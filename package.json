@@ -1,0 +1,33 @@
+{
+  "name": "bmdotcom",
+  "version": "1.0.0",
+  "description": "the home on the web for Brad Mallow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/briznad/bmdotcom.git"
+  },
+  "keywords": [
+    "brad",
+    "mallow",
+    "bradmallow",
+    "resume",
+    "portfolio",
+    "projects"
+  ],
+  "author": "Brad Mallow <brad.mallow@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briznad/bmdotcom/issues"
+  },
+  "homepage": "http://bradmallow.com",
+  "devDependencies": {
+    "browserify": "^10.2.1"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
