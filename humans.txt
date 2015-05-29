@@ -11,7 +11,11 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5/CSS3/JavaScript
-    SASS
+    HTML/CSS/JavaScript
+    SASS/libsass
     CoffeeScript
+    jQuery
+    underscore
     Davis.js
+    grunt
+    bower
