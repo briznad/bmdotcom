@@ -6,6 +6,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,700,500,900);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -6617,13 +6618,6 @@ th.hide-for-touch {
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'apercuregular';
-  src: url("/assets/fonts/apercu_regular-webfont.eot");
-  src: url("/assets/fonts/apercu_regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/apercu_regular-webfont.woff") format("woff"), url("/assets/fonts/apercu_regular-webfont.ttf") format("truetype"), url("/assets/fonts/apercu_regular-webfont.svg#apercuregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /* settings */
 /* /settings */
 .social-link:before, .lightbox-close:before, .modal-close:before {
@@ -6724,7 +6718,7 @@ body {
   margin: 0 auto;
   padding: 2.8571428571em 1.4285714286em;
   -webkit-font-smoothing: antialiased;
-  font-family: "apercuregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Maven Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #505050; }
 
