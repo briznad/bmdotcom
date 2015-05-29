@@ -409,6 +409,9 @@ td, th {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+figure {
+  margin: 0; }
+
 /* /helper styles */
 /* really simplistic grid system */
 .left-content {
