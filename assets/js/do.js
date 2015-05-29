@@ -12603,8 +12603,7 @@ aWindow.cache = {
   $body: $(document.body),
   $title: $('title'),
   $h1: $('h1'),
-  $dynamicContainer: $('#dynamicContainer'),
-  $helium: $('#Helium')
+  $dynamicContainer: $('#dynamicContainer')
 };
 ;var aWindow;
 
