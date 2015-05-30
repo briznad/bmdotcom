@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Brad Mallow</title>
 
@@ -25,21 +24,32 @@
         <link rel="stylesheet" media="screen, projection" href="assets/css/style.min.css" />
     </head>
 
-    <body>
-        <h1>
-            <span>B</span>
-            <span>r</span>
-            <span>a</span>
-            <span>d</span>
-            <span>M</span>
-            <span>a</span>
-            <span>l</span>
-            <span>l</span>
-            <span>o</span>
-            <span>w</span>
-        </h1>
+    <body class="root">
+        <header>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li class="main-nav-list-item">
+                        <a class="main-nav-link" href="/projects" title="Some of the things I've worked on.">Projects</a>
+                    </li>
+                    <li class="main-nav-list-item">
+                        <a class="main-nav-link" href="/resume" title="A map of where I've been, professionally.">Resume</a>
+                    </li>
+                    <li class="main-nav-list-item">
+                        <a class="main-nav-link" href="/contact" title="How to get ahold of me.">Contact</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <!-- <div id="dynamicContainer"></div> -->
+            <aside class="name-tag-wrapper">
+                <a href="/" class="name-tag">
+                    <h1 class="name-tag-header"><span>Brad Mallow</span></h1>
+                </a>
+            </aside>
+        </header>
+
+        <main id="dynamicContainer" class="main-container"></main>
+
+        <!-- <footer></footer> -->
 
         <!--[if lt IE 9]>
             <p class="chromeframe" style="position: fixed; width: 100%; top: 0; margin: 0; padding: 15px; text-align: center; background-color: #555;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -58,6 +68,5 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
-
-</body>
+    </body>
 </html>
