@@ -12592,11 +12592,11 @@ Davis.App = (function () {
     });
   }
 }.call(this));
-;var aWindow;
+;var bmdotcom;
 
-aWindow = aWindow || {};
+bmdotcom = bmdotcom || {};
 
-aWindow.cache = {
+bmdotcom.cache = {
   $window: $(window),
   $document: $(document),
   $html: $(document.documentElement),
@@ -12605,11 +12605,11 @@ aWindow.cache = {
   $h1: $('h1'),
   $dynamicContainer: $('#dynamicContainer')
 };
-;var aWindow;
+;var bmdotcom;
 
-aWindow = aWindow || {};
+bmdotcom = bmdotcom || {};
 
-aWindow.contact = (function() {
+bmdotcom.contact = (function() {
   'use strict';
   var send, _afterSend, _establishFormType, _validate;
   send = function(req) {
@@ -12620,7 +12620,7 @@ aWindow.contact = (function() {
     }
     return $.ajax({
       type: 'POST',
-      url: '//formspree.io/awindownyc@gmail.com',
+      url: '//formspree.io/bradmallow@gmail.com',
       data: req.params,
       dataType: 'json',
       complete: _afterSend[formType]
@@ -12628,8 +12628,6 @@ aWindow.contact = (function() {
   };
   _establishFormType = function(typeOfContact) {
     switch (typeOfContact) {
-      case 'Subscribe to Newsletter':
-        return 'newsletterSubscribe';
       case 'Contact Form Message':
         return 'contactPage';
       default:
@@ -12638,31 +12636,21 @@ aWindow.contact = (function() {
   };
   _validate = {
     emailPattern: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-    newsletterSubscribe: function(formFields) {
+    contactPage: function(formFields) {
       if (_validate.emailPattern.test(formFields.newsletterEmail)) {
         return true;
       } else {
-        aWindow.modal.open('Please enter a valid e-mail address.', {
+        bmdotcom.modal.open('Please enter a valid e-mail address.', {
           displayDuration: 3000,
           additionalClasses: ['contact-modal']
         });
         return false;
       }
-    },
-    contactPage: function() {
-      return true;
     }
   };
   _afterSend = {
-    newsletterSubscribe: function() {
-      return aWindow.modal.open('Thank you for signing up for our newsletter.', {
-        reloadPage: true,
-        displayDuration: 3000,
-        additionalClasses: ['contact-modal']
-      });
-    },
     contactPage: function() {
-      return aWindow.modal.open('Thank you for contacting us and expressing interest to learn more about the project. We will respond shortly.', {
+      return bmdotcom.modal.open('Thank you for contacting us and expressing interest to learn more about the project. We will respond shortly.', {
         reloadPage: true,
         additionalClasses: ['contact-modal']
       });
@@ -12672,56 +12660,11 @@ aWindow.contact = (function() {
     send: send
   };
 })();
-;var aWindow;
+;var bmdotcom;
 
-aWindow = aWindow || {};
+bmdotcom = bmdotcom || {};
 
-aWindow.lightbox = (function() {
-  'use strict';
-  var init, options, _closeLightbox, _controlLightbox, _openLightbox;
-  options = {
-    enabledElements: ['.primary-image:not(.sub-item)', '.thumbnail-image:not(.sub-item)']
-  };
-  init = function(opts) {
-    if (opts == null) {
-      opts = {};
-    }
-    _.extend(options, opts);
-    aWindow.cache.$body.on('click', options.enabledElements.join(', '), _openLightbox);
-    aWindow.cache.$body.on('click', '.lightbox-control', _controlLightbox);
-    return aWindow.cache.$body.on('click', '.lightbox-overlay', _closeLightbox);
-  };
-  _openLightbox = function(e) {
-    var $el, $target;
-    e.preventDefault();
-    e.stopPropagation();
-    $el = $(this);
-    console.log($el);
-    $target = $el.is('a') ? $el : $el.closest('a');
-    return aWindow.cache.$body.append(aWindow.template.lightboxModule({
-      imgSource: $target.attr('href')
-    }));
-  };
-  _controlLightbox = function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    return aWindow.log('control');
-  };
-  _closeLightbox = function(e) {
-    e.preventDefault();
-    if (!$(e.target).is('.lightbox-container, .lightbox-img')) {
-      return $(e.currentTarget).remove();
-    }
-  };
-  return {
-    init: init
-  };
-})();
-;var aWindow;
-
-aWindow = aWindow || {};
-
-aWindow.modal = (function() {
+bmdotcom.modal = (function() {
   'use strict';
   var init, options, _destroyModal, _redirect, _registerEvents;
   options = {
@@ -12738,7 +12681,7 @@ aWindow.modal = (function() {
     options = _.extend(options, opts || {}, {
       modalID: _.uniqueId('modal-')
     });
-    aWindow.cache.$body.append(aWindow.template.modalModule({
+    bmdotcom.cache.$body.append(bmdotcom.template.modalModule({
       modalID: options.modalID,
       modalContent: content,
       additionalClasses: _.isArray(options.additionalClasses) ? options.additionalClasses.join(' ') : options.additionalClasses,
@@ -12750,7 +12693,7 @@ aWindow.modal = (function() {
     }
   };
   _registerEvents = function() {
-    return aWindow.cache.$body.off('click.' + options.modalID).on('click.' + options.modalID, '#' + options.modalID, _destroyModal);
+    return bmdotcom.cache.$body.off('click.' + options.modalID).on('click.' + options.modalID, '#' + options.modalID, _destroyModal);
   };
   _destroyModal = function(e) {
     if ((e != null) && $(e.target).is('.modal-close, .modal-overlay')) {
@@ -12773,11 +12716,11 @@ aWindow.modal = (function() {
     open: init
   };
 })();
-;var aWindow;
+;var bmdotcom;
 
-aWindow = aWindow || {};
+bmdotcom = bmdotcom || {};
 
-aWindow.modelBuildr = (function() {
+bmdotcom.modelBuildr = (function() {
   'use strict';
   var init, _addMetaList, _addMetaPage, _cleanArrayify, _createCleanModel, _getData, _internalExternalImg, _lineBreakify, _postProcessing, _processAttribution, _processGeneral, _processMedia, _processSpecific, _slugify, _sortRawInput, _uppercasify;
   init = function(callback) {
@@ -12795,18 +12738,18 @@ aWindow.modelBuildr = (function() {
       return callback();
     });
     return request.fail(function(data) {
-      aWindow.model = aWindow.tempData();
+      bmdotcom.model = bmdotcom.tempData();
       return callback();
     });
   };
   _createCleanModel = function(data, callback) {
-    aWindow.model = {};
+    bmdotcom.model = {};
     if (data.feed.entry) {
-      aWindow.model.settings = {};
+      bmdotcom.model.settings = {};
       _.each(data.feed.entry, _sortRawInput);
       return _postProcessing();
     } else {
-      return aWindow.model = {
+      return bmdotcom.model = {
         status: 'error',
         description: 'no "entry" object returned',
         data: data
@@ -12816,9 +12759,9 @@ aWindow.modelBuildr = (function() {
   _sortRawInput = function(obj) {
     var key, tempCleanObj;
     key = obj.gsx$newpagetype.$t;
-    aWindow.model[key] = aWindow.model[key] || {};
+    bmdotcom.model[key] = bmdotcom.model[key] || {};
     tempCleanObj = _.extend(_processGeneral(obj, key), _processSpecific(obj, key));
-    aWindow.model[key][tempCleanObj.normalized] = tempCleanObj;
+    bmdotcom.model[key][tempCleanObj.normalized] = tempCleanObj;
     return _addMetaList(tempCleanObj);
   };
   _processGeneral = function(raw, key) {
@@ -12930,9 +12873,9 @@ aWindow.modelBuildr = (function() {
   };
   _addMetaList = function(cleanObj) {
     var objPlural;
-    aWindow.model.meta = aWindow.model.meta || {};
+    bmdotcom.model.meta = bmdotcom.model.meta || {};
     objPlural = cleanObj.type + 's';
-    if (['meta', 'sub-item'].indexOf(cleanObj.type) !== -1 || typeof aWindow.model.meta[objPlural] === 'object') {
+    if (['meta', 'sub-item'].indexOf(cleanObj.type) !== -1 || typeof bmdotcom.model.meta[objPlural] === 'object') {
       return false;
     }
     return _addMetaPage(objPlural, 'This is the ' + _uppercasify(objPlural) + ' list.', {
@@ -12948,7 +12891,7 @@ aWindow.modelBuildr = (function() {
     if (description == null) {
       description = 'This is the ' + properSlug + ' page.';
     }
-    return aWindow.model.meta[slug] = _.extend({
+    return bmdotcom.model.meta[slug] = _.extend({
       type: 'meta',
       normalized: slug,
       title: properSlug,
@@ -12968,51 +12911,51 @@ aWindow.modelBuildr = (function() {
       metaListType: 'item',
       displayOrder: []
     });
-    _.each(aWindow.model.meta, function(value, key) {
+    _.each(bmdotcom.model.meta, function(value, key) {
       if (value.metaListType && !value.displayOrder) {
-        return value.displayOrder = _.keys(aWindow.model[value.metaListType]).sort();
+        return value.displayOrder = _.keys(bmdotcom.model[value.metaListType]).sort();
       }
     });
-    _.each(aWindow.model['sub-item'], function(value, key) {
-      aWindow.model.item[value.parentItem]['sub-items'].push(key);
-      value.edition = aWindow.model.item[value.parentItem].edition;
-      value.creator = aWindow.model.item[value.parentItem].creator;
-      return aWindow.model.collaborator[value.creator].items.push(key);
+    _.each(bmdotcom.model['sub-item'], function(value, key) {
+      bmdotcom.model.item[value.parentItem]['sub-items'].push(key);
+      value.edition = bmdotcom.model.item[value.parentItem].edition;
+      value.creator = bmdotcom.model.item[value.parentItem].creator;
+      return bmdotcom.model.collaborator[value.creator].items.push(key);
     });
-    _.each(aWindow.model.item, function(value, key) {
+    _.each(bmdotcom.model.item, function(value, key) {
       var priceRange;
       value.galleryItem = /^gallery/.test(key) ? true : false;
-      aWindow.model.edition[value.edition].items.push(key);
+      bmdotcom.model.edition[value.edition].items.push(key);
       if (value.creator) {
-        aWindow.model.edition[value.edition].collaborators.push(value.creator);
+        bmdotcom.model.edition[value.edition].collaborators.push(value.creator);
       }
       if (value['sub-items'].length) {
         value['sub-items'].sort();
         priceRange = [];
         _.each(value['sub-items'], function(subItem, key) {
-          return priceRange.push(parseInt(aWindow.model['sub-item'][subItem].price.replace('$', '')));
+          return priceRange.push(parseInt(bmdotcom.model['sub-item'][subItem].price.replace('$', '')));
         });
         priceRange.sort();
         value.price = '$' + priceRange.shift() + ' - $' + priceRange.pop();
         if (!value.purchasePageMedia.source) {
-          value.purchasePageMedia = aWindow.model['sub-item'][value['sub-items'][0]].purchasePageMedia;
+          value.purchasePageMedia = bmdotcom.model['sub-item'][value['sub-items'][0]].purchasePageMedia;
         }
-        return aWindow.model.meta.shop.displayOrder = aWindow.model.meta.shop.displayOrder.concat(value['sub-items']);
+        return bmdotcom.model.meta.shop.displayOrder = bmdotcom.model.meta.shop.displayOrder.concat(value['sub-items']);
       } else {
-        aWindow.model.meta.shop.displayOrder.push(key);
+        bmdotcom.model.meta.shop.displayOrder.push(key);
         if (value.creator) {
-          return aWindow.model.collaborator[value.creator].items.push(key);
+          return bmdotcom.model.collaborator[value.creator].items.push(key);
         }
       }
     });
-    aWindow.model.meta.shop.displayOrder.sort();
-    _.each(aWindow.model.edition, function(value, key) {
-      aWindow.model.settings.currentEdition = key;
+    bmdotcom.model.meta.shop.displayOrder.sort();
+    _.each(bmdotcom.model.edition, function(value, key) {
+      bmdotcom.model.settings.currentEdition = key;
       value.collaborators.sort();
       value.items.sort();
       return value.collaborators = _.uniq(value.collaborators, true);
     });
-    return _.each(aWindow.model.collaborator, function(value, key) {
+    return _.each(bmdotcom.model.collaborator, function(value, key) {
       return value.items.sort();
     });
   };
@@ -13041,54 +12984,44 @@ aWindow.modelBuildr = (function() {
     init: init
   };
 })();
-;var aWindow;
+;var bmdotcom;
 
-aWindow = aWindow || {};
+bmdotcom = bmdotcom || {};
 
-aWindow.router = (function() {
+bmdotcom.router = (function() {
   'use strict';
-  var init, initRoutes, _testHash;
+  var init, _initRoutes, _testHash;
   init = function(callback) {
     if (callback == null) {
       callback = function() {};
     }
-    initRoutes();
+    _initRoutes();
     _testHash();
     return callback();
   };
-  initRoutes = function() {
+  _initRoutes = function() {
     var routes;
     return routes = new Davis(function() {
       this.configure(function(config) {
-        return config.generateRequestOnPageLoad = true;
+        return config.generateRequestOnPageLoad = false;
       });
-      this.before(aWindow.updateView.beforeUpdate);
+      this.before(bmdotcom.updateView.beforeUpdate);
       this.after(function(req) {
-        return aWindow.tracking.trackPage(req.path);
+        return bmdotcom.tracking.trackPage(req.path);
       });
       this.get('/', function() {
-        return aWindow.updateView.update('meta', 'root');
+        return bmdotcom.updateView.update('root');
       });
       this.get('/index.html', function() {
-        return aWindow.updateView.update('meta', 'root');
+        return bmdotcom.updateView.update('root');
       });
-      this.get('/:titleNormalized', function(req) {
-        return aWindow.updateView.update('meta', req.params.titleNormalized, !req.queryString ? false : {
-          title: req.params.title
-        });
+      this.get('/:pageTitle', function(req) {
+        return bmdotcom.updateView.update(req.params.pageTitle);
       });
-      this.get(':titleNormalized', function(req) {
-        return aWindow.updateView.update('meta', req.params.titleNormalized, !req.queryString ? false : {
-          title: req.params.title
-        });
+      this.get(':pageTitle', function(req) {
+        return bmdotcom.updateView.update(req.params.pageTitle);
       });
-      this.get('/:type/:titleNormalized', function(req) {
-        return aWindow.updateView.update(req.params.type, req.params.titleNormalized);
-      });
-      this.get('/item/:parentItem/:childItem', function(req) {
-        return aWindow.updateView.update('sub-item', req.params.childItem);
-      });
-      return this.post('/contact', aWindow.contact.send);
+      return this.post('/contact', bmdotcom.contact.send);
     });
   };
   _testHash = function() {
@@ -13100,11 +13033,11 @@ aWindow.router = (function() {
     init: init
   };
 })();
-;var aWindow;
+;var bmdotcom;
 
-aWindow = aWindow || {};
+bmdotcom = bmdotcom || {};
 
-aWindow.template = (function() {
+bmdotcom.template = (function() {
   'use strict';
   var init, _processTemplates;
   init = function(callback) {
@@ -13117,14 +13050,14 @@ aWindow.template = (function() {
       return _processTemplates(data, callback);
     });
     return request.fail(function(data) {
-      return _processTemplates(aWindow.dummyData().template(), callback);
+      return callback();
     });
   };
   _processTemplates = function(response, callback) {
     var $templates;
     $templates = $(response).filter('script[type="text/html"]');
     $templates.each(function() {
-      return aWindow.template[$(this).attr('id')] = _.template($(this).html());
+      return bmdotcom.template[$(this).attr('id')] = _.template($(this).html());
     });
     return callback();
   };
@@ -13132,247 +13065,88 @@ aWindow.template = (function() {
     init: init
   };
 })();
-;var aWindow;
+;var bmdotcom;
 
-aWindow = aWindow || {};
+bmdotcom = bmdotcom || {};
 
-aWindow.tracking = (function() {
+bmdotcom.tracking = (function() {
   'use strict';
-  var addToCart, heliumCartEvents, init, trackPage;
+  var init, trackPage;
   init = function() {};
   trackPage = function(req) {
     return _gaq.push(['_trackPageview', req]);
   };
-  addToCart = function() {
-    return _gaq.push(['_trackEvent', 'cart', 'add to cart', window.location.pathname, void 0, true]);
-  };
-  heliumCartEvents = function() {
-    var ajaxBuster, counter;
-    counter = 0;
-    ajaxBuster = function(selector, action, postClickCallback) {
-      var t;
-      if (postClickCallback == null) {
-        postClickCallback = function() {};
-      }
-      if ($(selector).length) {
-        return $(selector).on('click', function() {
-          _gaq.push(['_trackEvent', 'cart', action, action !== 'remove from cart' ? window.location.pathname : $(this).parent('.paper_row').parent().attr('data-id'), void 0, true]);
-          return postClickCallback();
-        });
-      } else if (counter < 3000) {
-        counter++;
-        return t = setTimeout(function() {
-          return ajaxBuster(selector, action, postClickCallback);
-        }, 100);
-      }
-    };
-    ajaxBuster('.paper_row .remove.item', 'remove from cart', function() {
-      return ajaxBuster('#helium_checkout_server_error .helium_checkout_button', 'close cart');
-    });
-    ajaxBuster('#checkout_submit', 'place order');
-    return ajaxBuster('#checkout_cancel', 'continue shopping');
-  };
   return {
     init: init,
-    trackPage: trackPage,
-    addToCart: addToCart,
-    heliumCartEvents: heliumCartEvents
+    trackPage: trackPage
   };
 })();
-;var aWindow;
+;var bmdotcom;
 
-aWindow = aWindow || {};
+bmdotcom = bmdotcom || {};
 
-aWindow.updateView = (function() {
+bmdotcom.updateView = (function() {
   'use strict';
-  var beforeUpdate, update, _addBodyClasses, _cartEvents, _computePageTitle, _initChooseDesign, _initEvents, _initLearnMore, _initParallax, _initThumbnails, _metaRedirects, _removeBodyClasses, _updateBodyClasses, _updateCurrentPage;
+  var beforeUpdate, update, _computePageTitle, _initEvents, _initThumbnails, _updateBodyClasses, _updateCurrentPage;
   beforeUpdate = function(request) {};
-  update = function(type, titleNormalized, contactData) {
+  update = function(pageTitle) {
     var currentPage;
-    if (contactData == null) {
-      contactData = false;
-    }
-    currentPage = aWindow.model[type][titleNormalized];
-    if (type === 'meta' && _metaRedirects(currentPage)) {
-      return false;
-    }
-    _removeBodyClasses();
-    _addBodyClasses(type, titleNormalized);
-    _updateCurrentPage(type, titleNormalized);
-    aWindow.cache.$title.add(aWindow.cache.$h1).text(_computePageTitle(type, currentPage.title));
-    aWindow.cache.$dynamicContainer.html(aWindow.template.primaryTemplate({
-      data: aWindow.model,
-      currentType: type,
-      currentTitleNormalized: titleNormalized,
-      currentPage: currentPage,
-      currentEdition: aWindow.model.settings.currentEdition,
-      contactData: contactData
+    currentPage = bmdotcom.model.pages[pageTitle];
+    _updateBodyClasses(pageTitle);
+    _updateCurrentPage(pageTitle);
+    bmdotcom.cache.$title.text(_computePageTitle(pageTitle));
+    bmdotcom.cache.$dynamicContainer.html(bmdotcom.template[pageTitle + 'View']({
+      data: bmdotcom.model,
+      pageTitle: pageTitle,
+      currentPage: currentPage
     }));
-    return _initEvents(type, titleNormalized);
+    return _initEvents(pageTitle);
   };
-  _metaRedirects = function(currentPage) {
-    if (currentPage.metaListType) {
-      if (!currentPage.displayOrder.length) {
-        Davis.location.assign(new Davis.Request('/'));
-        return true;
-      } else if (currentPage.displayOrder.length === 1) {
-        Davis.location.assign(new Davis.Request('/' + currentPage.metaListType + '/' + currentPage.displayOrder[0]));
-        return true;
-      }
-    }
-    return false;
+  _updateBodyClasses = function(pageTitle) {
+    return bmdotcom.cache.$body.addClass(pageTitle).removeClass(bmdotcom.model.settings.currentPage ? bmdotcom.model.settings.currentPage.title : '');
   };
-  _updateBodyClasses = function(method, classesArr) {
-    return aWindow.cache.$body[method](classesArr.join(' '));
-  };
-  _removeBodyClasses = function() {
-    if (aWindow.model.settings.currentPage) {
-      return _updateBodyClasses('removeClass', [aWindow.model.settings.currentPage.type, aWindow.model.settings.currentPage.titleNormalized, 'purchase']);
-    }
-  };
-  _addBodyClasses = function(type, titleNormalized) {
-    return _updateBodyClasses('addClass', [type, titleNormalized]);
-  };
-  _updateCurrentPage = function(type, titleNormalized) {
-    return aWindow.model.settings.currentPage = _.extend(aWindow.model.settings.currentPage || {}, {
-      type: type,
-      titleNormalized: titleNormalized
+  _updateCurrentPage = function(pageTitle) {
+    return bmdotcom.model.settings.currentPage = _.extend(bmdotcom.model.settings.currentPage || {}, {
+      title: pageTitle
     });
   };
-  _computePageTitle = function(type, title) {
-    title = title.toLowerCase();
-    if (title === 'root') {
-      return 'a w i n d o w';
-    } else if (type === 'edition') {
-      return 'a w i n d o w | ' + 'edition ' + title;
+  _computePageTitle = function(pageTitle) {
+    if (pageTitle === 'root') {
+      return 'Brad Mallow';
     } else {
-      return 'a w i n d o w | ' + title;
+      return 'Brad Mallow | ' + pageTitle;
     }
   };
-  _initEvents = function(type, titleNormalized) {
-    var currentPage;
-    currentPage = aWindow.model[type][titleNormalized];
-    if (titleNormalized === 'root') {
-
-    } else if (titleNormalized === 'edition-one-parallax') {
-      return _initParallax();
-    } else if (type === 'item' || type === 'sub-item') {
-      _cartEvents(titleNormalized);
-      _initLearnMore(currentPage);
-      if (type === 'sub-item' || currentPage['sub-items'].length) {
-        return _initChooseDesign(type, currentPage, titleNormalized);
-      }
-    } else if (['edition', 'project', 'event'].indexOf(type) !== -1) {
-      return _initThumbnails();
+  _initEvents = function(pageTitle) {
+    var x;
+    switch (pageTitle) {
+      case 'root':
+        return x = 1;
+      case 'contact':
+        return x = 2;
+      default:
+        return x = 3;
     }
   };
-  _initParallax = function() {
-    var $scene, parallax, scene, toggleClass;
-    scene = document.getElementById('parallax');
-    parallax = new Parallax(scene);
-    $scene = $(scene);
-    toggleClass = function(item) {
-      return $scene.toggleClass($(item).attr('class').split(' ')[2] + '-hover');
-    };
-    return $scene.find('.link-layer').on({
-      mouseenter: function() {
-        return toggleClass(this);
-      },
-      mouseleave: function() {
-        return toggleClass(this);
-      }
-    });
-  };
-  _initLearnMore = function(currentPage) {
-    if (currentPage.parentItem) {
-      currentPage = aWindow.model.item[currentPage.parentItem];
-    }
-    return aWindow.cache.$body.off('click.learnMore').on('click.learnMore', '.learn-more-link', function(e) {
-      e.preventDefault();
-      return aWindow.modal.open(aWindow.template.learnMoreModule({
-        currentPage: currentPage,
-        attribution: currentPage.media.attribution
-      }), {
-        displayDuration: false,
-        additionalClasses: ['learn-more-modal']
-      });
-    });
-  };
-  _initChooseDesign = function(type, currentPage, titleNormalized) {
-    var currentSubItem;
-    currentSubItem = false;
-    if (type === 'sub-item') {
-      currentSubItem = titleNormalized;
-      titleNormalized = currentPage.parentItem;
-      currentPage = aWindow.model.item[titleNormalized];
-    }
-    return aWindow.cache.$body.off('click.chooseDesign').on('click.chooseDesign', '.choose-design-btn, .choose-design-link', function(e) {
-      e.preventDefault();
-      aWindow.modal.open(aWindow.template.chooseDesignModule({
-        data: aWindow.model,
-        currentPage: currentPage,
-        currentSubItem: currentSubItem,
-        currentTitleNormalized: titleNormalized
-      }), {
-        displayDuration: false,
-        additionalClasses: ['choose-design-modal']
-      });
-      return aWindow.cache.$body.off('click.destroyChooseDesignModal').on('click.destroyChooseDesignModal', '.sub-item-link', function() {
-        return $(this).closest('.choose-design-modal').remove();
-      });
-    });
-  };
-  _cartEvents = function(titleNormalized) {
-    return aWindow.cache.$body.off('click.addToCart').on('click.addToCart', '.order-link', function(e) {
-      e.preventDefault();
-      Helium.cart.add(titleNormalized);
-      Helium.show();
-      aWindow.tracking.addToCart();
-      return aWindow.tracking.heliumCartEvents();
-    });
-  };
-  _initThumbnails = function() {
-    var $thumbContainer, $thumbWrapper, $thumbnails, thumbsWidth;
-    $thumbContainer = $('.additional-media');
-    $thumbWrapper = $thumbContainer.parent();
-    $thumbnails = $('.thumbnail-image', $thumbContainer);
-    thumbsWidth = 0;
-    $thumbnails.each(function() {
-      return thumbsWidth += $(this).outerWidth(true);
-    });
-    if (thumbsWidth > $thumbWrapper.innerWidth()) {
-      return $thumbContainer.width(thumbsWidth);
-    }
-  };
+  _initThumbnails = function() {};
   return {
     beforeUpdate: beforeUpdate,
     update: update
   };
 })();
-;var aWindow;
+;var bmdotcom;
 
-aWindow = aWindow || {};
+bmdotcom = bmdotcom || {};
+;var bmdotcom;
 
-aWindow.log = function(msg1, msg2) {
+bmdotcom = bmdotcom || {};
+
+bmdotcom.init = (function() {
   'use strict';
-  if ((typeof console !== "undefined" && console !== null) && (console.log != null)) {
-    if (msg2) {
-      return console.log(msg1, msg2);
-    } else {
-      return console.log(msg1);
-    }
-  }
-};
-;var aWindow;
-
-aWindow = aWindow || {};
-
-aWindow.init = (function() {
-  'use strict';
-  aWindow.template.init(function() {
-    return aWindow.modelBuildr.init(function() {
-      return aWindow.router.init();
+  bmdotcom.template.init(function() {
+    return bmdotcom.modelBuildr.init(function() {
+      return bmdotcom.router.init();
     });
   });
-  return aWindow.lightbox.init();
+  return bmdotcom.tracking.init();
 })();
