@@ -12858,7 +12858,7 @@ bmdotcom.updateView = (function() {
     return _initEvents(pageTitle);
   };
   _updateBodyClasses = function(pageTitle) {
-    return bmdotcom.cache.$body.addClass(pageTitle).removeClass(bmdotcom.model.settings.currentPage ? bmdotcom.model.settings.currentPage.title : '');
+    return bmdotcom.cache.$body.addClass(pageTitle).removeClass(bmdotcom.model.settings.currentPage ? bmdotcom.model.settings.currentPage.title : 'root');
   };
   _updateCurrentPage = function(pageTitle) {
     return bmdotcom.model.settings.currentPage = _.extend(bmdotcom.model.settings.currentPage || {}, {
