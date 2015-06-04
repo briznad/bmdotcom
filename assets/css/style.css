@@ -685,8 +685,8 @@ header {
       -webkit-transform-origin: top left;
       -ms-transform-origin: top left;
       transform-origin: top left;
-      -webkit-animation: arrow-grow 500ms ease 1500ms 6 alternate;
-      animation: arrow-grow 500ms ease 1500ms 6 alternate; }
+      -webkit-animation: arrow-grow 500ms ease 3000ms 6 alternate;
+      animation: arrow-grow 500ms ease 3000ms 6 alternate; }
 
 @-webkit-keyframes arrow-grow {
   30% {
