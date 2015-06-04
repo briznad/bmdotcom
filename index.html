@@ -15,6 +15,17 @@
             (function() {
                 document.write('<meta name="viewport" content="' + (/iPad/i.test(navigator.userAgent) ? 'width=1000' : 'width=device-width') + ', initial-scale=1.0, minimal-ui" />');
             })();
+
+            // log start time
+            var bmdotcom = {
+                loadTime: Math.floor(new Date())
+            };
+
+            // add loading class to html element
+            if (document.documentElement.classList)
+              document.documentElement.classList.add('loading');
+            else
+              document.documentElement.className += ' loading';
         </script>
 
         <!--[if lt IE 9]>

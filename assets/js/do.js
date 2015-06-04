@@ -12726,7 +12726,11 @@ bmdotcom.modelBuildr = (function() {
   init = function(callback) {
     bmdotcom.model = {};
     bmdotcom.model.pages = {};
-    bmdotcom.model.settings = {};
+    bmdotcom.model.settings = {
+      currentPage: {
+        title: 'root'
+      }
+    };
     bmdotcom.model.pages.projects = _addProjectsModel();
     bmdotcom.model.pages.resume = _addResumeModel();
     bmdotcom.model.pages.contact = _addContactModel();
@@ -12842,10 +12846,22 @@ bmdotcom = bmdotcom || {};
 
 bmdotcom.updateView = (function() {
   'use strict';
-  var beforeUpdate, update, _computePageTitle, _initEvents, _initThumbnails, _updateBodyClasses, _updateCurrentPage;
+  var beforeUpdate, removeLoading, update, _computePageTitle, _initEvents, _initThumbnails, _updateBodyClasses, _updateCurrentPage;
   beforeUpdate = function(request) {};
+  removeLoading = function() {
+    var desiredDelay, elapsedTime, remainingDelay, t;
+    desiredDelay = 1500;
+    elapsedTime = Math.floor(new Date()) - bmdotcom.loadTime;
+    remainingDelay = elapsedTime < desiredDelay ? desiredDelay - elapsedTime : 0;
+    return t = setTimeout(function() {
+      return bmdotcom.cache.$html.removeClass('loading');
+    }, remainingDelay);
+  };
   update = function(pageTitle) {
     var currentPage;
+    if (pageTitle === bmdotcom.model.settings.currentPage.title) {
+      return false;
+    }
     currentPage = bmdotcom.model.pages[pageTitle];
     _updateBodyClasses(pageTitle);
     _updateCurrentPage(pageTitle);
@@ -12858,7 +12874,7 @@ bmdotcom.updateView = (function() {
     return _initEvents(pageTitle);
   };
   _updateBodyClasses = function(pageTitle) {
-    return bmdotcom.cache.$body.addClass(pageTitle).removeClass(bmdotcom.model.settings.currentPage ? bmdotcom.model.settings.currentPage.title : 'root');
+    return bmdotcom.cache.$body.addClass(pageTitle).removeClass(bmdotcom.model.settings.currentPage.title);
   };
   _updateCurrentPage = function(pageTitle) {
     return bmdotcom.model.settings.currentPage = _.extend(bmdotcom.model.settings.currentPage || {}, {
@@ -12886,7 +12902,8 @@ bmdotcom.updateView = (function() {
   _initThumbnails = function() {};
   return {
     beforeUpdate: beforeUpdate,
-    update: update
+    update: update,
+    removeLoading: removeLoading
   };
 })();
 ;var bmdotcom;
@@ -12901,7 +12918,9 @@ bmdotcom.init = (function() {
   return _.defer(function() {
     bmdotcom.template.init(function() {
       return bmdotcom.modelBuildr.init(function() {
-        return bmdotcom.router.init();
+        return bmdotcom.router.init(function() {
+          return bmdotcom.updateView.removeLoading();
+        });
       });
     });
     return bmdotcom.tracking.init();
