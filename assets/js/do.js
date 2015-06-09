@@ -12611,7 +12611,7 @@ bmdotcom = bmdotcom || {};
 
 bmdotcom.contact = (function() {
   'use strict';
-  var send, _afterSend, _establishFormType, _validate;
+  var registerEvents, send, _afterSend, _establishFormType, _validate;
   send = function(req) {
     var formType;
     formType = _establishFormType(req.params.typeOfContact);
@@ -12620,10 +12620,21 @@ bmdotcom.contact = (function() {
     }
     return $.ajax({
       type: 'POST',
-      url: '//formspree.io/bradmallow@gmail.com',
+      url: '//formspree.io/contact@bradmallow.com',
       data: req.params,
       dataType: 'json',
       complete: _afterSend[formType]
+    });
+  };
+  registerEvents = function() {
+    return bmdotcom.cache.$body.on('change.contact', '.form-container input, .form-container textarea', function() {
+      var $this;
+      $this = $(this);
+      if ($this.val() !== '') {
+        return $this.removeClass('deleted').addClass('changed');
+      } else {
+        return $this.removeClass('changed').addClass('deleted');
+      }
     });
   };
   _establishFormType = function(typeOfContact) {
@@ -12637,12 +12648,12 @@ bmdotcom.contact = (function() {
   _validate = {
     emailPattern: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     contactPage: function(formFields) {
-      if (_validate.emailPattern.test(formFields.newsletterEmail)) {
+      if (_validate.emailPattern.test(formFields._replyto)) {
         return true;
       } else {
-        bmdotcom.modal.open('Please enter a valid e-mail address.', {
-          displayDuration: 3000,
-          additionalClasses: ['contact-modal']
+        bmdotcom.modal.open('Please enter a valid e-mail address. Otherwise it\'s gonna be tough to respond.', {
+          additionalClasses: ['contact-modal'],
+          displayDuration: 3000
         });
         return false;
       }
@@ -12650,14 +12661,26 @@ bmdotcom.contact = (function() {
   };
   _afterSend = {
     contactPage: function() {
-      return bmdotcom.modal.open('Thank you for contacting us and expressing interest to learn more about the project. We will respond shortly.', {
-        reloadPage: true,
-        additionalClasses: ['contact-modal']
+      return bmdotcom.modal.open('Thanks for reaching out! I\'ll be receiving your message any minute now and should respond in good time.', {
+        additionalClasses: ['contact-modal'],
+        postDestroy: function() {
+          var $autofilled;
+          $autofilled = $('.form-container label').find('input, textarea').val('').removeClass('changed deleted').end().find('input:-webkit-autofill, textarea:-webkit-autofill');
+          if ($autofilled.length) {
+            return $autofilled.each(function() {
+              var $clone, $this;
+              $this = $(this);
+              $clone = $this.clone();
+              return $this.after($clone).remove();
+            });
+          }
+        }
       });
     }
   };
   return {
-    send: send
+    send: send,
+    registerEvents: registerEvents
   };
 })();
 ;var bmdotcom;
@@ -12672,7 +12695,8 @@ bmdotcom.modal = (function() {
     showCloseBtn: true,
     redirectHome: false,
     reloadPage: false,
-    additionalClasses: []
+    additionalClasses: [],
+    postDestroy: function() {}
   };
   init = function(content, opts) {
     if (content == null) {
@@ -12681,7 +12705,7 @@ bmdotcom.modal = (function() {
     options = _.extend(options, opts || {}, {
       modalID: _.uniqueId('modal-')
     });
-    bmdotcom.cache.$body.append(bmdotcom.template.modalModule({
+    bmdotcom.cache.$body.append(bmdotcom.template.modalView({
       modalID: options.modalID,
       modalContent: content,
       additionalClasses: _.isArray(options.additionalClasses) ? options.additionalClasses.join(' ') : options.additionalClasses,
@@ -12703,6 +12727,7 @@ bmdotcom.modal = (function() {
     } else if (e == null) {
       $('#' + options.modalID).remove();
     }
+    options.postDestroy();
     return _redirect();
   };
   _redirect = function() {
@@ -12774,7 +12799,7 @@ bmdotcom.router = (function() {
     var routes;
     return routes = new Davis(function() {
       this.configure(function(config) {
-        return config.generateRequestOnPageLoad = false;
+        return config.generateRequestOnPageLoad = true;
       });
       this.before(bmdotcom.updateView.beforeUpdate);
       this.after(function(req) {
@@ -12816,7 +12841,10 @@ bmdotcom.template = (function() {
   };
   _processTemplates = function($templates, callback) {
     $templates.each(function() {
-      return bmdotcom.template[$(this).attr('id')] = _.template($(this).html());
+      var $template;
+      $template = $(this);
+      bmdotcom.template[$template.attr('id')] = _.template($template.html());
+      return $template.remove();
     });
     return callback();
   };
@@ -12853,13 +12881,16 @@ bmdotcom.updateView = (function() {
     desiredDelay = 1500;
     elapsedTime = Math.floor(new Date()) - bmdotcom.loadTime;
     remainingDelay = elapsedTime < desiredDelay ? desiredDelay - elapsedTime : 0;
+    $('#timingInfo').text((elapsedTime / 1000).toFixed(2));
     return t = setTimeout(function() {
       return bmdotcom.cache.$html.removeClass('loading');
     }, remainingDelay);
   };
   update = function(pageTitle) {
-    var currentPage;
-    if (pageTitle === bmdotcom.model.settings.currentPage.title) {
+    var currentPage, previousPage;
+    previousPage = bmdotcom.model.settings.currentPage.title;
+    if (pageTitle === previousPage) {
+      console.debug('Requested page is the same as the current page. Request denied.');
       return false;
     }
     currentPage = bmdotcom.model.pages[pageTitle];
@@ -12888,13 +12919,14 @@ bmdotcom.updateView = (function() {
       return 'Brad Mallow | ' + pageTitle;
     }
   };
-  _initEvents = function(pageTitle) {
+  _initEvents = function(pageTitle, previousPage) {
     var x;
+    bmdotcom.cache.$body.off('.' + previousPage);
     switch (pageTitle) {
       case 'root':
         return x = 1;
       case 'contact':
-        return x = 2;
+        return bmdotcom.contact.registerEvents();
       default:
         return x = 3;
     }
