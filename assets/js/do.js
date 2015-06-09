@@ -12653,7 +12653,7 @@ bmdotcom.contact = (function() {
       } else {
         bmdotcom.modal.open('Please enter a valid e-mail address. Otherwise it\'s gonna be tough to respond.', {
           additionalClasses: ['contact-modal'],
-          displayDuration: 3000
+          displayDuration: 4000
         });
         return false;
       }
@@ -12661,8 +12661,9 @@ bmdotcom.contact = (function() {
   };
   _afterSend = {
     contactPage: function() {
-      return bmdotcom.modal.open('Thanks for reaching out! I\'ll be receiving your message any minute now and should respond in good time.', {
+      return bmdotcom.modal.open('Thanks for reaching out! I\'ll receive your message any minute now, and should respond in good time.', {
         additionalClasses: ['contact-modal'],
+        displayDuration: false,
         postDestroy: function() {
           var $autofilled;
           $autofilled = $('.form-container label').find('input, textarea').val('').removeClass('changed deleted').end().find('input:-webkit-autofill, textarea:-webkit-autofill');
