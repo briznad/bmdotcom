@@ -786,7 +786,8 @@ footer {
   font-size: 1.3em; }
 
 .project-media img {
-  max-width: 100%; }
+  max-width: 100%;
+  min-width: 100%; }
 
 .project-keywords dt {
   font-weight: bold; }
@@ -803,6 +804,12 @@ footer {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2; } }
+
+@media only screen and (max-width: 550px) {
+  .projects-list {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1; } }
 
 .resume-column-left {
   float: left;
