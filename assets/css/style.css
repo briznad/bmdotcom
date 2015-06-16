@@ -395,7 +395,6 @@ th {
 
 /* mixins */
 /* /mixins */
-/* partials */
 .visually-hidden, .resume-meta-list dt {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -419,25 +418,62 @@ th {
 [class*="-row"]:before,
 .main-nav-list:before,
 .main-container:before,
+.print-download-buttons:before,
 .modal-content:before,
 .choose-design-modal .choose-design-list:before,
-.clearfix:after, [class*="-row"]:after, .main-nav-list:after, .main-container:after, .modal-content:after, .choose-design-modal .choose-design-list:after {
+.clearfix:after, [class*="-row"]:after, .main-nav-list:after, .main-container:after, .print-download-buttons:after, .modal-content:after, .choose-design-modal .choose-design-list:after {
   content: " ";
   display: table; }
 
-.clearfix:after, [class*="-row"]:after, .main-nav-list:after, .main-container:after, .modal-content:after, .choose-design-modal .choose-design-list:after {
+.clearfix:after, [class*="-row"]:after, .main-nav-list:after, .main-container:after, .print-download-buttons:after, .modal-content:after, .choose-design-modal .choose-design-list:after {
   clear: both; }
 
 .relative-container {
   position: relative; }
 
-.projects-list-item, .resume-section, .form-container [type="text"],
+.print-button:focus,
+.download-button:focus, .form-container [type="submit"]:focus, .form-container [type="text"]:focus,
+.form-container [type="email"]:focus,
+.form-container textarea:focus {
+  border-color: rgba(52, 152, 219, 0.75);
+  outline-color: rgba(52, 152, 219, 0.75);
+  outline-style: solid;
+  outline-offset: 0px;
+  outline-width: 2px; }
+
+.print-button,
+.download-button, .form-container [type="submit"] {
+  display: block;
+  padding: 0.75em;
+  border-radius: 0;
+  border: 1px solid rgba(52, 152, 219, 0.75);
+  background-color: rgba(52, 152, 219, 0.9);
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff; }
+  .print-button:focus,
+  .download-button:focus,
+  .form-container [type="submit"]:focus,
+  .print-button:hover,
+  .download-button:hover, .form-container [type="submit"]:hover {
+    background-color: #3498db; }
+  .print-button:hover,
+  .download-button:hover, .form-container [type="submit"]:hover {
+    text-decoration: none; }
+  .print-button:active,
+  .download-button:active, .form-container [type="submit"]:active {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    outline-color: #2c3e50; }
+
+.projects-list-item, .resume-section:not(.print-download-buttons), .form-container [type="text"],
 .form-container [type="email"],
 .form-container textarea {
   background-color: #fff;
   border: 1px solid rgba(149, 165, 166, 0.5); }
 
-/* /partials */
 /* helper styles */
 *,
 *:before,
@@ -502,7 +538,9 @@ body {
   font-size: 1em;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  color: #2c3e50; }
+  color: #2c3e50;
+  -webkit-transition: padding 250ms ease;
+  transition: padding 250ms ease; }
 
 p,
 ul,
@@ -548,6 +586,10 @@ li {
   display: inline-block; }
 
 /* /general page styles */
+@media only screen and (max-width: 850px) {
+  body {
+    padding: 2.8571428571em 1.7857142857em; } }
+
 header {
   position: relative;
   z-index: 1;
@@ -597,7 +639,8 @@ header {
   background-color: rgba(189, 195, 199, 0.1);
   -webkit-transition: background-color 175ms ease-in;
   transition: background-color 175ms ease-in; }
-  .main-nav-link:hover {
+  .main-nav-link:hover,
+  .main-nav-link:focus {
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.1); }
   .main-nav-link:active,
@@ -657,9 +700,9 @@ header {
   transition-duration: 175ms;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease; }
-  .name-tag:hover {
-    text-decoration: none; }
-  .name-tag:hover {
+  .name-tag:hover,
+  .name-tag:focus {
+    outline: none;
     text-decoration: none;
     -webkit-transform: scale(1.01) rotate(-0.6deg);
     -ms-transform: scale(1.01) rotate(-0.6deg);
@@ -699,6 +742,12 @@ header {
     -ms-transform: rotate(2deg);
     transform: rotate(2deg); }
 
+@media only screen and (max-width: 850px) {
+  .name-tag-wrapper {
+    -webkit-transform: scale(0.25) translateX(-175px) translateY(-310px) rotate(-30deg);
+    -ms-transform: scale(0.25) translateX(-175px) translateY(-310px) rotate(-30deg);
+    transform: scale(0.25) translateX(-175px) translateY(-310px) rotate(-30deg); } }
+
 .main-container {
   min-height: 28.5714285714em;
   padding: 0 3.3333333333%; }
@@ -728,6 +777,7 @@ footer {
   position: relative;
   float: right;
   max-width: 45%;
+  min-width: 365px;
   font-size: 1.8em; }
   .welcome-text p:last-child {
     max-width: 75%; }
@@ -821,10 +871,29 @@ footer {
   width: 61.803398875%; }
 
 .resume-section {
-  margin-top: 1em;
-  padding: 1em; }
+  margin-top: 1em; }
   .resume-section:first-child {
     margin-top: 0; }
+  .resume-section:not(.print-download-buttons) {
+    padding: 1em; }
+
+.print-button,
+.download-button {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1.2em; }
+  .print-button:first-child,
+  .download-button:first-child {
+    float: left; }
+  .print-button:last-child,
+  .download-button:last-child {
+    float: right; }
+
+.print-button {
+  width: 36.196601125%; }
+
+.download-button {
+  width: 59.803398875%; }
 
 .resume-section-header {
   margin-bottom: 0.5em; }
@@ -937,15 +1006,6 @@ footer {
       opacity: 0;
       -webkit-transition: opacity 250ms ease;
       transition: opacity 250ms ease; }
-  .form-container [type="text"]:focus,
-  .form-container [type="email"]:focus,
-  .form-container textarea:focus,
-  .form-container [type="submit"]:focus {
-    border-color: rgba(52, 152, 219, 0.75);
-    outline-color: rgba(52, 152, 219, 0.75);
-    outline-style: solid;
-    outline-offset: 0px;
-    outline-width: 2px; }
   .form-container [type="text"],
   .form-container [type="email"],
   .form-container textarea {
@@ -996,24 +1056,8 @@ footer {
       background-color: rgba(192, 57, 43, 0.9);
       font-weight: bold; }
   .form-container [type="submit"] {
-    display: block;
     width: 100%;
-    margin-top: 1.0714285714em;
-    padding: 0.75em;
-    border-radius: 0;
-    border: 1px solid rgba(52, 152, 219, 0.75);
-    background-color: rgba(52, 152, 219, 0.9);
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff; }
-    .form-container [type="submit"]:focus,
-    .form-container [type="submit"]:hover {
-      background-color: #3498db; }
-    .form-container [type="submit"]:active {
-      background-color: #2c3e50;
-      border-color: #2c3e50;
-      outline-color: #2c3e50; }
+    margin-top: 1.0714285714em; }
 
 .lightbox-overlay, .modal-overlay {
   position: fixed;
