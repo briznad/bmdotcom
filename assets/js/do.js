@@ -12763,18 +12763,168 @@ bmdotcom.modelBuildr = (function() {
     return callback();
   };
   _addProjectsModel = function() {
-    return {
-      title: 'projects'
-    };
+    return [
+      {
+        title: 'shapeDance',
+        link: 'http://shapedance.beautifuluniquesnowflake.com/',
+        media: 'shapeDance_sample.png',
+        description: 'I make shapes dance, set to music. This was an exercise to master CSS3 transforms, transitions, and animations, while using a minimum of DOM elements.',
+        keywords: ['HTML/CSS/JS', 'CSS3', 'SASS']
+      }, {
+        title: 'bouncingBubbles',
+        link: 'http://bouncingbubbles.beautifuluniquesnowflake.com/',
+        media: 'bouncingBubbles_sample.png',
+        description: 'An experiment in adding physical properties to DOM elements, with appearance and behavior affected by the user\'s current weather.',
+        keywords: ['HTML/CSS/JS', 'CSS3', 'SASS', 'Box2DJS', 'GeoIP API', 'Forecast.io API']
+      }, {
+        title: 'Oracle of 8',
+        link: 'http://8ball.beautifuluniquesnowflake.com/',
+        media: '8ball_sample.png',
+        description: 'I created an online version of the classic <a href="http://en.wikipedia.org/wiki/Magic_8-Ball">Magic 8-Ball</a>, partly as a gift to my girlfriend and partly as a vehicle to explore CSS animations. The Oracle of 8 will answer any yes/no question and can anonymously log the question and answer to its own Twitter account, <a href="http://twitter.com/oracleof8">@OracleOf8</a>.',
+        keywords: ['HTML/CSS/JS', 'CSS3', 'SASS', 'Bootstrap', 'jQuery', 'Twitter API']
+      }, {
+        title: 'Intuit QuickNav',
+        link: 'http://www.intuit.com/',
+        media: 'Intuit_QuickNav_sample.png',
+        description: 'Replacing what was previously bulky and overly-complex, I developed a new header used across Intuit.com. With speed a high priority, I worked closely with the Intuit design team to move away from cross-browser "pixel perfection". Instead we took advantage of CSS3 to enhance the visual design, while making sure older browsers still enjoyed a completely usable experience; a first for Intuit.',
+        keywords: ['HTML/CSS/JS', 'CSS3', 'performance tuning', 'accessibility']
+      }, {
+        title: 'Intuit Performance Overhaul',
+        link: 'http://www.webpagetest.org/result/130129_H7_P5T/',
+        media: 'Intuit_Perf_sample.png',
+        description: 'As part of a small consulting team I performed a performance overhaul on Intuit.com - ranked in the US Top 100 by <a href="http://www.alexa.com/siteinfo/intuit.com">Alexa</a> - as well as Intuit\'s 50 other most frequented pages. We accomplished a halving of page load times, driving a marked increase in growth.',
+        keywords: ['HTML/CSS/JS', 'performance analysis', 'performance tuning', 'intense refactoring', 'build automation', 'accessibility']
+      }, {
+        title: 'Pyxera',
+        link: 'http://www.pyxera.com/',
+        media: 'Pyxera_sample.png',
+        description: 'I worked closely with the design firm <a href="http://hoffmanchrisman.com/">Hoffman Chrisman</a> to develop a site for a medical consulting agency, incorporating a unique animated navigation system.',
+        keywords: ['HTML/CSS/JS', 'SASS', 'Bootstrap', 'jQuery', 'side scroll']
+      }, {
+        title: 'BdayMindr',
+        link: false,
+        media: 'BdayMindr_sample.png',
+        description: 'Create a list of friends and family, along with their respective birthdays (or sign up via Facebook and have the list pre-populated for you). Then, prior to a friend\'s birthday, you\'ll be sent a reminder. What you do with this information is up to you.',
+        keywords: ['NodeJS', 'CouchDB', 'Facebook Connect', 'jQuery', 'Hasher.js', 'Bootstrap', 'jQueryUI', 'Express.js', 'HTML/CSS/JS']
+      }, {
+        title: 'Noike: The Book',
+        link: 'http://www.noikethebook.com/',
+        media: 'Noike_sample.png',
+        description: 'A PSD to HTML/CSS website build-out, to promote the publication of a book.',
+        keywords: ['HTML/CSS/JS', 'jQuery']
+      }, {
+        title: 'former BradMallow.com',
+        link: 'http://archive.bradmallow.com/',
+        media: 'bradmallow_com_sample.png',
+        description: 'Though existing now for posterity, I originally built this site shortly after the first tablets came to market, as I was intrigued by the merging of traditional web design with the smaller, app-centric world of tablet computing.',
+        keywords: ['HTML/CSS/JS', 'jQuery', 'CSS3', 'side scroll', 'Tumblr API']
+      }, {
+        title: 'SLT Remix',
+        link: false,
+        media: 'SLT_Remix_sample.png',
+        description: 'The SLT (Safe Login Toolbar) Remix was a tool I developed to help the tech support and community management teams at Ning.com quickly tackle common social network adminstration tasks. It is still in use today.',
+        keywords: ['HTML/CSS/JS', 'jQuery', 'jQueryUI']
+      }, {
+        title: 'Love and Theft Fans',
+        link: false,
+        media: 'Love_and_Theft_sample.png',
+        description: 'A PSD to HTML/CSS adaptation for a band\'s fan network on the Ning platform.',
+        keywords: ['HTML/CSS/JS', 'social network']
+      }, {
+        title: 'Caroline\'s Comedy Community',
+        link: false,
+        media: 'Carolines_Comedy_sample.png',
+        description: 'I built out the community portal for patrons and fans of Caroline\'s Comedy Club.',
+        keywords: ['HTML/CSS/JS', 'social network']
+      }, {
+        title: 'Fraiche Yogurt',
+        link: 'http://fraicheyogurt.com/',
+        media: 'Fraiche_sample.png',
+        description: 'After correcting a previous design that had gone off the rails, I developed and deployed the original web presence for a local retail startup, under a tight deadline.',
+        keywords: ['HTML/CSS']
+      }
+    ];
   };
   _addResumeModel = function() {
     return {
-      title: 'resume'
+      meta: {
+        name: 'Brad Mallow',
+        email: 'contact@bradmallow.com',
+        phone: {
+          countryCode: '1',
+          areaCode: '858',
+          number: '205-8052'
+        },
+        website: 'http://bradmallow.com'
+      },
+      summary: 'I am passionate​ about technology, web services, and the opportunities provided by the open web application stack. I look forward to finding a position where I can utilize my skills, both technical and personal, to build great products while continuing to challenge myself and grow professionally.',
+      education: [
+        {
+          school: 'University of California, Santa Cruz',
+          degree: {
+            type: 'B.A.',
+            subject: 'Film & Digital Media'
+          },
+          graduationYear: '2006'
+        }
+      ],
+      skills: ['HTML/5', 'CSS/3', 'JavaScript', 'performance optimization', 'web accessibility'],
+      experience: [
+        {
+          title: 'Frontend Developer',
+          organization: 'Intuit',
+          location: 'San Francisco, California',
+          period: {
+            start: 'February 2012',
+            end: 'March 2013'
+          },
+          description: 'As part of a small consulting team, I performed an overhaul on Intuit.com – an Alexa US Top 100 website - as well as Intuit\'s 50 other most-frequented pages, concentrating on performance, accessibility, frontend best practices, and optimizing for use on mobile devices.',
+          achievements: ['Achieved a 50% reduction in page load times by refactoring HTML, CSS, and JavaScript, driving a marked jump in conversions in key growth areas.', 'Introduced an adaptive, mobile-optimized experience for key new pages and helped align the production life cycle around mobile.', 'Lead tech talks for the marketing and development groups, evangelizing the cause of performance and frontend best practices.', 'Audited and refactored Intuit’s top 50 pages to ensure compliance with accessibility best practices, allow all customers to enjoy a superb experience.']
+        }, {
+          title: 'Web Developer',
+          organization: 'Freelance',
+          location: 'San Francisco, California',
+          period: {
+            start: 'October 2011',
+            end: 'February 2012'
+          },
+          description: 'Part of a two-man team, I created engaging web experiences using HTML5, CSS3, and JavaScript, helping clients tell their unique stories; worked with varied customers from an independent author promoting a new book to a medical-consulting startup working with an established design firm; fostered a fluid working relationship between development, designers, and the client.'
+        }, {
+          title: 'Support Engineer',
+          organization: 'Atlassian',
+          location: 'San Francisco, California',
+          period: {
+            start: 'August 2010',
+            end: 'September 2011'
+          },
+          description: 'Provided high-touch technical support for mission-critical software development and communication tools, supporting customers of all sizes, from startups to Fortune 100s, using a number of communication channels – support tickets, online forums, telephone – across all major operating systems and DB setups – MySQL, PostgreSQL, Oracle, Solaris; developed productivity tools integrating our admin and ticketing systems using HTML5, CSS3, and JavaScript.'
+        }, {
+          title: 'Community Advocate',
+          organization: 'Ning',
+          location: 'Palo Alto, California',
+          period: {
+            start: 'February 2008',
+            end: 'April 2010'
+          },
+          description: 'Product expert and first line of contact for existing and prospective customers; answered technical support tickets and support forum posts, wrote blog posts and FAQs, and worked with engineering teams to file and prioritize bugs; designed and developed internal support tools integrating our admin interface, production environment, Salesforce CRM ticketing system, and bug tracking systems using HTML, CSS, and JavaScript; onboarded and trained new employees on all tools necessary for efficient awesomeness; served on the incident management on-call team.'
+        }
+      ]
     };
   };
   _addContactModel = function() {
     return {
-      title: 'contact'
+      socialMedia: [
+        {
+          title: 'GitHub',
+          link: 'https://github.com/briznad'
+        }, {
+          title: 'Stack Overflow',
+          link: 'http://stackoverflow.com/users/418954/briznad'
+        }, {
+          title: 'Twitter',
+          link: 'https://twitter.com/briznad'
+        }
+      ]
     };
   };
   return {
@@ -12830,30 +12980,113 @@ bmdotcom.router = (function() {
     init: init
   };
 })();
-;var bmdotcom;
-
-bmdotcom = bmdotcom || {};
-
-bmdotcom.template = (function() {
-  'use strict';
-  var init, _processTemplates;
-  init = function(callback) {
-    return _processTemplates($('script[type="text/html"]'), callback);
-  };
-  _processTemplates = function($templates, callback) {
-    $templates.each(function() {
-      var $template;
-      $template = $(this);
-      bmdotcom.template[$template.attr('id')] = _.template($template.html());
-      return $template.remove();
-    });
-    return callback();
-  };
-  return {
-    init: init
-  };
-})();
-;var bmdotcom;
+;this["bmdotcom"] = this["bmdotcom"] || {};
+this["bmdotcom"]["templates"] = this["bmdotcom"]["templates"] || {};
+this["bmdotcom"]["templates"]["contactView"] = function (obj) {
+    var __t, __p = '',
+        __j = Array.prototype.join,
+        print = function () {
+            __p += __j.call(arguments, '');
+        };
+    with(obj || {}) {
+        __p += '<section class="social-media-container">\n  <h2 class="section-header">Also find me on…</h2>\n  <ul class="social-media-list">\n    ';
+        _.each(currentPage.socialMedia, function (value) {
+            __p += '\n      <li class="social-media-list-item">\n        <a href="' + ((__t = (value.link)) == null ? '' : __t) + '" class="social-media-link" target="_blank">' + ((__t = (value.title)) == null ? '' : __t) + '</a>\n      </li>\n    ';
+        });
+        __p += '\n  </ul>\n</section>\n\n<section class="form-container">\n  <form action="/contact" method="post">\n    <input name="typeOfContact" type="hidden" value="Contact Form Message" />\n\n    <label for="contactName">\n      <input id="contactName" name="name" type="text" required autofocus />\n      <span class="label-text">Name</span>\n    </label>\n\n    <label for="contactEmail">\n      <input id="contactEmail" name="_replyto" type="email" required />\n      <span class="label-text">Email</span>\n    </label>\n\n    <label for="contactSubject">\n      <input id="contactSubject" name="subject" type="text" />\n      <span class="label-text">Subject</span>\n    </label>\n\n    <label for="contactMessage">\n      <textarea id="contactMessage" name="message" rows="5" required></textarea>\n      <span class="label-text">Message</span>\n    </label>\n\n    <input type="submit" value="Send" />\n  </form>\n</section>';
+    }
+    return __p;
+};
+this["bmdotcom"]["templates"]["modalView"] = function (obj) {
+    var __t, __p = '',
+        __j = Array.prototype.join,
+        print = function () {
+            __p += __j.call(arguments, '');
+        };
+    with(obj || {}) {
+        __p += '<div class="modal-overlay ' + ((__t = (additionalClasses)) == null ? '' : __t) + '" id="' + ((__t = (modalID)) == null ? '' : __t) + '">\n  <section class="modal-container">\n    <div class="modal-content">' + ((__t = (modalContent)) == null ? '' : __t) + '</div>\n\n    ';
+        if (showCloseBtn) {
+            __p += '\n      <a class="modal-close" href="javascript:void(0)"><span class="visually-hidden">close modal</span></a>\n    ';
+        }
+        __p += '\n  </section>\n</div>';
+    }
+    return __p;
+};
+this["bmdotcom"]["templates"]["projectsView"] = function (obj) {
+    var __t, __p = '',
+        __j = Array.prototype.join,
+        print = function () {
+            __p += __j.call(arguments, '');
+        };
+    with(obj || {}) {
+        __p += '<ul class="projects-list">\n  ';
+        _.each(currentPage, function (project) {
+            __p += '\n    <li class="projects-list-item">\n      <article class="project-wrapper">\n        ';
+            if (project.link) {
+                print('<a href="' + project.link + '" class="project-link" target="_blank">');
+            }
+            __p += '\n\n        <h3 class="project-title">' + ((__t = (project.title)) == null ? '' : __t) + '</h3>\n\n        <figure class="project-media">\n          <img src="/assets/images/projects/' + ((__t = (project.media)) == null ? '' : __t) + '" alt="' + ((__t = (project.title)) == null ? '' : __t) + '" />\n        </figure>\n\n        ';
+            if (project.link) {
+                print('</a>');
+            }
+            __p += '\n\n        <p class="project-description">' + ((__t = (project.description)) == null ? '' : __t) + '</p>\n\n        <dl class="project-keywords">\n          <dt>Keywords:</dt>\n\n          ';
+            _.each(project.keywords, function (keyword) {
+                __p += '\n            <dd>' + ((__t = (keyword)) == null ? '' : __t) + '</dd>\n          ';
+            });
+            __p += '\n        </dl>\n      </article>\n    </li>\n  ';
+        });
+        __p += '\n</ul>';
+    }
+    return __p;
+};
+this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
+    var __t, __p = '',
+        __j = Array.prototype.join,
+        print = function () {
+            __p += __j.call(arguments, '');
+        };
+    with(obj || {}) {
+        __p += '<article class="resume-container" itemscope itemtype="http://schema.org/Person">\n  <div class="resume-column-left">\n    <section class="resume-section meta">\n      <dl class="resume-meta-list">\n        <dt>name</dt>\n        <dd itemprop="name">' + ((__t = (currentPage.meta.name)) == null ? '' : __t) + '</dd>\n\n        <dt>phone number</dt>\n        <dd><a itemprop="telephone" href="tel://' + ((__t = (currentPage.meta.phone.countryCode)) == null ? '' : __t) + '-' + ((__t = (currentPage.meta.phone.areaCode)) == null ? '' : __t) + '-' + ((__t = (currentPage.meta.phone.number)) == null ? '' : __t) + '">+' + ((__t = (currentPage.meta.phone.countryCode)) == null ? '' : __t) + ' (' + ((__t = (currentPage.meta.phone.areaCode)) == null ? '' : __t) + ') ' + ((__t = (currentPage.meta.phone.number)) == null ? '' : __t) + '</a></dd>\n\n        <dt>email address</dt>\n        <dd><a itemprop="email" href="mailto://' + ((__t = (currentPage.meta.email)) == null ? '' : __t) + '">' + ((__t = (currentPage.meta.email)) == null ? '' : __t) + '</a></dd>\n\n        <dt>website</dt>\n        <dd><a itemprop="url" href="' + ((__t = (currentPage.meta.website)) == null ? '' : __t) + '">' + ((__t = (currentPage.meta.website)) == null ? '' : __t) + '</a></dd>\n      </dl>\n    </section>\n\n    <section class="resume-section summary">\n      <h2 class="resume-section-header">Summary</h2>\n\n      <p>' + ((__t = (currentPage.summary)) == null ? '' : __t) + '</p>\n    </section>\n\n    <section class="resume-section education">\n      <h2 class="resume-section-header">Education</h2>\n\n      <ul class="education-list">\n        ';
+        _.each(currentPage.education, function (education) {
+            __p += '\n          <li itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity" class="education-list-item">\n            <h3 itemprop="name">' + ((__t = (education.school)) == null ? '' : __t) + '</h3>\n            <span class="education-degree-year">' + ((__t = (education.degree.type)) == null ? '' : __t) + ', ' + ((__t = (education.degree.subject)) == null ? '' : __t) + ' &#8212; ' + ((__t = (education.graduationYear)) == null ? '' : __t) + '</span>\n          </li>\n        ';
+        });
+        __p += '\n      </ul>\n    </section>\n\n    <section class="resume-section skills">\n      <h2 class="resume-section-header">Skills</h2>\n\n      <ul class="skills-list">\n        ';
+        _.each(currentPage.skills, function (skill) {
+            __p += '\n          <li class="skill-list-item">' + ((__t = (skill)) == null ? '' : __t) + '</li>\n        ';
+        });
+        __p += '\n      </ul>\n    </section>\n  </div>\n\n  <div class="resume-column-right">\n    <section class="resume-section experience">\n      <h2 class="resume-section-header">Professional Experience</h2>\n\n      <ul class="experience-list">\n        ';
+        _.each(currentPage.experience, function (job) {
+            __p += '\n          <li itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="experience-list-item">\n            <h3>' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n            <span class="job-location-period">\n              ';
+            print((job.location ? job.location + ' &#8212; ' : '') + job.period.start + ' to ' + (job.period.end ? job.period.end : 'present'));
+            __p += '\n            </span>\n\n            ';
+            if (job.description) {
+                __p += '\n              <p class="job-description">' + ((__t = (job.description)) == null ? '' : __t) + '</p>\n            ';
+            }
+            __p += '\n\n            ';
+            if (job.achievements && job.achievements.length) {
+                __p += '\n              <h4 class="job-achievements-title">Achievements</h4>\n\n              <ul class="job-achievements-list">\n                ';
+                _.each(job.achievements, function (achievement) {
+                    __p += '\n                  <li class="job-achievements-list-item">' + ((__t = (achievement)) == null ? '' : __t) + '</li>\n                ';
+                });
+                __p += '\n              </ul>\n            ';
+            }
+            __p += '\n          </li>\n        ';
+        });
+        __p += '\n      </ul>\n    </section>\n  </div>\n</article>';
+    }
+    return __p;
+};
+this["bmdotcom"]["templates"]["rootView"] = function (obj) {
+    var __t, __p = '',
+        __j = Array.prototype.join,
+        print = function () {
+            __p += __j.call(arguments, '');
+        };
+    with(obj || {}) {
+        __p += '<article class="welcome-text">\n  <p>I\'m a <strong>Frontend Developer</strong> who is passionionate about seamless UX, with experience spanning industries and product categories.</p>\n  <p><strong>Get in touch</strong> if you\'d like to build something together.</p>\n</article>';
+    }
+    return __p;
+};;var bmdotcom;
 
 bmdotcom = bmdotcom || {};
 
@@ -12875,17 +13108,36 @@ bmdotcom = bmdotcom || {};
 
 bmdotcom.updateView = (function() {
   'use strict';
-  var beforeUpdate, removeLoading, update, _computePageTitle, _initEvents, _initThumbnails, _updateBodyClasses, _updateCurrentPage;
+  var beforeUpdate, preloadImages, removeLoading, update, _computePageTitle, _doPreloadImg, _initEvents, _initThumbnails, _updateBodyClasses, _updateCurrentPage;
   beforeUpdate = function(request) {};
   removeLoading = function() {
     var desiredDelay, elapsedTime, remainingDelay, t;
-    desiredDelay = 1500;
+    desiredDelay = 1250;
     elapsedTime = Math.floor(new Date()) - bmdotcom.loadTime;
     remainingDelay = elapsedTime < desiredDelay ? desiredDelay - elapsedTime : 0;
     $('#timingInfo').text((elapsedTime / 1000).toFixed(2));
     return t = setTimeout(function() {
       return bmdotcom.cache.$html.removeClass('loading');
     }, remainingDelay);
+  };
+  preloadImages = function() {
+    return _.defer(function() {
+      return _doPreloadImg(['8ball_sample.png', 'BdayMindr_sample.png', 'Carolines_Comedy_sample.png', 'Fraiche_sample.png', 'Intuit_Perf_sample.png', 'Intuit_QuickNav_sample.png', 'Love_and_Theft_sample.png', 'Noike_sample.png', 'Pyxera_sample.png', 'SLT_Remix_sample.png', 'bouncingBubbles_sample.png', 'bradmallow_com_sample.png', 'shapeDance_sample.png']);
+    });
+  };
+  _doPreloadImg = function(preloadList) {
+    return _.defer(function() {
+      var dummyImg;
+      dummyImg = new Image();
+      dummyImg.src = 'assets/images/projects/' + preloadList.pop();
+      return dummyImg.onload = function() {
+        if (preloadList.length) {
+          return _doPreloadImg(preloadList);
+        } else {
+          return console.debug('All images successfully preloaded.');
+        }
+      };
+    });
   };
   update = function(pageTitle) {
     var currentPage, previousPage;
@@ -12898,8 +13150,7 @@ bmdotcom.updateView = (function() {
     _updateBodyClasses(pageTitle);
     _updateCurrentPage(pageTitle);
     bmdotcom.cache.$title.text(_computePageTitle(pageTitle));
-    bmdotcom.cache.$dynamicContainer.html(bmdotcom.template[pageTitle + 'View']({
-      data: bmdotcom.model,
+    bmdotcom.cache.$dynamicContainer.html(bmdotcom.templates[pageTitle + 'View']({
       pageTitle: pageTitle,
       currentPage: currentPage
     }));
@@ -12936,7 +13187,8 @@ bmdotcom.updateView = (function() {
   return {
     beforeUpdate: beforeUpdate,
     update: update,
-    removeLoading: removeLoading
+    removeLoading: removeLoading,
+    preloadImages: preloadImages
   };
 })();
 ;var bmdotcom;
@@ -12949,11 +13201,10 @@ bmdotcom = bmdotcom || {};
 bmdotcom.init = (function() {
   'use strict';
   return _.defer(function() {
-    bmdotcom.template.init(function() {
-      return bmdotcom.modelBuildr.init(function() {
-        return bmdotcom.router.init(function() {
-          return bmdotcom.updateView.removeLoading();
-        });
+    bmdotcom.modelBuildr.init(function() {
+      return bmdotcom.router.init(function() {
+        bmdotcom.updateView.removeLoading();
+        return bmdotcom.updateView.preloadImages();
       });
     });
     return bmdotcom.tracking.init();

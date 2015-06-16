@@ -396,7 +396,7 @@ th {
 /* mixins */
 /* /mixins */
 /* partials */
-.visually-hidden {
+.visually-hidden, .resume-meta-list dt {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -430,6 +430,12 @@ th {
 
 .relative-container {
   position: relative; }
+
+.projects-list-item, .resume-section, .form-container [type="text"],
+.form-container [type="email"],
+.form-container textarea {
+  background-color: #fff;
+  border: 1px solid rgba(149, 165, 166, 0.5); }
 
 /* /partials */
 /* helper styles */
@@ -697,6 +703,10 @@ header {
   min-height: 28.5714285714em;
   padding: 0 3.3333333333%; }
 
+@media only screen and (max-width: 850px) {
+  .main-container {
+    padding: 0; } }
+
 footer {
   margin-top: 2.8571428571em;
   text-align: center; }
@@ -748,6 +758,102 @@ footer {
   to {
     -webkit-transform: scale(1.15) rotate(7deg);
     transform: scale(1.15) rotate(7deg); } }
+
+.projects-list {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em; }
+
+.projects-list-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em; }
+  .projects-list-item:last-child {
+    margin-bottom: 0; }
+
+.project-wrapper {
+  font-size: 1.1em; }
+
+.project-title,
+.project-media {
+  margin-bottom: 0.5em; }
+
+.project-title {
+  font-size: 1.3em; }
+
+.project-media img {
+  max-width: 100%; }
+
+.project-keywords dt {
+  font-weight: bold; }
+
+.project-keywords dd {
+  display: inline; }
+  .project-keywords dd:after {
+    content: ','; }
+  .project-keywords dd:last-child:after {
+    content: none; }
+
+@media only screen and (max-width: 850px) {
+  .projects-list {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; } }
+
+.resume-column-left {
+  float: left;
+  width: 38.196601125%;
+  padding-right: 1em; }
+
+.resume-column-right {
+  float: right;
+  width: 61.803398875%; }
+
+.resume-section {
+  margin-top: 1em;
+  padding: 1em; }
+  .resume-section:first-child {
+    margin-top: 0; }
+
+.resume-section-header {
+  margin-bottom: 0.5em; }
+
+.resume-meta-list {
+  font-size: 1.2em; }
+  .resume-meta-list dd {
+    margin-top: 0.5em; }
+    .resume-meta-list dd:first-of-type {
+      margin-top: 0;
+      font-size: 1.5em;
+      font-weight: bold; }
+
+.education-degree-year,
+.job-location-period {
+  font-weight: bold;
+  color: #95a5a6; }
+
+.skill-list-item,
+.job-achievements-list-item {
+  display: list-item;
+  margin-left: 1.5em;
+  list-style-type: square;
+  line-height: 1.5em; }
+
+.experience-list-item {
+  margin-top: 1em; }
+  .experience-list-item:first-child {
+    margin-top: 0; }
+
+.job-location-period {
+  display: inline-block;
+  margin-bottom: 0.5em; }
+
+.job-achievements-title {
+  margin-bottom: 0.25em; }
 
 .social-media-container {
   float: left;
@@ -839,7 +945,6 @@ footer {
     display: block;
     width: 100%;
     padding: 1em 0.75em 0.5em;
-    border: 1px solid rgba(149, 165, 166, 0.5);
     font-size: 1.5em; }
     .form-container [type="text"][required] + .label-text:after,
     .form-container [type="email"][required] + .label-text:after,
@@ -1035,7 +1140,3 @@ footer {
   transition: background-color 250ms ease; }
 
 /* /imports */
-/* responsive media queries */
-@media only screen and (max-width: 767px) {
-  body {
-    max-width: 100%; } }
