@@ -417,14 +417,15 @@ th {
 [class*="-row"]:before,
 .main-nav-list:before,
 .main-container:before,
+.welcome-text:before,
 .print-download-buttons:before,
 .modal-content:before,
 .choose-design-modal .choose-design-list:before,
-.clearfix:after, [class*="-row"]:after, .main-nav-list:after, .main-container:after, .print-download-buttons:after, .modal-content:after, .choose-design-modal .choose-design-list:after {
+.clearfix:after, [class*="-row"]:after, .main-nav-list:after, .main-container:after, .welcome-text:after, .print-download-buttons:after, .modal-content:after, .choose-design-modal .choose-design-list:after {
   content: " ";
   display: table; }
 
-.clearfix:after, [class*="-row"]:after, .main-nav-list:after, .main-container:after, .print-download-buttons:after, .modal-content:after, .choose-design-modal .choose-design-list:after {
+.clearfix:after, [class*="-row"]:after, .main-nav-list:after, .main-container:after, .welcome-text:after, .print-download-buttons:after, .modal-content:after, .choose-design-modal .choose-design-list:after {
   clear: both; }
 
 .relative-container {
@@ -472,6 +473,12 @@ th {
 .form-container textarea {
   background-color: #fff;
   border: 1px solid rgba(149, 165, 166, 0.5); }
+
+.main-nav, .name-tag-wrapper, .name-tag-wrapper:after, .name-tag, .name-tag-header, .name-tag-header span, .pointing-arrow,
+.pointing-arrow:before,
+.pointing-arrow:after {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 /* helper styles */
 *,
@@ -645,14 +652,6 @@ header {
   .mobile-nav-label:after {
     bottom: 20%; }
 
-.main-nav,
-.name-tag-wrapper,
-.name-tag-wrapper:after,
-.name-tag,
-.name-tag-header {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
 .main-nav {
   -webkit-transition: -webkit-transform 400ms ease;
   transition: transform 400ms ease; }
@@ -808,7 +807,7 @@ header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
-  text-indent: 35px;
+  text-indent: 20px;
   -webkit-transform: scale(1.004);
   -ms-transform: scale(1.004);
   transform: scale(1.004); }
@@ -834,6 +833,10 @@ header {
       -webkit-transform: scale(0.9) translateX(-50%) translateY(-1em) rotate(-2deg);
       -ms-transform: scale(0.9) translateX(-50%) translateY(-1em) rotate(-2deg);
       transform: scale(0.9) translateX(-50%) translateY(-1em) rotate(-2deg); }
+  .name-tag-header span {
+    -webkit-transform: scale(0.9) rotate(2deg);
+    -ms-transform: scale(0.9) rotate(2deg);
+    transform: scale(0.9) rotate(2deg); }
   .main-nav-link, .mobile-home-link {
     font-size: 1.3em; } }
 
@@ -843,6 +846,18 @@ header {
     display: block; }
   header {
     margin-bottom: 4.5em; }
+    header:after {
+      position: absolute;
+      bottom: -1.7em;
+      left: 0.7em;
+      font-size: 2em;
+      font-weight: bold; }
+      .contact header:after {
+        content: 'Contact'; }
+      .resume header:after {
+        content: 'Resume'; }
+      .projects header:after {
+        content: 'Projects'; }
   .main-nav {
     overflow: hidden;
     max-height: 5px;
@@ -979,58 +994,90 @@ footer {
     display: none; } }
 
 .welcome-text {
-  position: relative;
   float: right;
   max-width: 45%;
   font-size: 1.8em; }
-  .welcome-text p:last-child {
-    position: relative;
+  .welcome-text p:last-of-type {
+    float: left;
     max-width: 75%; }
-    .welcome-text p:last-child:after {
-      content: '\2935';
-      font-size: 2em;
-      position: absolute;
-      top: 1.15em;
-      left: 102%;
-      -webkit-transform-origin: top left;
-      -ms-transform-origin: top left;
-      transform-origin: top left;
-      -webkit-animation: arrow-grow 500ms ease 3000ms 6 alternate;
-      animation: arrow-grow 500ms ease 3000ms 6 alternate; }
+
+.pointing-arrow {
+  float: left;
+  position: relative;
+  top: 1.2em;
+  left: -0.4em;
+  pointer-events: none;
+  -webkit-transform-origin: 0px 19px;
+  -ms-transform-origin: 0px 19px;
+  transform-origin: 0px 19px;
+  -webkit-animation: arrow-grow 500ms ease 3000ms 6 alternate;
+  animation: arrow-grow 500ms ease 3000ms 6 alternate; }
+  .pointing-arrow:before,
+  .pointing-arrow:after {
+    content: ''; }
+  .pointing-arrow:before {
+    display: block;
+    width: 80px;
+    height: 85px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .pointing-arrow:after {
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    top: 47%;
+    left: 36.5%;
+    z-index: -1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent #000 #000 transparent;
+    -webkit-transform: rotate(48deg) skewX(15deg);
+    -ms-transform: rotate(48deg) skewX(15deg);
+    transform: rotate(48deg) skewX(15deg); }
 
 @-webkit-keyframes arrow-grow {
   30% {
     -webkit-transform: none;
     transform: none; }
   to {
-    -webkit-transform: scale(1.15) rotate(7deg);
-    transform: scale(1.15) rotate(7deg); } }
+    -webkit-transform: scale(1.15) rotate(20deg);
+    transform: scale(1.15) rotate(20deg); } }
 
 @keyframes arrow-grow {
   30% {
     -webkit-transform: none;
     transform: none; }
   to {
-    -webkit-transform: scale(1.15) rotate(7deg);
-    transform: scale(1.15) rotate(7deg); } }
+    -webkit-transform: scale(1.15) rotate(20deg);
+    transform: scale(1.15) rotate(20deg); } }
 
 @media only screen and (max-width: 850px) {
   .welcome-text {
     float: none;
     max-width: 100%;
     margin-top: 10.5em; }
-    .welcome-text p:last-child:after {
-      top: 0.55em; } }
+  .pointing-arrow {
+    top: 0.1em;
+    left: 0.4em; }
+    .pointing-arrow:after {
+      border-width: 3px; } }
 
 @media only screen and (max-width: 550px) {
   .welcome-text {
     margin-top: 10em;
     font-size: 1.5em; }
-    .welcome-text p:last-child {
+    .welcome-text p:last-of-type {
       max-width: none; }
-      .welcome-text p:last-child:after {
-        content: none;
-        display: none; } }
+  .pointing-arrow {
+    display: none; } }
 
 .projects-list {
   -webkit-column-count: 3;
