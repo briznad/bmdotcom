@@ -708,6 +708,22 @@ header {
     background-color: rgba(0, 0, 0, 0.35);
     -webkit-transition-duration: 0s;
     transition-duration: 0s; }
+  .root .main-nav-link.mobile-home-link,
+  .root .mobile-home-link,
+  .projects .main-nav-link.projects-link,
+  .projects .projects-link.mobile-home-link,
+  .resume .main-nav-link.resume-link,
+  .resume .resume-link.mobile-home-link,
+  .contact .main-nav-link.contact-link,
+  .contact .contact-link.mobile-home-link,
+  .root .main-nav-link .mobile-home-link.mobile-home-link,
+  .root .mobile-home-link .mobile-home-link.mobile-home-link,
+  .projects .main-nav-link .mobile-home-link.projects-link,
+  .projects .mobile-home-link .mobile-home-link.projects-link,
+  .resume .main-nav-link .mobile-home-link.resume-link,
+  .resume .mobile-home-link .mobile-home-link.resume-link,
+  .contact .main-nav-link .mobile-home-link.contact-link, .contact .mobile-home-link .mobile-home-link.contact-link {
+    cursor: default; }
 
 .name-tag-wrapper {
   position: absolute;
@@ -912,7 +928,7 @@ header {
 
 @media only screen and (max-width: 550px) {
   .main-container.main-container {
-    padding: 0 1.5em; } }
+    padding: 0 1.5em 1.5em; } }
 
 @media print {
   .main-container {
