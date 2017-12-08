@@ -1126,6 +1126,7 @@ footer {
   color: #95a5a6; }
 
 .skill-list-item,
+.tool-list-item,
 .job-achievements-list-item {
   display: list-item;
   position: relative;
@@ -1133,6 +1134,7 @@ footer {
   margin-left: 1.5em;
   line-height: 1.5em; }
   .skill-list-item:before,
+  .tool-list-item:before,
   .job-achievements-list-item:before {
     content: '';
     display: block;
@@ -1179,9 +1181,11 @@ footer {
   .resume-meta-list dd:first-of-type {
     font-size: 2em; }
   .skill-list-item,
+  .tool-list-item,
   .job-achievements-list-item {
     list-style-type: square; }
     .skill-list-item:before,
+    .tool-list-item:before,
     .job-achievements-list-item:before {
       content: none; } }
 
