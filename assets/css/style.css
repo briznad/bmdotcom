@@ -926,8 +926,6 @@ footer {
     border-width: 0 0 0 1px; }
     footer section:first-child {
       border-left: none; }
-  .loading footer .timing-info {
-    display: none; }
 
 @media only screen and (max-width: 850px) {
   footer {
