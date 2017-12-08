@@ -12870,7 +12870,7 @@ bmdotcom.modelBuildr = (function() {
         },
         website: 'http://bradmallow.com'
       },
-      summary: 'I am a frontend developer with over 15 years experience developing websites and web applications. I am passionate about exposing complex information through simple, thoughtful interfaces. I look forward to my next opportunity to utilize my skills, both technical and personal, to build quality products and foster great teams.',
+      summary: 'I am a developer with over 15 years experience crafting websites and web applications. I am passionate about exposing complicated information through thoughtful interfaces. I look forward to my next opportunity to utilize my skills, both technical and personal, to build quality products and foster great teams.',
       education: [
         {
           school: 'University of California, Santa Cruz',
@@ -12881,9 +12881,20 @@ bmdotcom.modelBuildr = (function() {
           graduationYear: '2006'
         }
       ],
-      skills: ['HTML', 'CSS', 'JavaScript', 'PHP', 'node.js', 'performance optimization', 'web accessibility'],
+      skills: ['engineering management', 'development workflows', 'performance optimization', 'web accessibility', 'rapid prototyping'],
+      tools: ['JavaScript (TypeScript, CoffeeScript)', 'HTML', 'CSS', 'PHP', 'node.js'],
       experience: [
         {
+          title: 'Senior Manager Engineering',
+          organization: 'Poppin',
+          location: 'New York, New York',
+          period: {
+            start: 'August 2016',
+            end: 'August 2017'
+          },
+          description: 'I ran the frontend ecom system and oversaw a successful replatforming. Transitioned to managing entire tech team, consisting of on-site and offshore team members, handling all technical needs of a rapidly growing startup selling physical goods to both B2B & B2C customers. This included ecom, ERP, sales management, and middleware systems to make it all work.',
+          achievements: ['Completed a successful replatforming from an aging system that was inhibiting growth to a modern, full-feautured ecom solution.', 'Transitioned from static markup to fully accessible templates that could be administered by our internal clients, freeing up their creativity and my developer\'s time.']
+        }, {
           title: 'Senior Interface Developer',
           organization: 'Thrillist Media Group',
           location: 'New York, New York',
@@ -13106,6 +13117,10 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         __p += '\n      </ul>\n    </section>\n\n    <section class="resume-section skills">\n      <h2 class="resume-section-header">Skills</h2>\n\n      <ul class="skills-list">\n        ';
         _.each(currentPage.skills, function (skill) {
             __p += '\n          <li class="skill-list-item">' + ((__t = (skill)) == null ? '' : __t) + '</li>\n        ';
+        });
+        __p += '\n      </ul>\n    </section>\n\n    <section class="resume-section tools">\n      <h2 class="resume-section-header">My Tools</h2>\n\n      <ul class="tools-list">\n        ';
+        _.each(currentPage.tools, function (tools) {
+            __p += '\n          <li class="tools-list-item">' + ((__t = (tools)) == null ? '' : __t) + '</li>\n        ';
         });
         __p += '\n      </ul>\n    </section>\n  </div>\n\n  <div class="resume-column-right">\n    <section class="resume-section experience">\n      <h2 class="resume-section-header">Professional Experience</h2>\n\n      <ul class="experience-list">\n        ';
         _.each(currentPage.experience, function (job) {
