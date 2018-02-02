@@ -1358,7 +1358,7 @@ footer {
   top: -16px;
   right: -16px;
   display: block;
-  width: 30px;
+  width: 31px;
   line-height: 26px;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -1366,6 +1366,8 @@ footer {
   background-color: #000;
   color: #fff;
   font-size: 20px; }
+  .lightbox-close:before, .modal-close:before {
+    line-height: 25px; }
   .lightbox-close:hover, .modal-close:hover {
     text-decoration: none; }
 
