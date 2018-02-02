@@ -1,4 +1,5 @@
 
-.icon-stackoverflow:before { content: '\e800'; } /* '' */
-.icon-github-circled:before { content: '\e803'; } /* '' */
-.icon-twitter:before { content: '\e804'; } /* '' */
+.icon-cancel:before { content: '\e800'; } /* '' */
+.icon-github-circled:before { content: '\e801'; } /* '' */
+.icon-stackoverflow:before { content: '\e802'; } /* '' */
+.icon-twitter:before { content: '\e803'; } /* '' */
