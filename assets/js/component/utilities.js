@@ -1,0 +1,3 @@
+var bmdotcom;
+
+bmdotcom = bmdotcom || {};

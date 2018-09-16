@@ -1,0 +1,1 @@
+bmdotcom = bmdotcom or {}

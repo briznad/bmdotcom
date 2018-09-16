@@ -1,0 +1,32 @@
+/* helper styles */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+/* /helper styles */
+
+/* grid styles */
+
+[class*="-row"] {
+	@extend .clearfix;
+}
+
+/* /grid styles */
+
+/* dropdown menu system */
+
+// if dropdown is a list, display children li's as block
+.dropdown[class*="-list"] {
+	> li {
+		display: block;
+	}
+}
+
+/* /dropdown menu system */

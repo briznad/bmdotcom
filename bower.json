@@ -1,0 +1,23 @@
+{
+  "name": "bmdotcom-source",
+  "version": "1.0.0",
+  "homepage": "https://github.com/briznad/bmdotcom-source",
+  "authors": [
+    "Brad Mallow <briznad@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "davis": "~0.9.8",
+    "underscore": "~1.8.3",
+    "normalize-scss": "~3.0.3"
+  }
+}

@@ -1,0 +1,27 @@
+%icon {
+  &:before {
+    line-height: 1em;
+    font-family: 'fontello';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    speak: none;
+  }
+}
+
+%icon-cancel {
+  &:before { content: '\e800'; }
+}
+
+%icon-github {
+  &:before { content: '\e801'; }
+}
+
+%icon-stack-overflow {
+  &:before { content: '\e802'; }
+}
+
+%icon-twitter {
+  &:before { content: '\e803'; }
+}

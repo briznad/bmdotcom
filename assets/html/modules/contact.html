@@ -1,0 +1,38 @@
+<section class="social-media-container">
+  <h2 class="section-header">Also find me on…</h2>
+  <ul class="social-media-list">
+    <% _.each(currentPage.socialMedia, function(value) { %>
+      <li class="social-media-list-item">
+        <a href="<%= value.link %>" class="social-media-link" target="_blank"><%= value.title %></a>
+      </li>
+    <% }); %>
+  </ul>
+</section>
+
+<section class="form-container">
+  <form action="/contact" method="post">
+    <input name="typeOfContact" type="hidden" value="Contact Form Message" />
+
+    <label for="contactName">
+      <input id="contactName" name="name" type="text" required autofocus />
+      <span class="label-text">Name</span>
+    </label>
+
+    <label for="contactEmail">
+      <input id="contactEmail" name="_replyto" type="email" required />
+      <span class="label-text">Email</span>
+    </label>
+
+    <label for="contactSubject">
+      <input id="contactSubject" name="subject" type="text" />
+      <span class="label-text">Subject</span>
+    </label>
+
+    <label for="contactMessage">
+      <textarea id="contactMessage" name="message" rows="5" required></textarea>
+      <span class="label-text">Message</span>
+    </label>
+
+    <input type="submit" value="Send" />
+  </form>
+</section>

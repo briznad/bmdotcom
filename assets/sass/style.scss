@@ -1,0 +1,25 @@
+// plugins (managed via bower)
+@import "normalize-scss/_normalize.scss";
+
+// helpers
+@import "helpers/fonts";
+@import "helpers/colors";
+@import "helpers/settings";
+@import "helpers/icons";
+@import "helpers/mixins";
+@import "helpers/partials";
+@import "helpers/base_styles";
+
+// partials
+@import "partials/shared_styles";
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
+
+// modules
+@import "modules/root";
+@import "modules/projects";
+@import "modules/resume";
+@import "modules/contact";
+@import "modules/lightbox";
+@import "modules/modal";
