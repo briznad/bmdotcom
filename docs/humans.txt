@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Brad Mallow     --  maker   --  @briznad
+
+# THANKS
+
+    Mom and Dad
+
+# TECHNOLOGY COLOPHON
+
+    HTML/CSS/JavaScript
+    SASS/libsass
+    CoffeeScript
+    jQuery
+    underscore
+    Davis.js
+    grunt
+    bower

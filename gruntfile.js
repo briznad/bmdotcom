@@ -13,27 +13,28 @@ module.exports = function(grunt) {
     // project configuration
     grunt.initConfig({
         config: {
+            htmlInput: 'assets/html/',
+            buildOutput: 'docs/',
             sassInput: 'assets/sass/',
             coffeeInput: 'assets/coffee/',
             jsRawIO: 'assets/js/',
             cssOutput: 'docs/assets/css/',
             jsOutput: 'docs/assets/js/',
-            htmlInput: 'assets/html/',
-            htmlOutput: 'docs/',
             imagesInput: 'assets/images',
-            fontsInput: 'assets/fonts',
-            pdfInput: 'assets/pdf',
-            feedsInput: 'assets/feeds',
             imagesOutput: 'docs/assets/images/',
+            fontsInput: 'assets/fonts',
             fontsOutput: 'docs/assets/fonts/',
+            pdfInput: 'assets/pdf',
             pdfOutput: 'docs/assets/pdf/',
+            feedsInput: 'assets/feeds',
             feedsOutput: 'docs/assets/feeds/',
+            metaInput: 'meta',
             bower: 'bower_components/'
         },
 
         clean: {
             html: {
-                src: ['<%= config.htmlOutput %>*.html'],
+                src: ['<%= config.buildOutput %>*.html'],
                 options: {
                     force: true
                 }
@@ -67,7 +68,7 @@ module.exports = function(grunt) {
         htmlbuild: {
             prod: {
                 src: '<%= config.htmlInput %>index.html',
-                dest: '<%= config.htmlOutput %>',
+                dest: '<%= config.buildOutput %>',
                 options: {
                     parseTag: 'include',
                     logOptions: true,
@@ -99,8 +100,8 @@ module.exports = function(grunt) {
                     collapseWhitespace: true
                 },
                 files: {
-                    '<%= config.htmlOutput %>index.html': '<%= config.htmlOutput %>index.html',
-                    '<%= config.htmlOutput %>404.html': '<%= config.htmlInput %>404.html'
+                    '<%= config.buildOutput %>index.html': '<%= config.buildOutput %>index.html',
+                    '<%= config.buildOutput %>404.html': '<%= config.htmlInput %>404.html'
                 }
             },
         },
@@ -300,25 +301,31 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: '<%= config.imagesInput %>',
                 src: '**',
-                dest: '<%= config.imagesOutput %>',
+                dest: '<%= config.imagesOutput %>'
             },
             fonts: {
                 expand: true,
                 cwd: '<%= config.fontsInput %>',
                 src: '**',
-                dest: '<%= config.fontsOutput %>',
+                dest: '<%= config.fontsOutput %>'
             },
             pdf: {
                 expand: true,
                 cwd: '<%= config.pdfInput %>',
                 src: '**',
-                dest: '<%= config.pdfOutput %>',
+                dest: '<%= config.pdfOutput %>'
             },
             feeds: {
                 expand: true,
                 cwd: '<%= config.feedsInput %>',
                 src: '**',
-                dest: '<%= config.feedsOutput %>',
+                dest: '<%= config.feedsOutput %>'
+            },
+            meta: {
+                expand: true,
+                cwd: '<%= config.metaInput %>',
+                src: '**',
+                dest: '<%= config.buildOutput %>'
             }
         },
 
@@ -366,5 +373,6 @@ module.exports = function(grunt) {
     grunt.registerTask('html', ['template-module', 'concat', 'uglify:component', 'clean:html', 'htmlbuild', 'htmlmin', 'notify']);
     grunt.registerTask('css', ['clean:css', 'sass', 'autoprefixer', 'cssmin', 'notify']);
     grunt.registerTask('js', ['clean:js', 'coffeelint', 'coffee', 'jshint', 'template-module', 'concat', 'uglify', 'notify']);
-    grunt.registerTask('assets', ['clean:assets', 'copy', 'notify']);
+    grunt.registerTask('meta', ['copy:meta', 'notify']);
+    grunt.registerTask('assets', ['clean:assets', 'copy:images', 'copy:fonts', 'copy:pdf', 'copy:feeds', 'notify']);
 };
