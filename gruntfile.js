@@ -20,6 +20,8 @@ module.exports = function(grunt) {
             jsOutput: 'docs/assets/js/',
             htmlInput: 'assets/html/',
             htmlOutput: 'docs/',
+            imagesInput: 'assets/images',
+            imagesOutput: 'docs/assets/images/',
             bower: 'bower_components/'
         },
 
@@ -276,6 +278,15 @@ module.exports = function(grunt) {
             }
         },
 
+        copy: {
+            prod: {
+                expand: true,
+                cwd: '<%= config.imagesInput %>',
+                src: '**',
+                dest: '<%= config.imagesOutput %>',
+            }
+        },
+
         watch: {
             // whenever html is changed…
             html: {
@@ -314,10 +325,11 @@ module.exports = function(grunt) {
     });
 
     // default task
-    grunt.registerTask('default', ['clean', 'coffeelint', 'coffee', 'jshint', 'template-module', 'concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'htmlbuild', 'htmlmin', 'notify']);
+    grunt.registerTask('default', ['clean', 'coffeelint', 'coffee', 'jshint', 'template-module', 'concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'htmlbuild', 'htmlmin', 'copy', 'notify']);
 
     // component tasks
     grunt.registerTask('html', ['template-module', 'concat', 'uglify:component', 'clean:html', 'htmlbuild', 'htmlmin', 'notify']);
     grunt.registerTask('css', ['clean:css', 'sass', 'autoprefixer', 'cssmin', 'notify']);
     grunt.registerTask('js', ['clean:js', 'coffeelint', 'coffee', 'jshint', 'template-module', 'concat', 'uglify', 'notify']);
+    grunt.registerTask('images', ['copy', 'notify']);
 };
