@@ -43,6 +43,12 @@ module.exports = function(grunt) {
                 options: {
                     force: true
                 }
+            },
+            images: {
+                src: ['<%= config.imagesOutput %>*'],
+                options: {
+                    force: true
+                }
             }
         },
 
@@ -331,5 +337,5 @@ module.exports = function(grunt) {
     grunt.registerTask('html', ['template-module', 'concat', 'uglify:component', 'clean:html', 'htmlbuild', 'htmlmin', 'notify']);
     grunt.registerTask('css', ['clean:css', 'sass', 'autoprefixer', 'cssmin', 'notify']);
     grunt.registerTask('js', ['clean:js', 'coffeelint', 'coffee', 'jshint', 'template-module', 'concat', 'uglify', 'notify']);
-    grunt.registerTask('images', ['copy', 'notify']);
+    grunt.registerTask('images', ['clean:images', 'copy', 'notify']);
 };

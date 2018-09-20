@@ -19,7 +19,7 @@ bmdotcom.preload = do ->
         'bouncingBubbles_sample.png'
         'bradmallow_com_sample.png'
         'shapeDance_sample.png'
-        'TMG_sample.png'
+        'thrillistmediagroup_sample.png'
       ]
 
   _preloadImg = (preloadList) ->

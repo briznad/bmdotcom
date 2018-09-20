@@ -25,7 +25,7 @@ bmdotcom.modelBuildr = do ->
       {
         title       : 'Thrillist Media Group'
         link        : 'http://www.thrillistmediagroup.com/'
-        media       : 'TMG_sample.png'
+        media       : 'thrillistmediagroup_sample.png'
         description : 'I built the corporate identity site for Thrillist Media Group, making use of CSS animation and transitions to spice up the usual advertising, executives, career, and tech blog sections.'
         keywords    : [
           'HTML/CSS/JS'

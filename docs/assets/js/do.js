@@ -12768,7 +12768,7 @@ bmdotcom.modelBuildr = (function() {
       {
         title: 'Thrillist Media Group',
         link: 'http://www.thrillistmediagroup.com/',
-        media: 'TMG_sample.png',
+        media: 'thrillistmediagroup_sample.png',
         description: 'I built the corporate identity site for Thrillist Media Group, making use of CSS animation and transitions to spice up the usual advertising, executives, career, and tech blog sections.',
         keywords: ['HTML/CSS/JS', 'CSS3', 'HTML5', 'SASS', 'blog']
       }, {
@@ -12974,7 +12974,7 @@ bmdotcom.preload = (function() {
   var init, _preloadImg;
   init = function() {
     return _.defer(function() {
-      return _preloadImg(['8ball_sample.png', 'BdayMindr_sample.png', 'Carolines_Comedy_sample.png', 'Fraiche_sample.png', 'Intuit_Perf_sample.png', 'Intuit_QuickNav_sample.png', 'Love_and_Theft_sample.png', 'Noike_sample.png', 'Pyxera_sample.png', 'SLT_Remix_sample.png', 'bouncingBubbles_sample.png', 'bradmallow_com_sample.png', 'shapeDance_sample.png', 'TMG_sample.png']);
+      return _preloadImg(['8ball_sample.png', 'BdayMindr_sample.png', 'Carolines_Comedy_sample.png', 'Fraiche_sample.png', 'Intuit_Perf_sample.png', 'Intuit_QuickNav_sample.png', 'Love_and_Theft_sample.png', 'Noike_sample.png', 'Pyxera_sample.png', 'SLT_Remix_sample.png', 'bouncingBubbles_sample.png', 'bradmallow_com_sample.png', 'shapeDance_sample.png', 'thrillistmediagroup_sample.png']);
     });
   };
   _preloadImg = function(preloadList) {
