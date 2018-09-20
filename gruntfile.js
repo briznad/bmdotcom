@@ -21,7 +21,13 @@ module.exports = function(grunt) {
             htmlInput: 'assets/html/',
             htmlOutput: 'docs/',
             imagesInput: 'assets/images',
+            fontsInput: 'assets/fonts',
+            pdfInput: 'assets/pdf',
+            feedsInput: 'assets/feeds',
             imagesOutput: 'docs/assets/images/',
+            fontsOutput: 'docs/assets/fonts/',
+            pdfOutput: 'docs/assets/pdf/',
+            feedsOutput: 'docs/assets/feeds/',
             bower: 'bower_components/'
         },
 
@@ -44,8 +50,13 @@ module.exports = function(grunt) {
                     force: true
                 }
             },
-            images: {
-                src: ['<%= config.imagesOutput %>*'],
+            assets: {
+                src: [
+                    '<%= config.imagesOutput %>*',
+                    '<%= config.fontsOutput %>*',
+                    '<%= config.pdfOutput %>*',
+                    '<%= config.feedsOutput %>*'
+                ],
                 options: {
                     force: true
                 }
@@ -285,11 +296,29 @@ module.exports = function(grunt) {
         },
 
         copy: {
-            prod: {
+            images: {
                 expand: true,
                 cwd: '<%= config.imagesInput %>',
                 src: '**',
                 dest: '<%= config.imagesOutput %>',
+            },
+            fonts: {
+                expand: true,
+                cwd: '<%= config.fontsInput %>',
+                src: '**',
+                dest: '<%= config.fontsOutput %>',
+            },
+            pdf: {
+                expand: true,
+                cwd: '<%= config.pdfInput %>',
+                src: '**',
+                dest: '<%= config.pdfOutput %>',
+            },
+            feeds: {
+                expand: true,
+                cwd: '<%= config.feedsInput %>',
+                src: '**',
+                dest: '<%= config.feedsOutput %>',
             }
         },
 
@@ -337,5 +366,5 @@ module.exports = function(grunt) {
     grunt.registerTask('html', ['template-module', 'concat', 'uglify:component', 'clean:html', 'htmlbuild', 'htmlmin', 'notify']);
     grunt.registerTask('css', ['clean:css', 'sass', 'autoprefixer', 'cssmin', 'notify']);
     grunt.registerTask('js', ['clean:js', 'coffeelint', 'coffee', 'jshint', 'template-module', 'concat', 'uglify', 'notify']);
-    grunt.registerTask('images', ['clean:images', 'copy', 'notify']);
+    grunt.registerTask('assets', ['clean:assets', 'copy', 'notify']);
 };
