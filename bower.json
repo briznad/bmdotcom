@@ -1,9 +1,9 @@
 {
-  "name": "bmdotcom-source",
+  "name": "bmdotcom",
   "version": "1.0.0",
-  "homepage": "https://github.com/briznad/bmdotcom-source",
+  "homepage": "https://github.com/briznad/bmdotcom",
   "authors": [
-    "Brad Mallow <briznad@gmail.com>"
+    "Brad Mallow <brad.mallow@gmail.com>"
   ],
   "license": "MIT",
   "private": true,

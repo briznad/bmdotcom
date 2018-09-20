@@ -15,7 +15,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Special+Elite);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Special+Elite);
 html {
   font-family: sans-serif;
   /* 1 */

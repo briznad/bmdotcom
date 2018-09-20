@@ -25,13 +25,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/briznad/bmdotcom-source.git"
+    "url": "git://github.com/briznad/bmdotcom.git"
   },
-  "description": "[aWindow](http://www.awindow.com/) ======",
-  "bugs": {
-    "url": "https://github.com/briznad/aWindowNYC-source/issues"
-  },
-  "homepage": "https://github.com/briznad/aWindowNYC-source#readme",
   "main": "gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

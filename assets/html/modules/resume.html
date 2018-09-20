@@ -1,4 +1,4 @@
-<article class="resume-container" itemscope itemtype="http://schema.org/Person">
+<article class="resume-container" itemscope itemtype="https://schema.org/Person">
   <div class="resume-column-left">
     <section class="resume-section print-download-buttons">
       <a href="/assets/pdf/Brad_Mallow_resume.pdf" class="download-button" target="_blank" download>download</a>
@@ -32,7 +32,7 @@
 
       <ul class="education-list">
         <% _.each(currentPage.education, function(education) { %>
-          <li itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity" class="education-list-item">
+          <li itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity" class="education-list-item">
             <h3 itemprop="name"><%= education.school %></h3>
             <span class="education-degree-year"><%= education.degree.type %>, <%= education.degree.subject %> &#8212; <%= education.graduationYear %></span>
           </li>
@@ -67,7 +67,7 @@
 
       <ul class="experience-list">
         <% _.each(currentPage.experience, function(job) { %>
-          <li itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="experience-list-item">
+          <li itemscope itemprop="worksFor" itemtype="https://schema.org/Organization" class="experience-list-item">
             <h3><%= job.title %>, <span itemprop="name"><%= job.organization %></span></h3>
 
             <span class="job-location-period">
