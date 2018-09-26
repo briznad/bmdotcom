@@ -1,175 +1,298 @@
 {
   "providerName": "bradmallow",
   "language": "en_US",
-  "lastUpdated": "2018-09-14T19:36:54+00:00",
+  "lastUpdated": "2018-09-26T01:38:58+00:00",
   "shortFormVideos": [
     {
-      "id": "273023661",
-      "title": "Travel to Lake Garda and Discover Italy's Next \"It\" Wine Region",
+      "id": "290603828",
+      "title": "Paso Robles Wine Country: A New Frontier",
       "content": {
-        "dateAdded": "2018-06-01T20:51:19+00:00",
+        "dateAdded": "2018-09-19T00:58:05+00:00",
         "videos": [
           {
-            "url": "https://player.vimeo.com/external/273023661.hd.mp4?s=6bc9037ab2df02497e43208c1eda5c227f7dc430&profile_id=174&oauth2_token_id=1116094139",
-            "quality": "HD",
-            "videoType": "MP4",
-            "bitRate": 29.97
-          },
-          {
-            "url": "https://player.vimeo.com/external/273023661.sd.mp4?s=6d9a08bd99a564e5917ae00026a89fcb128dd991&profile_id=164&oauth2_token_id=1116094139",
+            "url": "https://player.vimeo.com/external/290603828.sd.mp4?s=57e8381824ae607e084d640f76548a2ddd548ea4&profile_id=165&oauth2_token_id=1116094139",
             "quality": "SD",
             "videoType": "MP4",
             "bitRate": 29.97
           },
           {
-            "url": "https://player.vimeo.com/external/273023661.sd.mp4?s=6d9a08bd99a564e5917ae00026a89fcb128dd991&profile_id=165&oauth2_token_id=1116094139",
-            "quality": "SD",
-            "videoType": "MP4",
-            "bitRate": 29.97
-          },
-          {
-            "url": "https://player.vimeo.com/external/273023661.hd.mp4?s=6bc9037ab2df02497e43208c1eda5c227f7dc430&profile_id=175&oauth2_token_id=1116094139",
+            "url": "https://player.vimeo.com/external/290603828.hd.mp4?s=fcb73ca8be1818a2c902b84f3239856649c5ce55&profile_id=174&oauth2_token_id=1116094139",
             "quality": "HD",
             "videoType": "MP4",
             "bitRate": 29.97
           },
           {
-            "url": "https://player.vimeo.com/external/273023661.m3u8?s=902244de25a7cfe7da8638013bd1589509581233&oauth2_token_id=1116094139",
+            "url": "https://player.vimeo.com/external/290603828.sd.mp4?s=57e8381824ae607e084d640f76548a2ddd548ea4&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290603828.m3u8?s=02d342c9884a28836a8eeba82854d66c44414e59&oauth2_token_id=1116094139",
             "quality": "UHD",
             "videoType": "MP4"
           }
         ],
-        "duration": 1413,
+        "duration": 278,
         "language": null
       },
       "genres": [
         "special"
       ],
-      "thumbnail": "https://i.vimeocdn.com/video/704733152_960x540.jpg?r=pad",
-      "releaseDate": "2018-06-01",
-      "shortDescription": "Video: Travel to Lake Garda and Discover Italy's Next \"It\" Wine Region",
+      "thumbnail": "https://i.vimeocdn.com/video/726519766_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-19",
+      "shortDescription": "Wine Enthusiast named Paso Robles the 2013 Wine Region of the Year. This amazing place is exactly halfway between Los Angeles and San Francisco on the Central Coast of California. The wine region was established in 1983 and expanded twice since then. Paso Robles produces more than 40 wine grape varieties – from Spanish to Italian, Bordeaux to Rhône, including the area's heritage variety Zinfandel. The styles of wine they make are as diverse as the people and winemakers behind the bottle.",
       "tags": null
     },
     {
-      "id": "157521291",
-      "title": "Premiere Napa Valley: 5 Million Reasons to Love 2014 Napa Valley Wines",
+      "id": "290603758",
+      "title": "Learn about Livermore Valley Wine Country",
       "content": {
-        "dateAdded": "2016-03-03T01:23:11+00:00",
+        "dateAdded": "2018-09-19T00:57:21+00:00",
         "videos": [
           {
-            "url": "https://player.vimeo.com/external/157521291.hd.mp4?s=681ec14b9df3c63985139e7b9dc4176af2240736&profile_id=113&oauth2_token_id=1116094139",
+            "url": "https://player.vimeo.com/external/290603758.sd.mp4?s=163d0380b3ed52a38bb500f8017768529a55bb41&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290603758.sd.mp4?s=163d0380b3ed52a38bb500f8017768529a55bb41&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290603758.hd.mp4?s=ca037f4715e651f73bbb5e1ebeb71f30a4da8c63&profile_id=174&oauth2_token_id=1116094139",
             "quality": "HD",
             "videoType": "MP4",
-            "bitRate": 30
+            "bitRate": 29.97
           },
           {
-            "url": "https://player.vimeo.com/external/157521291.sd.mp4?s=48a224f4de9009aae9ff7df51e31cd8236b072d8&profile_id=164&oauth2_token_id=1116094139",
-            "quality": "SD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/157521291.sd.mp4?s=48a224f4de9009aae9ff7df51e31cd8236b072d8&profile_id=165&oauth2_token_id=1116094139",
-            "quality": "SD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/157521291.m3u8?s=91510189499255ba6d30bee1a06d83e22c80ca5e&oauth2_token_id=1116094139",
+            "url": "https://player.vimeo.com/external/290603758.m3u8?s=37e6a37104360a28573179b44e8e16efd90b2e0e&oauth2_token_id=1116094139",
             "quality": "UHD",
             "videoType": "MP4"
           }
         ],
-        "duration": 264,
-        "language": "en"
-      },
-      "genres": [
-        "special"
-      ],
-      "thumbnail": "https://i.vimeocdn.com/video/559217941_960x540.jpg?r=pad",
-      "releaseDate": "2016-03-03",
-      "shortDescription": "For more wine videos visit www.wineoh.tv.\nIn this video, Monique Soltani heads to the Napa Valley to report on the 20th annual Premiere Napa Valley.\n\nOn February 20, 2016, over 1,000 wine aficionados flocked to the Culinary Institute of America for Premiere Napa Valley 2016. An annual event where winemakers open their cellars and share their secret wine stash. Customers and collectors get to taste and bid on the Napa Valley's most sought after, one of a kind wines.",
-      "tags": null
-    },
-    {
-      "id": "153990082",
-      "title": "Duskie Estes & John Stewart Will Make You Rethink the Way You Eat",
-      "content": {
-        "dateAdded": "2016-02-03T01:02:17+00:00",
-        "videos": [
-          {
-            "url": "https://player.vimeo.com/external/153990082.hd.mp4?s=6fdbcc811cc3278cdf9880625de4463a7167656c&profile_id=113&oauth2_token_id=1116094139",
-            "quality": "HD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/153990082.sd.mp4?s=087f54bea188b00ab2fe59691534d2be5066f530&profile_id=112&oauth2_token_id=1116094139",
-            "quality": "SD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/153990082.sd.mp4?s=087f54bea188b00ab2fe59691534d2be5066f530&profile_id=165&oauth2_token_id=1116094139",
-            "quality": "SD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/153990082.m3u8?s=3d1712fa12e7e969220768db9fd833007ad38c7a&oauth2_token_id=1116094139",
-            "quality": "UHD",
-            "videoType": "MP4"
-          }
-        ],
-        "duration": 370,
+        "duration": 594,
         "language": null
       },
       "genres": [
         "special"
       ],
-      "thumbnail": "https://i.vimeocdn.com/video/554426022_960x540.jpg?r=pad",
-      "releaseDate": "2016-02-03",
-      "shortDescription": "Sonoma Chefs Make Food that Makes a Difference\n\nDuskie Estes The Good LifeFarm to table phenomenons, Duskie Estes and John Stewart, first set up shop in Sonoma 15 years ago, long before snout to tail rolled off the tongue.\n\nIn 2001, they opened ZAZU restaurant + farm, right in the heart of the cornucopia of California. Together these chefs turned farmers are giving new meaning to the phrase food for thought.\n\nIn this video, the well known King and Queen of pork show us, when it comes to making food that's making a difference, there's no place like Sonoma.\n\nI'm excited to announce that the video you just watched, is part of a pilot I produced called The Good Life. The Good Life uplifts and inspires audiences by celebrating diversity and showcasing everyday men and women from all walks of life who are living their version of the good life. Please email me directly to learn more about The Good Life monique (at) wineoh.tv.",
+      "thumbnail": "https://i.vimeocdn.com/video/726519733_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-19",
+      "shortDescription": "In this video, Wine Oh TV’s Monique Soltani travels to Livermore Valley Wine Country where she interviews the wine legends of Livermore. Monique takes a trip back in time with one of America’s oldest winemaking families. Sixth generation winemaker Steven Kent Mirassou could make wine anywhere in the world, but he chose the Livermore Valley for his namesake Steven Kent Winery",
       "tags": null
     },
     {
-      "id": "142901490",
-      "title": "Coors Family Has a New Beverage Brewing in Napa Valley: Goosecross Cellars",
+      "id": "290596317",
+      "title": "Here's What the Wine Pros are Drinking on Christmas Day",
       "content": {
-        "dateAdded": "2015-10-19T16:23:09+00:00",
+        "dateAdded": "2018-09-18T23:41:39+00:00",
         "videos": [
           {
-            "url": "https://player.vimeo.com/external/142901490.sd.mp4?s=024d3b2901d5d1733d435b89d090e375196cb97a&profile_id=112&oauth2_token_id=1116094139",
-            "quality": "SD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/142901490.hd.mp4?s=f2eb899a8b2b82668b5b7484fffe6a822f34897a&profile_id=113&oauth2_token_id=1116094139",
+            "url": "https://player.vimeo.com/external/290596317.hd.mp4?s=5d6df427392cd899763eb6be572826ec4c470976&profile_id=174&oauth2_token_id=1116094139",
             "quality": "HD",
             "videoType": "MP4",
-            "bitRate": 30
+            "bitRate": 29.97
           },
           {
-            "url": "https://player.vimeo.com/external/142901490.m3u8?s=7e4f213907857c639ce167ca81845e49fe93366d&oauth2_token_id=1116094139",
+            "url": "https://player.vimeo.com/external/290596317.sd.mp4?s=90757ba35344a077049c83cbcc944f8708d15a67&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596317.sd.mp4?s=90757ba35344a077049c83cbcc944f8708d15a67&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596317.m3u8?s=4005372860680008746c04646d3690d86b0bda72&oauth2_token_id=1116094139",
             "quality": "UHD",
             "videoType": "MP4"
           }
         ],
-        "duration": 369,
+        "duration": 490,
         "language": null
       },
       "genres": [
         "special"
       ],
-      "thumbnail": "https://i.vimeocdn.com/video/540374435_960x540.jpg?r=pad",
-      "releaseDate": "2015-10-19",
-      "shortDescription": "Goosecross Cellars Soars with Coors\n\nI’m excited to announce that the above video is apart of a new show I am working on called The Good Life. The Good Life uplifts and inspires audiences by celebrating diversity and showcasing everyday men and women from all walks of life who are living their version of the good life.",
+      "thumbnail": "https://i.vimeocdn.com/video/728059153_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "In this episode of Wine Oh TV, Monique Soltani checks in with the who's who of wine country to see how they are celebrating the season. They share everything from their favorite holiday traditions, to which bottles of wine they are breaking out on the big day from Beaujolais Crus Gamay to bubbles all the way!\n \nHear from John Jordan, Joel Peterson, Jean-Charles Boisset and many more and you'll certainly find yourself saying \"I'll have what she (or he's) having\" on Christmas Day.  Here's What Wine Pros Are Drinking & Doing on Christmas Day Watch as we say Merry Christmas from Wine Country!",
+      "tags": null
+    },
+    {
+      "id": "290596027",
+      "title": "This is Where Napa Valley's Cult Cabernet Came From",
+      "content": {
+        "dateAdded": "2018-09-18T23:38:31+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290596027.hd.mp4?s=82bd872e669b6f2268c7bd49f210e8bd373b826d&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596027.sd.mp4?s=25330b3a03b4a76400aecf7389c4ae04678a6bfc&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596027.sd.mp4?s=25330b3a03b4a76400aecf7389c4ae04678a6bfc&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596027.m3u8?s=2ae032ce646b9f65a955d412514386f4995964a4&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 847,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726508867_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "Before there was Screaming Eagle or Scarecrow, Beaulieu Vineyard released Napa Valley's very first cult Cabernet back in 1940. In this episode of Wine Oh TV, Monique Soltani sits down for an epic Cabernet tasting of rare releases with Beaulieu Vineyard's General Manager and Chief Winemaker, Trevor Durling.",
+      "tags": null
+    },
+    {
+      "id": "290595908",
+      "title": "Winemaker Delia Viader Dares to Do Things Differently for 3 Decades - Wine Oh TV",
+      "content": {
+        "dateAdded": "2018-09-18T23:37:14+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290595908.sd.mp4?s=a6e5289d3d8cff4a1bd4304003e4b7094517e6c8&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595908.sd.mp4?s=a6e5289d3d8cff4a1bd4304003e4b7094517e6c8&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595908.hd.mp4?s=ae70cf4d2e0f45b4099560567008827c1c5c77ab&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595908.m3u8?s=280df7f1f07c67dae7f06fd47e6704261d4fd8fa&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 950,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726508726_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "In this video, Wine Oh TV's Monique Soltani goes behind the bottle with one of Napa Valley's leading ladies. Delia Viader has been daring to do things differently for three decades. As one of Napa Valley's first female winemakers, she's seen her shares of ups and downs, and still found a way to come out on top and turned wine tragedy into a new opportunity.",
+      "tags": null
+    },
+    {
+      "id": "290595774",
+      "title": "Everything You Need to Know About Zinfandel with Joel Peterson",
+      "content": {
+        "dateAdded": "2018-09-18T23:35:59+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290595774.sd.mp4?s=f13db82efb8ac7a9c72d4f4dd9ee5e54a1eb7d19&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595774.sd.mp4?s=f13db82efb8ac7a9c72d4f4dd9ee5e54a1eb7d19&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595774.hd.mp4?s=032c82c6dd4376ff2904347fd1e9f289c6ec94d0&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595774.m3u8?s=5b14cd2fd5b2b885baa1c47cdf2382be92dc9fc1&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 730,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726511968_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "In this episode of Wine Oh TV, Monique Soltani gets a history lesson from the \"Godfather of Zin\", Joel Peterson on California's most famous grape, Zinfandel. For over 40 years, the Sonoma icon has been a trailblazer in American Zinfandel.\n\nJoel Peterson reflects back on the early days at Ravenswood, takes a closer look at his legacy and the lineage of California's heritage grape, plus, he talks about passing the torch on to his protege, Director of Winemaking at Ravenswood Gary Sitton.\n\nGary, is a familiar face at Ravenswood. He’s spent the better part of the last 15 years working alongside Joel making big, bold Zinfandel's the winery is known for. Plus, Joel and Gary search the cellar for their favorite Zinfandel's and unearth some affordable and unexpected treasures.",
+      "tags": null
+    },
+    {
+      "id": "290595485",
+      "title": "Meet the Mexican-American Dreamer Behind Napa Valley’s Mi Sueño Winery",
+      "content": {
+        "dateAdded": "2018-09-18T23:33:08+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290595485.hd.mp4?s=ca822e05c083c41e444cf638d6c139c5c659fa22&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595485.sd.mp4?s=304fe7cbbaca22e6d0dd126621f29c08bc3d7c4a&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595485.sd.mp4?s=304fe7cbbaca22e6d0dd126621f29c08bc3d7c4a&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595485.m3u8?s=ffa49b1fee264dee2bbc7319c5be52478e1a5665&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 856,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726508206_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "From Dishwasher to Napa Valley Winemaker: Meet the Mexican-American Immigrant Living the American Dream for Two Decades\n\nIn this episode of Wine Oh TV, Monique Soltani heads to the Napa Valley and introduces us to Rolando Herrera, a Mexican-American immigrant who got his start washing dishes at the Auberge du Soleil. \nToday, he is one of the Napa Valley's most sought after winemakers.\nHear Rolando share his inspiring story of  how hard work, dedication, and a big break from one of the the biggest names in the business, took him from breaking rock to making wine.",
       "tags": null
     },
     {
       "id": "90069170",
-      "title": "9 Reasons Lodi is the Most Zinsational Place on the Planet",
+      "title": "Discover California's Lodi Wine Region",
       "content": {
         "dateAdded": "2014-03-25T22:27:11+00:00",
         "videos": [
@@ -199,7 +322,487 @@
       ],
       "thumbnail": "https://i.vimeocdn.com/video/469062117_960x540.jpg?r=pad",
       "releaseDate": "2014-03-25",
-      "shortDescription": "For more videos visit www.wineoh.tv. In this wine video, Wine Oh TV's Monique Soltani travels to Lodi wine country and finds out why the Lodi wine region takes growing grapes to a whole new galaxy and discovers Lodi is the Most Zinsational Place on the Planet.",
+      "shortDescription": "In this wine video, Wine Oh TV's Monique Soltani travels to Lodi wine country and finds out why the Lodi wine region takes growing grapes to a whole new galaxy and discovers Lodi is the Most Zinsational Place on the Planet. For more videos visit www.wineoh.tv.",
+      "tags": null
+    },
+    {
+      "id": "32173080",
+      "title": "Discover Mendocino Wine Country",
+      "content": {
+        "dateAdded": "2011-11-15T22:50:50+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/32173080.sd.mp4?s=bf3f3d81921d9556a368b9994eca6ec3fb26ae5e&profile_id=112&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/32173080.m3u8?s=89226ee3e915c0e73e5d2bb8e7cf33ab7762cb9d&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 273,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/725717026_960x540.jpg?r=pad",
+      "releaseDate": "2011-11-15",
+      "shortDescription": "California’s amazing wine country spans the Golden State from Temecula to Ukiah. With nearly 100 working wineries Mendocino county’s wine country serves up something for everyone no matter what your taste. Wine Oh TV’s Monique Soltani takes us on a Grape Escape to Mendocino where she discovers their stories behind the bottle are as different as the wines they produce.",
+      "tags": null
+    },
+    {
+      "id": "291801024",
+      "title": "Discover Why Prosecco is America's Favorite Italian Sparkling Wine",
+      "content": {
+        "dateAdded": "2018-09-25T21:45:05+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/291801024.sd.mp4?s=4fe6e67abb49c72cd73cb3001536bc1b8ac58b5f&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/291801024.hd.mp4?s=c07fba48c7d191e0ce12fe91140775230cbaa23b&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/291801024.sd.mp4?s=4fe6e67abb49c72cd73cb3001536bc1b8ac58b5f&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/291801024.m3u8?s=6145f199c6c61fe38f4eca756489d55d1c3a7289&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 523,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/728029866_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-25",
+      "shortDescription": "Monique Soltani travels to Northern Italy and discovers why Prosecco is America's favorite Italian Sparkling wine.",
+      "tags": null
+    },
+    {
+      "id": "291328389",
+      "title": "Prosecco DOC Sparking Wine that’s Sustainable & Attainable",
+      "content": {
+        "dateAdded": "2018-09-23T04:42:34+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/291328389.hd.mp4?s=e343030a7c1399bd8f8866e7d530bb2064f414f9&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/291328389.sd.mp4?s=686cf88425c91db5e6f4417d3e978cb8d0fe3eee&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/291328389.sd.mp4?s=686cf88425c91db5e6f4417d3e978cb8d0fe3eee&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/291328389.m3u8?s=55028aa22c75605a58c44b51754ff69bb4e03945&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 648,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/727761572_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-23",
+      "shortDescription": "In this episode of Wine Oh TV, Monique Soltani travels to Northern Italy to learn about Prosecco DOC wine and discovers the 2000 year old sparkling wine is embarking on a sustainable future.\n\nWe start off in an unusually empty St Mark's square in Venice, Italy. Then, we go in the vineyard to learn about Prosecco DOC's positive environmental practices and organic wine production.\n\nAfter that, we explore Prosecco's connection with culture and visit one of Andrea Palladio's Italian masterpieces, Villa Emo. We wrap up with a taste of Tiramisù in Treviso. Watch and learn how to make Tiramisù at the restaurant where it was invented, Le Beccherie.",
+      "tags": null
+    },
+    {
+      "id": "290595229",
+      "title": "Discover Italy's Popular Puglia Wine Region",
+      "content": {
+        "dateAdded": "2018-09-18T23:30:39+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290595229.sd.mp4?s=7199c2a5194e3fa7eac82277f421e5835c201867&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595229.hd.mp4?s=365e34475166ea3b1011d8426f7853a2c659a65c&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595229.sd.mp4?s=7199c2a5194e3fa7eac82277f421e5835c201867&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595229.m3u8?s=b026462eae644001e853f59fc99547ef69fbe266&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 1384,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726507989_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "In this episode of Wine Oh TV, Monique Soltani heads back to the heel of Italy's boot. Watch as Monique explores the popular Italian wine region, gets a few cooking lessons and gets her hands dirty, plus she continues to uncover Puglia's California connection. This entire episode is music to our ears and our mouths as we see for ourselves why Puglia can officially take its place as one of Italy’s most popular tourist destinations.",
+      "tags": null
+    },
+    {
+      "id": "290595053",
+      "title": "Discover Why Somms Love Wine from Sicily",
+      "content": {
+        "dateAdded": "2018-09-18T23:28:53+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290595053.sd.mp4?s=b173443a9f28dda9e2f8b2b58e87af24fa20de7d&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595053.sd.mp4?s=b173443a9f28dda9e2f8b2b58e87af24fa20de7d&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595053.hd.mp4?s=66219f152ef4ccd2c389efef0ccad9072e9fcb69&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595053.m3u8?s=e9e7efbd38c1e936118a87ebecc182b7a825af80&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 1385,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726507653_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "Travel to Sicily and find out why the Italian wine region is a favorite with Somms around the world.",
+      "tags": null
+    },
+    {
+      "id": "290594898",
+      "title": "Travel to Sicily and Discover Donnafugata",
+      "content": {
+        "dateAdded": "2018-09-18T23:27:23+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290594898.sd.mp4?s=bfebaf8f560f27864c3985cb07cba4767ff1cd33&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290594898.sd.mp4?s=bfebaf8f560f27864c3985cb07cba4767ff1cd33&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290594898.hd.mp4?s=6a024d80b6f6c837d42ecc8e04ae53b34bf7f7b0&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290594898.m3u8?s=4fca79c2284ecadd9ce12f0d082b2ebde346e293&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 1383,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726507384_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "Travel to Sicily and meet the family behind the world famous Donnafugata winery.",
+      "tags": null
+    },
+    {
+      "id": "290594598",
+      "title": "Travel to Puglia and Find Out why Primitivo is so Popular",
+      "content": {
+        "dateAdded": "2018-09-18T23:24:33+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290594598.sd.mp4?s=2c2d6a08bf18fbca88076c1b35c33f049d23509c&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290594598.sd.mp4?s=2c2d6a08bf18fbca88076c1b35c33f049d23509c&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290594598.hd.mp4?s=8a3a32c08a270776e72cf9ee94bb4f20eda7b51b&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290594598.m3u8?s=2c5a3c87215690cb60ae371ebc18282ab1af1ff9&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 1429,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726507135_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "In this episode of Wine Oh TV, Monique Soltani heads to the heel of Italy's boot. Puglia is known as the breadbasket of Italy. With its centuries old farmlands, ancient architecture, and an abundance of fabulous fruit forward wine, this land of plenty is a food and wine lover's paradise. Puglia's most popular grape is Primitivo, better known here in California as Zinfandel. Monique uncovers Puglia's California connection",
+      "tags": null
+    },
+    {
+      "id": "290589036",
+      "title": "How to Easily Understand Prosecco Superiore DOCG",
+      "content": {
+        "dateAdded": "2018-09-18T22:35:18+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290589036.hd.mp4?s=9f5c2a816f9e825ca9183908b2b18141e83853ae&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290589036.sd.mp4?s=ed84c7a14f9ae2dd7064ab028893991c1eeaae56&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290589036.sd.mp4?s=ed84c7a14f9ae2dd7064ab028893991c1eeaae56&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290589036.m3u8?s=ca7a75df007f42d1e72c1c33e0a2096f4a56faf6&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 580,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726499829_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "This video is about EP 1 WINE OH TV VERSION EP1 CVDOCG",
+      "tags": null
+    },
+    {
+      "id": "290587767",
+      "title": "Here's How to Recgonize High End Prosecco",
+      "content": {
+        "dateAdded": "2018-09-18T22:24:59+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290587767.sd.mp4?s=c3d49aae0a130daf35b79b57ba13b6dcc13702e8&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587767.hd.mp4?s=dcd86de243c2ed160bc1dd476dfd555a11cbd80f&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587767.sd.mp4?s=c3d49aae0a130daf35b79b57ba13b6dcc13702e8&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587767.m3u8?s=4911e85166ff61a74bc62629e7b664b4ccf6f7fa&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 648,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726500581_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "In this episode, we travel to Northern Italy and show you how to identify where the highest quality Prosecco on the planet comes from! Understanding Prosecco Superiore DOCG Top-Tier Wine: Rive and Cartizze. \n\nOur first stop is in Venice Italy at a local bacaro for a quick bite of \"cicheti\" and a little \"shadow\" of wine. Then, we are off to the hills of Conegliano Valdobbiadene.\n\nFor more wine videos visit www.wineoh.tv\n\n*This video was produced in partnership Gran Via Società e Comunicazione.",
+      "tags": null
+    },
+    {
+      "id": "290587692",
+      "title": "Discover Premium Prosecco from Asolo",
+      "content": {
+        "dateAdded": "2018-09-18T22:24:22+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290587692.hd.mp4?s=ffb96458803ed6c9acd10a325d815a526b35403d&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587692.sd.mp4?s=e6ff9f70c4fda0d8fa8c3586581d31a648fa63d6&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587692.sd.mp4?s=e6ff9f70c4fda0d8fa8c3586581d31a648fa63d6&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 25
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587692.m3u8?s=4696d29f7c9253f18ad9914e103f62ef03662f65&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 693,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726500690_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "Watch as we explore Asolo. An enchanting Italian town that produces exceptional Prosecco. Watch to learn more about these wonderful sparkling wines. \n\nAsolo Prosecco Superiore DOCG produces high quality hillside Prosecco and you have probably never even heard of it. \n\nFor more wine videos visit www.wineoh.tv\n\nThis video was produced in partnership Gran Via Società e Comunicazione.",
+      "tags": null
+    },
+    {
+      "id": "290587479",
+      "title": "Travel to Lake Garda and Discover Italy's Next \"It\" Wine Region",
+      "content": {
+        "dateAdded": "2018-09-18T22:22:44+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290587479.sd.mp4?s=c5fbcea8385157e1adc83ec13477c23eebd0a1d7&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587479.hd.mp4?s=3bd2df33e55ea576f4b126e877bcce3781ec1136&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587479.sd.mp4?s=c5fbcea8385157e1adc83ec13477c23eebd0a1d7&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587479.m3u8?s=b7b739691bafaf36926c88f8d5f4b85d0817eb93&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 1413,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726501156_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "In this episode of Wine Oh TV, Monique Soltani heads to Northern Italy and discovers how the largest lake in Italy helps the region make fresh and affordable wines. Plus, she gets her hands on the smallest book in the world, gets cheesy as she goes inside the one of the world's best selling cheese factories, and falls in love in Verona.",
+      "tags": null
+    },
+    {
+      "id": "196596791",
+      "title": "Discover Wines from Sardinia",
+      "content": {
+        "dateAdded": "2016-12-21T16:10:48+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/196596791.hd.mp4?s=e4f677c00a69109a803d7ff44b37464b76a7a6b5&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/196596791.sd.mp4?s=5e39516b94ad8ab34564d25690931e3ead92439b&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/196596791.sd.mp4?s=5e39516b94ad8ab34564d25690931e3ead92439b&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/196596791.m3u8?s=af1b748f6a06e2d564cf7aa71b5f7c959818022e&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 1405,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/609133244_960x540.jpg?r=pad",
+      "releaseDate": "2016-12-21",
+      "shortDescription": "Wine Oh TV's Monique Soltani travels to Sardinia and uncovers an island populated with strong wines and strong people. Recognized as a Blue Zone, Sardinia has one of the largest concentrations in centenarians in the world. Monique is off on an epic adventure to explore Sardinia’s five most important wine regions, eat their delicious dishes, discover the secret to living a century, all with a little mystery and a lot of magic along the way. Tune in as we taste wine and visit the old vines of Carignano del Sulcis in Sant’Antioco. After that we depart for the Ogliastra mountains and explore century-old Cannonau vineyards and wine and dine countryside. Then rise and shine, we get the goods on how to make a Sardanian staple (hint hint: it’s their famous flatbread). Watch as we set sail along the east coast of the island and visit in one of Sardinia’s secret beaches, Cala Gonone, the sea cave of “blue marino.” Then, we make our way over the mountain to Mamoiada, home to the to the Mamuthones, and where they make some of the world’s best Cannonau (aka grenache). Our adventure ends in Alghero, where we find Sardinia’s largest wine producer.",
       "tags": null
     },
     {
@@ -234,7 +837,7 @@
       ],
       "thumbnail": "https://i.vimeocdn.com/video/465841241_960x540.jpg?r=pad",
       "releaseDate": "2014-02-26",
-      "shortDescription": "For more wine videos visit www.wineoh.tv.\n\n2013 brought a year of wacky weather to Bordeaux: Watch as Bordeaux winemakers fought to save their crop during one of the hardest vintages in 20 years.",
+      "shortDescription": "2013 brought a year of wacky weather to Bordeaux: Watch as Bordeaux winemakers fought to save their crop during one of the hardest vintages in 20 years. For more wine videos visit www.wineoh.tv.",
       "tags": null
     },
     {
@@ -269,47 +872,12 @@
       ],
       "thumbnail": "https://i.vimeocdn.com/video/464157719_960x540.jpg?r=pad",
       "releaseDate": "2014-02-12",
-      "shortDescription": "For more videos visit www.wineoh.tv If you watched our first video, The Best Sparkling Wine You Have Never Heard Of you are already familiar with the fabulous wine of Franciacorta. In our second video, Italy’s Best Sparkling Wine: Franciacorta you heard first hand from the families behind the wine and fell in love with Franciacrota all over again. In our third and final video, Traveling in Northern Italy: Beyond Milan we are showing you the real region that doesn’t always make the headlines, but is well worth your time and mine.",
-      "tags": null
-    },
-    {
-      "id": "85291808",
-      "title": "Here's a Quick Way to Tell if a Wine is Bad",
-      "content": {
-        "dateAdded": "2014-01-28T21:52:06+00:00",
-        "videos": [
-          {
-            "url": "https://player.vimeo.com/external/85291808.hd.mp4?s=e5a27e526fa6573dc327be2a4423158127627d71&profile_id=113&oauth2_token_id=1116094139",
-            "quality": "HD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/85291808.sd.mp4?s=e7bce7d5a9f5dc7c9c976fa6ea5eb4b5df450f9a&profile_id=112&oauth2_token_id=1116094139",
-            "quality": "SD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/85291808.m3u8?s=c58a275accd77b51aff5111ddeb10336d7a89490&oauth2_token_id=1116094139",
-            "quality": "UHD",
-            "videoType": "MP4"
-          }
-        ],
-        "duration": 139,
-        "language": null
-      },
-      "genres": [
-        "special"
-      ],
-      "thumbnail": "https://i.vimeocdn.com/video/462535769_960x540.jpg?r=pad",
-      "releaseDate": "2014-01-28",
-      "shortDescription": "For more wine videos visit www.wineoh.tv.\nWine Tasting Tips with Master Sommelier Tim Gaiser: How to tell if a wine is bad",
+      "shortDescription": "If you watched our first video, The Best Sparkling Wine You Have Never Heard Of you are already familiar with the fabulous wine of Franciacorta. In our second video, Italy’s Best Sparkling Wine: Franciacorta you heard first hand from the families behind the wine and fell in love with Franciacrota all over again. In our third and final video, Traveling in Northern Italy: Beyond Milan we are showing you the real region that doesn’t always make the headlines, but is well worth your time and mine. For more videos visit www.wineoh.tv",
       "tags": null
     },
     {
       "id": "84711849",
-      "title": "Bordeaux Wine Tours & Travel Tips with Monique Soltani",
+      "title": "Bordeaux Wine Tours & Travel Tips",
       "content": {
         "dateAdded": "2014-01-21T20:35:52+00:00",
         "videos": [
@@ -339,42 +907,7 @@
       ],
       "thumbnail": "https://i.vimeocdn.com/video/461683568_960x540.jpg?r=pad",
       "releaseDate": "2014-01-21",
-      "shortDescription": "For more wine videos visit www.wineoh.tv",
-      "tags": null
-    },
-    {
-      "id": "83860955",
-      "title": "Bordeaux Wine Tasting: St. Emilion 2009",
-      "content": {
-        "dateAdded": "2014-01-10T16:24:28+00:00",
-        "videos": [
-          {
-            "url": "https://player.vimeo.com/external/83860955.sd.mp4?s=13293b833d202f6245fd5fc77bc079be23e04b17&profile_id=112&oauth2_token_id=1116094139",
-            "quality": "SD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/83860955.hd.mp4?s=4206fc5a8ece126b774f0c8ad7c00267aa487878&profile_id=113&oauth2_token_id=1116094139",
-            "quality": "HD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/83860955.m3u8?s=b0991d0bb9d0bebe8f284a14797e04e5474db8b9&oauth2_token_id=1116094139",
-            "quality": "UHD",
-            "videoType": "MP4"
-          }
-        ],
-        "duration": 226,
-        "language": null
-      },
-      "genres": [
-        "special"
-      ],
-      "thumbnail": "https://i.vimeocdn.com/video/460486976_960x540.jpg?r=pad",
-      "releaseDate": "2014-01-10",
-      "shortDescription": "For more wine videos visit www.wineoh.tv",
+      "shortDescription": "Travel to Bordeaux and discover their fun, fresh and affordble wines. For more wine videos visit www.wineoh.tv",
       "tags": null
     },
     {
@@ -448,41 +981,6 @@
       "tags": null
     },
     {
-      "id": "78571195",
-      "title": "Creative Thanksgiving Recipes & Wine Pairings",
-      "content": {
-        "dateAdded": "2013-11-04T21:01:07+00:00",
-        "videos": [
-          {
-            "url": "https://player.vimeo.com/external/78571195.sd.mp4?s=fe88ffd23a18c4154f478e6235cec602cc33d8e0&profile_id=112&oauth2_token_id=1116094139",
-            "quality": "SD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/78571195.hd.mp4?s=6fd76ff6b9a536d202df2ff5f3e78ec42cae0a23&profile_id=113&oauth2_token_id=1116094139",
-            "quality": "HD",
-            "videoType": "MP4",
-            "bitRate": 30
-          },
-          {
-            "url": "https://player.vimeo.com/external/78571195.m3u8?s=f9aa8ed89a6ab1d7572bc6a586cc4a4b405cb2b2&oauth2_token_id=1116094139",
-            "quality": "UHD",
-            "videoType": "MP4"
-          }
-        ],
-        "duration": 389,
-        "language": null
-      },
-      "genres": [
-        "special"
-      ],
-      "thumbnail": "https://i.vimeocdn.com/video/454040636_960x540.jpg?r=pad",
-      "releaseDate": "2013-11-04",
-      "shortDescription": "For these Thanksgiving recipes and more wine videos visit www.wineoh.tv",
-      "tags": null
-    },
-    {
       "id": "77568905",
       "title": "Franciacorta: The Best Sparkling Wine You Have Never Heard Of",
       "content": {
@@ -514,7 +1012,7 @@
       ],
       "thumbnail": "https://i.vimeocdn.com/video/725720365_960x540.jpg?r=pad",
       "releaseDate": "2013-10-23",
-      "shortDescription": "For more wine videos visit www.wineoh.tv",
+      "shortDescription": "Discover Franciacorta sparkling wine from Northern Italy. For more wine videos visit www.wineoh.tv",
       "tags": null
     },
     {
@@ -553,62 +1051,444 @@
       "tags": null
     },
     {
-      "id": "32173080",
-      "title": "Grape Escapes: Mendocino Country Wine Country",
+      "id": "157521291",
+      "title": "Premiere Napa Valley: 5 Million Reasons to Love 2014 Napa Valley Wines",
       "content": {
-        "dateAdded": "2011-11-15T22:50:50+00:00",
+        "dateAdded": "2016-03-03T01:23:11+00:00",
         "videos": [
           {
-            "url": "https://player.vimeo.com/external/32173080.sd.mp4?s=bf3f3d81921d9556a368b9994eca6ec3fb26ae5e&profile_id=112&oauth2_token_id=1116094139",
-            "quality": "SD",
+            "url": "https://player.vimeo.com/external/157521291.hd.mp4?s=681ec14b9df3c63985139e7b9dc4176af2240736&profile_id=113&oauth2_token_id=1116094139",
+            "quality": "HD",
             "videoType": "MP4",
-            "bitRate": 29.97
+            "bitRate": 30
           },
           {
-            "url": "https://player.vimeo.com/external/32173080.m3u8?s=89226ee3e915c0e73e5d2bb8e7cf33ab7762cb9d&oauth2_token_id=1116094139",
+            "url": "https://player.vimeo.com/external/157521291.sd.mp4?s=48a224f4de9009aae9ff7df51e31cd8236b072d8&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 30
+          },
+          {
+            "url": "https://player.vimeo.com/external/157521291.sd.mp4?s=48a224f4de9009aae9ff7df51e31cd8236b072d8&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 30
+          },
+          {
+            "url": "https://player.vimeo.com/external/157521291.m3u8?s=91510189499255ba6d30bee1a06d83e22c80ca5e&oauth2_token_id=1116094139",
             "quality": "UHD",
             "videoType": "MP4"
           }
         ],
-        "duration": 273,
+        "duration": 264,
+        "language": "en"
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/559217941_960x540.jpg?r=pad",
+      "releaseDate": "2016-03-03",
+      "shortDescription": "In this video, Monique Soltani heads to the Napa Valley to report on the 20th annual Premiere Napa Valley.\n\nOn February 20, 2016, over 1,000 wine aficionados flocked to the Culinary Institute of America for Premiere Napa Valley 2016. An annual event where winemakers open their cellars and share their secret wine stash. Customers and collectors get to taste and bid on the Napa Valley's most sought after, one of a kind wines.\n\nFor more wine videos visit www.wineoh.tv.",
+      "tags": null
+    },
+    {
+      "id": "83860955",
+      "title": "Bordeaux Wine Tasting: St. Emilion 2009",
+      "content": {
+        "dateAdded": "2014-01-10T16:24:28+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/83860955.sd.mp4?s=13293b833d202f6245fd5fc77bc079be23e04b17&profile_id=112&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 30
+          },
+          {
+            "url": "https://player.vimeo.com/external/83860955.hd.mp4?s=4206fc5a8ece126b774f0c8ad7c00267aa487878&profile_id=113&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 30
+          },
+          {
+            "url": "https://player.vimeo.com/external/83860955.m3u8?s=b0991d0bb9d0bebe8f284a14797e04e5474db8b9&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 226,
         "language": null
       },
       "genres": [
         "special"
       ],
-      "thumbnail": "https://i.vimeocdn.com/video/725717026_960x540.jpg?r=pad",
-      "releaseDate": "2011-11-15",
-      "shortDescription": "California’s amazing wine country spans the Golden State from Temecula to Ukiah. With nearly 100 working wineries Mendocino county’s wine country serves up something for everyone no matter what your taste. Wine Oh TV’s Monique Soltani takes us on a Grape Escape to Mendocino where she discovers their stories behind the bottle are as different as the wines they produce.",
+      "thumbnail": "https://i.vimeocdn.com/video/460486976_960x540.jpg?r=pad",
+      "releaseDate": "2014-01-10",
+      "shortDescription": "Bordeaux Wine Tasting. Taste the 2009 vintage and meet the winemakers from St. Emilion, France. For more wine videos visit www.wineoh.tv",
+      "tags": null
+    },
+    {
+      "id": "290596386",
+      "title": "Master SOMM Ian Cauble Picks Best Pinot Noir in the World",
+      "content": {
+        "dateAdded": "2018-09-18T23:42:26+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290596386.hd.mp4?s=efd3f1bccbba436eeea61246e543cf6aaad125ef&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596386.sd.mp4?s=c4fb2f6d5f83d114dc4f858b3130f045ed2a3a51&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596386.sd.mp4?s=c4fb2f6d5f83d114dc4f858b3130f045ed2a3a51&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596386.m3u8?s=06bf198a09e611675ec5733ab8e9923d0252f16f&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 887,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726511576_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "In this video, Monique Soltani shares a sip with Master Sommelier and the Blonde Guy from the movie SOMM, Ian Cauble.\n\nIan shares his top three Pinot Noirs he's drinking these days. He will blow you away with his vast knowledge of everything from blind tasting to Tectonic Plates. Ian explains why Oregon is THE best wine region for Pinot Noir lovers looking to get the best bang for their buck. Ian opens up about life after the movie SOMM, what it really takes to be a Master Sommelier, and why when it comes to wine glasses, size really does matter.\nFor more wine videos visit www.wineoh.tv",
+      "tags": null
+    },
+    {
+      "id": "290595635",
+      "title": "What's Hot in Italian Wine Trends? Top Somms Share Their Secrets",
+      "content": {
+        "dateAdded": "2018-09-18T23:34:41+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290595635.sd.mp4?s=7e752b94767fdb57c9639fce45ffc0b8b02f2e3c&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595635.hd.mp4?s=9157f30894568f22c05b802b54b3ed489c875095&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595635.sd.mp4?s=7e752b94767fdb57c9639fce45ffc0b8b02f2e3c&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290595635.m3u8?s=cd48acfbfb9c1c80e4027ff74b5ee03c0c4b85cb&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 1386,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726508386_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "In this episode of Wine Oh TV,  Monique Soltani pulls up a seat and shares a sip with Italian wine authority David Lynch. David is armed with information and serves up Everything You need to Know about Italian Wine and a few things you didn’t even know you needed to know.\n\nThen, it’s time to rethink the pink with Joe Campanale. The Annona Wine Proprietor and Host of “In The Drink”, shows us why NOW is the time to drink Rosé Made the Italian Way.\n\nPlus, Master Sommelier and Wine Enthusiast Magazine’s Top 40 Under 40 Tastemakers 2016 June Rodil, MS, gives us her go to Italian wines and shares with us How to Think, Speak, and Drink Like a Star Somm! For more wine videos visit www.wineoh.tv.",
+      "tags": null
+    },
+    {
+      "id": "290587332",
+      "title": "Chardonnays New Heyday America's Favorite White Wine Is Back in Fashion",
+      "content": {
+        "dateAdded": "2018-09-18T22:21:38+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290587332.hd.mp4?s=116e8b2605893b4191ac8cc3792f12481960e24f&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587332.sd.mp4?s=e573293c8d40a06e799a55d24eb680f4e3fce8ec&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587332.sd.mp4?s=e573293c8d40a06e799a55d24eb680f4e3fce8ec&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290587332.m3u8?s=aed58ce5928fa686e108f5a4fc5668538584cc5b&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 818,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726497403_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "If you have avoided California Chardonnay in the past, come hither. In this episode of Wine Oh TV, Donald Patz gives us ABC's of Chardonnay and shows us which styles are hotter than ever! \n\n\nFor more wine videos visit www.wineoh.tv",
+      "tags": null
+    },
+    {
+      "id": "85291808",
+      "title": "Wine Tasting Tips with Master Sommelier Tim Gaiser:",
+      "content": {
+        "dateAdded": "2014-01-28T21:52:06+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/85291808.hd.mp4?s=e5a27e526fa6573dc327be2a4423158127627d71&profile_id=113&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 30
+          },
+          {
+            "url": "https://player.vimeo.com/external/85291808.sd.mp4?s=e7bce7d5a9f5dc7c9c976fa6ea5eb4b5df450f9a&profile_id=112&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 30
+          },
+          {
+            "url": "https://player.vimeo.com/external/85291808.m3u8?s=c58a275accd77b51aff5111ddeb10336d7a89490&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 139,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/462535769_960x540.jpg?r=pad",
+      "releaseDate": "2014-01-28",
+      "shortDescription": "Wine Tasting Tips with Master Sommelier Tim Gaiser: How to tell if a wine is bad. For more wine videos visit www.wineoh.tv.",
+      "tags": null
+    },
+    {
+      "id": "290596218",
+      "title": "Holiday Wine Guide for Christmas & Hanukkah",
+      "content": {
+        "dateAdded": "2018-09-18T23:40:42+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290596218.sd.mp4?s=133bf7422a560a34e8220540255a1468d76ae258&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596218.hd.mp4?s=47d942b8c4e6b3c7be45fbf5e28fe046e715b30f&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596218.sd.mp4?s=133bf7422a560a34e8220540255a1468d76ae258&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596218.m3u8?s=c0ea96f076acba03e07876d8085832498809243f&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 550,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726509156_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "Tune in for the ultimate holiday wine advice on what to bring to a holiday party, what is the perfect holiday wine gift to impress your boss, holiday wine pairings with everything from latkes to cauliflower pizza and find out which wineries are donating to California fire relief efforts.",
+      "tags": null
+    },
+    {
+      "id": "290596123",
+      "title": "Thanksgiving Wine Picks from Napa and Sonoma",
+      "content": {
+        "dateAdded": "2018-09-18T23:39:37+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/290596123.sd.mp4?s=f1993bfe5fbdb54efcb77730b878ed4cd0de6a08&profile_id=165&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596123.hd.mp4?s=8c1cd7bf74b8691456d14eec9366d15906a6ceb0&profile_id=174&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596123.sd.mp4?s=f1993bfe5fbdb54efcb77730b878ed4cd0de6a08&profile_id=164&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 29.97
+          },
+          {
+            "url": "https://player.vimeo.com/external/290596123.m3u8?s=63542eee24af0af839156e25b5da94f2c27741ae&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 545,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/726509017_960x540.jpg?r=pad",
+      "releaseDate": "2018-09-18",
+      "shortDescription": "Support California Wine Country with these Thanksgiving Napa and Sonoma wine picks for every palate and priced for every pocket book. In this episode, Wine Oh TV's Monique Soltani breaks bread with the best of the Napa and Sonoma wine community. Watch as they come together for an epic All-American and San Franciscan style Thanksgiving feast featuring North Bay wine picks that will fill you with gratitude and leave you thirsty for more. We are sitting down at the Presidio Social Club in San Francisco for a Thanksgiving show saluting California wine country. Share a seat and a sip with one of the Napa Valley's most well known wineries, Matthew Crafton, winemaker of Chateau Montelena Winery and Sonoma's very own wine gal Ziggy \"The Wine Gal\" Eschliman.",
+      "tags": null
+    },
+    {
+      "id": "78571195",
+      "title": "Creative Thanksgiving Recipes & Wine Pairings",
+      "content": {
+        "dateAdded": "2013-11-04T21:01:07+00:00",
+        "videos": [
+          {
+            "url": "https://player.vimeo.com/external/78571195.sd.mp4?s=fe88ffd23a18c4154f478e6235cec602cc33d8e0&profile_id=112&oauth2_token_id=1116094139",
+            "quality": "SD",
+            "videoType": "MP4",
+            "bitRate": 30
+          },
+          {
+            "url": "https://player.vimeo.com/external/78571195.hd.mp4?s=6fd76ff6b9a536d202df2ff5f3e78ec42cae0a23&profile_id=113&oauth2_token_id=1116094139",
+            "quality": "HD",
+            "videoType": "MP4",
+            "bitRate": 30
+          },
+          {
+            "url": "https://player.vimeo.com/external/78571195.m3u8?s=f9aa8ed89a6ab1d7572bc6a586cc4a4b405cb2b2&oauth2_token_id=1116094139",
+            "quality": "UHD",
+            "videoType": "MP4"
+          }
+        ],
+        "duration": 389,
+        "language": null
+      },
+      "genres": [
+        "special"
+      ],
+      "thumbnail": "https://i.vimeocdn.com/video/454040636_960x540.jpg?r=pad",
+      "releaseDate": "2013-11-04",
+      "shortDescription": "For these Thanksgiving recipes and more wine videos visit www.wineoh.tv",
       "tags": null
     }
   ],
   "categories": [
     {
-      "playlistName": "Roku Feed",
-      "name": "Roku Feed",
+      "playlistName": "California Wine Country",
+      "name": "California Wine Country",
+      "order": "manual"
+    },
+    {
+      "playlistName": "Wine Travel",
+      "name": "Wine Travel",
+      "order": "manual"
+    },
+    {
+      "playlistName": "Wine Events",
+      "name": "Wine Events",
+      "order": "manual"
+    },
+    {
+      "playlistName": "Wine 101",
+      "name": "Wine 101",
+      "order": "manual"
+    },
+    {
+      "playlistName": "Wine Pairings",
+      "name": "Wine Pairings",
       "order": "manual"
     }
   ],
   "playlists": [
     {
-      "name": "Roku Feed",
+      "name": "California Wine Country",
       "itemIds": [
-        "273023661",
-        "157521291",
-        "153990082",
-        "142901490",
+        "290603828",
+        "290603758",
+        "290596317",
+        "290596027",
+        "290595908",
+        "290595774",
+        "290595485",
         "90069170",
+        "32173080"
+      ]
+    },
+    {
+      "name": "Wine Travel",
+      "itemIds": [
+        "291801024",
+        "291328389",
+        "290595229",
+        "290595053",
+        "290594898",
+        "290594598",
+        "290589036",
+        "290587767",
+        "290587692",
+        "290587479",
+        "196596791",
         "87686020",
         "86472642",
-        "85291808",
         "84711849",
-        "83860955",
         "82349480",
         "80374908",
-        "78571195",
         "77568905",
-        "73230546",
-        "32173080"
+        "73230546"
+      ]
+    },
+    {
+      "name": "Wine Events",
+      "itemIds": [
+        "157521291",
+        "83860955"
+      ]
+    },
+    {
+      "name": "Wine 101",
+      "itemIds": [
+        "290596386",
+        "290595635",
+        "290587332",
+        "85291808"
+      ]
+    },
+    {
+      "name": "Wine Pairings",
+      "itemIds": [
+        "290596218",
+        "290596123",
+        "78571195"
       ]
     }
   ]
