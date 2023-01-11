@@ -12868,9 +12868,9 @@ bmdotcom.modelBuildr = (function() {
           areaCode: '858',
           number: '205-8052'
         },
-        website: 'http://bradmallow.com'
+        website: 'https://bradmallow.com'
       },
-      summary: 'I am a developer with over 15 years experience crafting websites and web applications. I am passionate about exposing complicated information through thoughtful interfaces. I look forward to my next opportunity to utilize my skills, both technical and personal, to build quality products and foster great teams.',
+      summary: 'I am a technical leader, engineering manager, and software developer with extensive experience crafting businesses, websites, applications, and services. I am passionate about exposing complicated information through thoughtful interfaces. I enjoy utilizing my skills, both technical and personal, to build quality products and foster great teams.',
       education: [
         {
           school: 'University of California, Santa Cruz',
@@ -12881,10 +12881,20 @@ bmdotcom.modelBuildr = (function() {
           graduationYear: '2006'
         }
       ],
-      skills: ['engineering management', 'development workflows', 'performance optimization', 'web accessibility', 'rapid prototyping'],
-      tools: ['JavaScript (TypeScript, CoffeeScript)', 'HTML', 'CSS', 'PHP', 'node.js'],
+      skills: ['making something from nothing', 'engineering management', 'development & deployment workflows', 'performance optimization', 'web accessibility', 'rapid prototyping'],
+      tools: ['TypeScript/JavaScript', 'HTML', 'CSS'],
       experience: [
         {
+          title: 'Co-Founder & CTO',
+          organization: 'Thrilling',
+          location: 'Los Angeles, California',
+          period: {
+            start: 'August 2018',
+            end: 'December 2022'
+          },
+          description: 'Along with my partner, Shilla Kim-Parker, I founded Thrilling, an online marketplace for vintage clothing, apparel and home goods. We partnered with 1800+ independent vintage and secondhand clothing stores in the US and Canada to list over 300k+ unique items.',
+          achievements: ['Completed the Urban X and Elemental Excelerator programs to rapidly develop our initial concept and go-to-market strategies for B2C retail and B2B wholesale businesses.', 'Raised over $10 million dollars in pre-seed, seed, and series A funding. Investors included Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.', 'Prototyped, launched, and scaled a business from nothing to over $1 million in annual recurring revenue.', 'Built out a team of more than 35 outstanding employees with inclusive and diverse backgrounds, including a product organization that I directly managed.', 'We achieved the ultimate validation with our own wikipedia page: <a href="https://en.m.wikipedia.org/wiki/Thrilling_(company)">https://en.m.wikipedia.org/wiki/Thrilling_(company)</a>']
+        }, {
           title: 'Senior Manager Engineering',
           organization: 'Poppin',
           location: 'New York, New York',
@@ -12951,12 +12961,6 @@ bmdotcom.modelBuildr = (function() {
         {
           title: 'GitHub',
           link: 'https://github.com/briznad'
-        }, {
-          title: 'Stack Overflow',
-          link: 'http://stackoverflow.com/users/418954/briznad'
-        }, {
-          title: 'Twitter',
-          link: 'https://twitter.com/briznad'
         }
       ]
     };

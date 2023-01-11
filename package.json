@@ -2,7 +2,7 @@
   "name": "bmdotcom",
   "version": "1.0.0",
   "engines": {
-    "node": ">= 0.10.0"
+    "npm": "8.17.0"
   },
   "Gruntfile": "gruntfile.js",
   "devDependencies": {
@@ -30,7 +30,8 @@
   },
   "main": "gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt"
   },
   "keywords": [
     "brad",
