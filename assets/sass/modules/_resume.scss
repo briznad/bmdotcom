@@ -6,6 +6,12 @@
 	> section {
 		grid-column: 1;
 
+		&:not(.print-download-buttons) {
+			@extend %content-box;
+
+		  padding: 1em;
+		}
+
 		&.experience {
 			grid-column: 1 / -1;
 
