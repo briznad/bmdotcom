@@ -1062,7 +1062,9 @@ footer {
     grid-column: 1; }
     .resume-container > section:not(.print-download-buttons) {
       padding: 1em; }
-    .resume-container > section.experience:nth-child(-n+2) {
+    .resume-container > section.experience {
+      grid-column: 1 / -1; }
+    .resume-container > section.right-column {
       grid-column: 2; }
 
 .print-button,

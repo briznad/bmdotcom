@@ -50,7 +50,7 @@
   </section>
 
   <% _.each(currentPage.experience, function(job, index) { %>
-    <section class="experience">
+    <section class="experience<% if (index === 0 || index === 1) print(' right-column'); %>">
       <% if (index === 0) { %>
         <h2 class="resume-section-header">Professional Experience</h2>
       <% } %>

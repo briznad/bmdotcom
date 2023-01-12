@@ -74,7 +74,9 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         });
         __p += '\n    </ul>\n  </section>\n\n  ';
         _.each(currentPage.experience, function (job, index) {
-            __p += '\n    <section class="experience">\n      ';
+            __p += '\n    <section class="experience';
+            if (index === 0 || index === 1) print(' right-column');
+            __p += '">\n      ';
             if (index === 0) {
                 __p += '\n        <h2 class="resume-section-header">Professional Experience</h2>\n      ';
             }
