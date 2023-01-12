@@ -16,9 +16,8 @@ module.exports = function(grunt) {
             htmlInput: 'assets/html/',
             buildOutput: 'docs/',
             sassInput: 'assets/sass/',
-            coffeeInput: 'assets/coffee/',
-            jsRawIO: 'assets/js/',
             cssOutput: 'docs/assets/css/',
+            jsInput: 'assets/js/',
             jsOutput: 'docs/assets/js/',
             imagesInput: 'assets/images',
             imagesOutput: 'docs/assets/images/',
@@ -46,7 +45,7 @@ module.exports = function(grunt) {
                 }
             },
             js: {
-                src: ['<%= config.jsRawIO %>**/*.js*', '<%= config.jsOutput %>*.js*'],
+                src: ['<%= config.jsOutput %>*.js*'],
                 options: {
                     force: true
                 }
@@ -84,10 +83,10 @@ module.exports = function(grunt) {
                         }
                     },
                     scripts: {
-                        ga: '<%= config.jsRawIO %>individual/min/ga.js',
-                        logTime: '<%= config.jsRawIO %>individual/min/logTime.js',
-                        viewport: '<%= config.jsRawIO %>individual/min/viewport.js',
-                        loadingClass: '<%= config.jsRawIO %>individual/min/loadingClass.js'
+                        ga: '<%= config.jsInput %>individual/min/ga.js',
+                        logTime: '<%= config.jsInput %>individual/min/logTime.js',
+                        viewport: '<%= config.jsInput %>individual/min/viewport.js',
+                        loadingClass: '<%= config.jsInput %>individual/min/loadingClass.js'
                     }
                 }
             }
@@ -140,7 +139,7 @@ module.exports = function(grunt) {
             }
         },
 
-        // coffee/js tasks
+        // js tasks
         'template-module': {
             prod: {
                 options: {
@@ -161,86 +160,8 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    '<%= config.jsRawIO %>component/templates.js': ['<%= config.htmlInput %>/modules/*.html']
+                    '<%= config.jsInput %>component/templates.js': ['<%= config.htmlInput %>/modules/*.html']
                 }
-            }
-        },
-
-        coffeelint: {
-            dist: {
-                files: {
-                    src: ['<%= config.coffeeInput %>**/*.coffee']
-                },
-                options: {
-                    max_line_length: {
-                        level: "ignore"
-                    }
-                }
-            }
-        },
-
-        coffee: {
-            options: {
-                bare: true
-            },
-            component: {
-                expand: true,
-                flatten: true,
-                cwd: '<%= config.coffeeInput %>component/',
-                src: [
-                    '*.coffee',
-                    '!_*.coffee'
-                ],
-                dest: '<%= config.jsRawIO %>component/',
-                ext: '.js'
-            },
-            individual: {
-                expand: true,
-                flatten: true,
-                cwd: '<%= config.coffeeInput %>individual/',
-                src: [
-                    '*.coffee',
-                    '!_*.coffee'
-                ],
-                dest: '<%= config.jsRawIO %>individual/',
-                ext: '.js'
-            }
-        },
-
-        jshint: {
-            options: {
-                reporterOutput: '',
-                evil: true,
-                boss: true,
-                browser: true,
-                curly: true,
-                eqeqeq: true,
-                eqnull: true,
-                immed: false,
-                latedef: true,
-                newcap: true,
-                noarg: true,
-                node: true,
-                sub: true,
-                trailing: true,
-                laxcomma: true,
-                laxbreak: true,
-                undef: true,
-                debug: true,
-                globals: {
-                    _: true,
-                    $: true,
-                    jQuery: true,
-                    _gaq: true,
-                    Modernizr: true,
-                    Davis: true
-                }
-            },
-            gruntfile: {
-                src: 'gruntfile.js'
-            },
-            src: {
-                src: ['<%= config.jsRawIO %>**/*.js']
             }
         },
 
@@ -256,7 +177,7 @@ module.exports = function(grunt) {
                     '<%= config.bower %>davis/davis.js',
                     '<%= config.bower %>underscore/underscore.js',
                     // custom app js
-                    '<%= config.jsRawIO %>component/*.js'
+                    '<%= config.jsInput %>component/*.js'
                 ],
                 dest: '<%= config.jsOutput %>do.js'
             }
@@ -289,9 +210,9 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= config.jsRawIO %>individual/',
+                    cwd: '<%= config.jsInput %>individual/',
                     src: '*.js',
-                    dest: '<%= config.jsRawIO %>individual/min/'
+                    dest: '<%= config.jsInput %>individual/min/'
                 }]
             }
         },
@@ -340,9 +261,9 @@ module.exports = function(grunt) {
                 files: '<%= config.sassInput %>**/*.scss',
                 tasks: ['css']
             },
-            // whenever a coffee file is changed…
-            coffee: {
-                files: '<%= config.coffeeInput %>**/*.coffee',
+            // whenever a js file is changed…
+            js: {
+                files: '<%= config.jsInput %>**/*.js',
                 tasks: ['js', 'html']
             }
         },
@@ -350,7 +271,6 @@ module.exports = function(grunt) {
         notify_hooks: {
             options: {
                 enabled: true,
-                max_jshint_notifications: 3, // maximum number of notifications from jshint output
                 success: false, // whether successful grunt executions should be notified automatically
                 duration: 3 // the duration of notification in seconds, for `notify-send only
             }
@@ -367,12 +287,12 @@ module.exports = function(grunt) {
     });
 
     // default task
-    grunt.registerTask('default', ['clean', 'coffeelint', 'coffee', 'jshint', 'template-module', 'concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'htmlbuild', 'htmlmin', 'copy', 'notify']);
+    grunt.registerTask('default', ['clean', 'template-module', 'concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'htmlbuild', 'htmlmin', 'copy', 'notify']);
 
     // component tasks
     grunt.registerTask('html', ['template-module', 'concat', 'uglify:component', 'clean:html', 'htmlbuild', 'htmlmin', 'notify']);
     grunt.registerTask('css', ['clean:css', 'sass', 'autoprefixer', 'cssmin', 'notify']);
-    grunt.registerTask('js', ['clean:js', 'coffeelint', 'coffee', 'jshint', 'template-module', 'concat', 'uglify', 'notify']);
+    grunt.registerTask('js', ['clean:js', 'template-module', 'concat', 'uglify', 'notify']);
     grunt.registerTask('meta', ['copy:meta', 'notify']);
     grunt.registerTask('assets', ['clean:assets', 'copy:images', 'copy:fonts', 'copy:pdf', 'copy:feeds', 'notify']);
 };

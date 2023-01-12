@@ -13,36 +13,47 @@ bmdotcom.router = (function() {
     _testHash();
     return callback();
   };
+
   _initRoutes = function() {
     var routes;
+
     return routes = new Davis(function() {
       this.configure(function(config) {
-        return config.generateRequestOnPageLoad = true;
+        config.generateRequestOnPageLoad = true;
       });
+
       this.before(bmdotcom.updateView.beforeUpdate);
+
       this.after(function(req) {
-        return bmdotcom.tracking.trackPage(req.path);
+        bmdotcom.tracking.trackPage(req.path);
       });
+
       this.get('/', function() {
-        return bmdotcom.updateView.update('root');
+        bmdotcom.updateView.update('root');
       });
+
       this.get('/index.html', function() {
-        return bmdotcom.updateView.update('root');
+        bmdotcom.updateView.update('root');
       });
+
       this.get('/:pageTitle', function(req) {
-        return bmdotcom.updateView.update(req.params.pageTitle);
+        bmdotcom.updateView.update(req.params.pageTitle);
       });
+
       this.get(':pageTitle', function(req) {
-        return bmdotcom.updateView.update(req.params.pageTitle);
+        bmdotcom.updateView.update(req.params.pageTitle);
       });
-      return this.post('/contact', bmdotcom.contact.send);
+
+      this.post('/contact', bmdotcom.contact.send);
     });
   };
+
   _testHash = function() {
     if (location.hash) {
       return Davis.location.assign(new Davis.Request(location.hash.replace(/^#/, '')));
     }
   };
+
   return {
     init: init
   };

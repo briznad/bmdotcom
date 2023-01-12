@@ -51,35 +51,31 @@
     </section>
   </div>
 
-  <div class="resume-column-right">
+  <% _.each(currentPage.experience, function(job, index) { %>
     <section class="resume-section experience">
-      <h2 class="resume-section-header">Professional Experience</h2>
+      <% if (index === 0) { %>
+        <h2 class="resume-section-header">Professional Experience</h2>
+      <% } %>
 
-      <ul class="experience-list">
-        <% _.each(currentPage.experience, function(job) { %>
-          <li itemscope itemprop="worksFor" itemtype="https://schema.org/Organization" class="experience-list-item">
-            <h3><%= job.title %>, <span itemprop="name"><%= job.organization %></span></h3>
+      <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization"><%= job.title %>, <span itemprop="name"><%= job.organization %></span></h3>
 
-            <span class="job-location-period">
-              <% print((job.location ? job.location + ' &#8212; ' : '') + job.period.start + ' to ' + (job.period.end ? job.period.end : 'present')); %>
-            </span>
+      <span class="job-location-period">
+        <% print((job.location ? job.location + ' &#8212; ' : '') + job.period.start + ' to ' + (job.period.end ? job.period.end : 'present')); %>
+      </span>
 
-            <% if (job.description) { %>
-              <p class="job-description"><%= job.description %></p>
-            <% } %>
+      <% if (job.description) { %>
+        <p class="job-description"><%= job.description %></p>
+      <% } %>
 
-            <% if (job.achievements && job.achievements.length) { %>
-              <h4 class="job-achievements-title">Achievements</h4>
+      <% if (job.achievements && job.achievements.length) { %>
+        <h4 class="job-achievements-title">Achievements</h4>
 
-              <ul class="job-achievements-list">
-                <% _.each(job.achievements, function(achievement) { %>
-                  <li class="job-achievements-list-item"><%= achievement %></li>
-                <% }); %>
-              </ul>
-            <% } %>
-          </li>
-        <% }); %>
-      </ul>
+        <ul class="job-achievements-list">
+          <% _.each(job.achievements, function(achievement) { %>
+            <li class="job-achievements-list-item"><%= achievement %></li>
+          <% }); %>
+        </ul>
+      <% } %>
     </section>
-  </div>
+  <% }); %>
 </article>

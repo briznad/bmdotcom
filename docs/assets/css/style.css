@@ -1059,10 +1059,6 @@ footer {
   width: 38.196601125%;
   padding-right: 1em; }
 
-.resume-column-right {
-  float: right;
-  width: 61.803398875%; }
-
 .resume-section {
   margin-top: 1em; }
   .resume-section:first-child {
@@ -1131,11 +1127,6 @@ footer {
     left: -1.1em;
     background-color: #7f8c8d; }
 
-.experience-list-item {
-  margin-top: 1em; }
-  .experience-list-item:first-child {
-    margin-top: 0; }
-
 .job-location-period {
   display: inline-block;
   margin-bottom: 0.5em; }
@@ -1145,11 +1136,9 @@ footer {
   font-weight: normal; }
 
 @media only screen and (max-width: 550px) {
-  .resume-column-left,
-  .resume-column-right {
-    float: none;
-    width: 100%; }
   .resume-column-left {
+    float: none;
+    width: 100%;
     margin-bottom: 1em;
     padding-right: 0; } }
 

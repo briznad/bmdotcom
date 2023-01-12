@@ -13016,36 +13016,47 @@ bmdotcom.router = (function() {
     _testHash();
     return callback();
   };
+
   _initRoutes = function() {
     var routes;
+
     return routes = new Davis(function() {
       this.configure(function(config) {
-        return config.generateRequestOnPageLoad = true;
+        config.generateRequestOnPageLoad = true;
       });
+
       this.before(bmdotcom.updateView.beforeUpdate);
+
       this.after(function(req) {
-        return bmdotcom.tracking.trackPage(req.path);
+        bmdotcom.tracking.trackPage(req.path);
       });
+
       this.get('/', function() {
-        return bmdotcom.updateView.update('root');
+        bmdotcom.updateView.update('root');
       });
+
       this.get('/index.html', function() {
-        return bmdotcom.updateView.update('root');
+        bmdotcom.updateView.update('root');
       });
+
       this.get('/:pageTitle', function(req) {
-        return bmdotcom.updateView.update(req.params.pageTitle);
+        bmdotcom.updateView.update(req.params.pageTitle);
       });
+
       this.get(':pageTitle', function(req) {
-        return bmdotcom.updateView.update(req.params.pageTitle);
+        bmdotcom.updateView.update(req.params.pageTitle);
       });
-      return this.post('/contact', bmdotcom.contact.send);
+
+      this.post('/contact', bmdotcom.contact.send);
     });
   };
+
   _testHash = function() {
     if (location.hash) {
       return Davis.location.assign(new Davis.Request(location.hash.replace(/^#/, '')));
     }
   };
+
   return {
     init: init
   };
@@ -13124,25 +13135,29 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         _.each(currentPage.skills, function (skill) {
             __p += '\n          <li class="skill-list-item">' + ((__t = (skill)) == null ? '' : __t) + '</li>\n        ';
         });
-        __p += '\n      </ul>\n    </section>\n  </div>\n\n  <div class="resume-column-right">\n    <section class="resume-section experience">\n      <h2 class="resume-section-header">Professional Experience</h2>\n\n      <ul class="experience-list">\n        ';
-        _.each(currentPage.experience, function (job) {
-            __p += '\n          <li itemscope itemprop="worksFor" itemtype="https://schema.org/Organization" class="experience-list-item">\n            <h3>' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n            <span class="job-location-period">\n              ';
+        __p += '\n      </ul>\n    </section>\n  </div>\n\n  ';
+        _.each(currentPage.experience, function (job, index) {
+            __p += '\n    <section class="resume-section experience">\n      ';
+            if (index === 0) {
+                __p += '\n        <h2 class="resume-section-header">Professional Experience</h2>\n      ';
+            }
+            __p += '\n\n      <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n      <span class="job-location-period">\n        ';
             print((job.location ? job.location + ' &#8212; ' : '') + job.period.start + ' to ' + (job.period.end ? job.period.end : 'present'));
-            __p += '\n            </span>\n\n            ';
+            __p += '\n      </span>\n\n      ';
             if (job.description) {
-                __p += '\n              <p class="job-description">' + ((__t = (job.description)) == null ? '' : __t) + '</p>\n            ';
+                __p += '\n        <p class="job-description">' + ((__t = (job.description)) == null ? '' : __t) + '</p>\n      ';
             }
-            __p += '\n\n            ';
+            __p += '\n\n      ';
             if (job.achievements && job.achievements.length) {
-                __p += '\n              <h4 class="job-achievements-title">Achievements</h4>\n\n              <ul class="job-achievements-list">\n                ';
+                __p += '\n        <h4 class="job-achievements-title">Achievements</h4>\n\n        <ul class="job-achievements-list">\n          ';
                 _.each(job.achievements, function (achievement) {
-                    __p += '\n                  <li class="job-achievements-list-item">' + ((__t = (achievement)) == null ? '' : __t) + '</li>\n                ';
+                    __p += '\n            <li class="job-achievements-list-item">' + ((__t = (achievement)) == null ? '' : __t) + '</li>\n          ';
                 });
-                __p += '\n              </ul>\n            ';
+                __p += '\n        </ul>\n      ';
             }
-            __p += '\n          </li>\n        ';
+            __p += '\n    </section>\n  ';
         });
-        __p += '\n      </ul>\n    </section>\n  </div>\n</article>';
+        __p += '\n</article>\n';
     }
     return __p;
 };
@@ -13178,8 +13193,11 @@ bmdotcom = bmdotcom || {};
 
 bmdotcom.updateView = (function() {
   'use strict';
+
   var beforeUpdate, removeLoading, update, _computePageTitle, _initEvents, _initThumbnails, _updateBodyClasses, _updateCurrentPage;
+
   beforeUpdate = function(request) {};
+
   removeLoading = function() {
     var desiredDelay, elapsedTime, remainingDelay, t;
     desiredDelay = 1250;
@@ -13189,32 +13207,45 @@ bmdotcom.updateView = (function() {
       return bmdotcom.cache.$html.removeClass('loading');
     }, remainingDelay);
   };
+
   update = function(pageTitle) {
     var currentPage, previousPage;
+
     previousPage = bmdotcom.model.settings.currentPage.title;
+
     if (pageTitle === previousPage) {
       console.debug('Requested page is the same as the current page. Request denied.');
       return false;
     }
+
     bmdotcom.cache.$mobileNavTrigger.prop('checked', false);
+
     currentPage = bmdotcom.model.pages[pageTitle];
+
     _updateBodyClasses(pageTitle);
+
     _updateCurrentPage(pageTitle);
+
     bmdotcom.cache.$title.text(_computePageTitle(pageTitle));
+
     bmdotcom.cache.$dynamicContainer.html(bmdotcom.templates[pageTitle + 'View']({
       pageTitle: pageTitle,
       currentPage: currentPage
     }));
-    return _initEvents(pageTitle);
+
+    _initEvents(pageTitle);
   };
+
   _updateBodyClasses = function(pageTitle) {
-    return bmdotcom.cache.$body.addClass(pageTitle).removeClass(bmdotcom.model.settings.currentPage.title);
+    bmdotcom.cache.$body.addClass(pageTitle).removeClass(bmdotcom.model.settings.currentPage.title);
   };
+
   _updateCurrentPage = function(pageTitle) {
-    return bmdotcom.model.settings.currentPage = _.extend(bmdotcom.model.settings.currentPage || {}, {
+    bmdotcom.model.settings.currentPage = _.extend(bmdotcom.model.settings.currentPage || {}, {
       title: pageTitle
     });
   };
+
   _computePageTitle = function(pageTitle) {
     if (pageTitle === 'root') {
       return 'Brad Mallow';
@@ -13222,18 +13253,22 @@ bmdotcom.updateView = (function() {
       return 'Brad Mallow | ' + pageTitle;
     }
   };
+
   _initEvents = function(pageTitle, previousPage) {
     bmdotcom.cache.$body.off('.' + previousPage);
+
     switch (pageTitle) {
       case 'contact':
         return bmdotcom.contact.registerEvents();
     }
   };
+
   _initThumbnails = function() {};
+
   return {
-    beforeUpdate: beforeUpdate,
-    update: update,
-    removeLoading: removeLoading
+    beforeUpdate  : beforeUpdate,
+    update        : update,
+    removeLoading : removeLoading
   };
 })();
 ;var bmdotcom;
