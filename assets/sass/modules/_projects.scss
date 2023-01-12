@@ -1,18 +1,19 @@
 .projects-list {
 	column-count: 3;
-  column-gap: 1em;
+	column-gap: 1em;
 }
 
 .projects-list-item {
-  @extend %content-box;
-	display: inline-block;
-  width: 100%;
-  margin-bottom: 1em;
-  padding: 1em;
+	@extend %content-box-style;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 1em;
+	padding: 1em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .project-wrapper {
@@ -21,7 +22,7 @@
 
 .project-title,
 .project-media {
-  margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .project-title {
@@ -31,7 +32,7 @@
 .project-media {
 	img {
 		max-width: 100%;
-    min-width: 100%;
+		min-width: 100%;
 	}
 }
 
@@ -60,7 +61,7 @@
 }
 
 @media only screen and (max-width: $breakpoint-small) {
-  .projects-list {
-    column-count: 1;
-  }
+	.projects-list {
+		column-count: 1;
+	}
 }

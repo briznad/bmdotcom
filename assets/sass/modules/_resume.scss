@@ -7,13 +7,13 @@
 		grid-column: 1;
 
 		&:not(.print-download-buttons) {
-			@extend %content-box;
+			@extend %content-box-style;
 
-		  padding: 1em;
+			padding: 1em;
 		}
 
 		&.experience {
-			grid-column: 1 / -1;
+			// grid-column: 1 / -1;
 
 			// select the first 2
 			&:nth-child(-n+2) {
@@ -49,13 +49,13 @@
 }
 
 .resume-section-header {
-  margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .resume-meta-list {
-  font-size: 1.2em;
+	font-size: 1.2em;
 
-  dt {
+	dt {
 		@extend .visually-hidden;
 	}
 
@@ -71,8 +71,8 @@
 
 	a {
 		display: inline-block;
-	  width: 100%;
-	  overflow: hidden;
+		width: 100%;
+		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 	}
@@ -81,7 +81,7 @@
 .education-degree-year,
 .job-location-period {
 	font-weight: bold;
-  color: $concrete;
+	color: $concrete;
 }
 
 .skill-list-item,
@@ -91,23 +91,23 @@
 	position: relative;
 	list-style-type: none;
 	margin-left: 1.5em;
-  line-height: 1.5em;
+	line-height: 1.5em;
 
-  &:before {
+	&:before {
 		content: '';
 		display: block;
-	  position: absolute;
-	  width: 5px;
-	  height: 5px;
-	  top: 0.65em;
-	  left: -1.1em;
-	  background-color: $asbestos;
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		top: 0.65em;
+		left: -1.1em;
+		background-color: $asbestos;
 	}
 }
 
 .job-location-period {
 	display: inline-block;
-  margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .job-achievements-title {
@@ -134,7 +134,7 @@
 	.resume-meta-list {
 		dd {
 			&:first-of-type {
-				  font-size: 2em;
+					font-size: 2em;
 			}
 		}
 	}
