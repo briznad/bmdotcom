@@ -1,24 +1,20 @@
 .resume-container {
 	display: grid;
-	grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr;
+	grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr #{ parseInt($golden-ratio) / 100 }fr;
 	gap: 1em;
-}
 
-.resume-section {
-	margin-top: 1em;
+	> section {
+		grid-column: 1;
 
-	&:first-child {
-    margin-top: 0;
-  }
+		&.experience {
+			grid-column: 1 / -1;
 
-	&:not(.print-download-buttons) {
-		@extend %content-box;
-	  padding: 1em;
+			// select the first 2
+			&:nth-child(-n+2) {
+				grid-column: 2;
+			}
+		}
 	}
-}
-
-.print-download-buttons {
-	@extend .clearfix;
 }
 
 .print-button,
@@ -122,26 +118,11 @@
 }
 
 @media print {
-	.resume-section {
-		// doubling specificity to overwrite upstream styles
-		&.resume-section {
-			margin-top: 2em;
-			padding: 0;
-			border: none;
-
-			&:first-child,
-			&.meta {
-				margin-top: 0;
-			}
-		}
-
+	.resume-container {
+		.print-download-buttons,
 		.skills {
 			display: none;
 		}
-	}
-
-	.print-download-buttons {
-		display: none;
 	}
 
 	.resume-meta-list {
