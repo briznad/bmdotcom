@@ -12870,7 +12870,7 @@ bmdotcom.modelBuildr = (function() {
         },
         website: 'https://bradmallow.com'
       },
-      summary: 'I am a technical leader, engineering manager, and software developer with extensive experience crafting businesses, websites, applications, and services. I am passionate about exposing complicated information through thoughtful interfaces. I enjoy utilizing my skills, both technical and personal, to build quality products and foster great teams.',
+      summary: 'I am a founder, product leader, engineering manager, and software developer with extensive experience crafting businesses, applications, and services. I am passionate about exposing complicated information through thoughtful interfaces. I enjoy utilizing my skills, both technical and personal, to build quality products and foster great teams.',
       education: [
         {
           school: 'University of California, Santa Cruz',
@@ -12882,7 +12882,6 @@ bmdotcom.modelBuildr = (function() {
         }
       ],
       skills: ['making something from nothing', 'engineering management', 'development & deployment workflows', 'performance optimization', 'web accessibility', 'rapid prototyping'],
-      tools: ['TypeScript/JavaScript', 'HTML', 'CSS'],
       experience: [
         {
           title: 'Co-Founder & CTO',
@@ -12892,7 +12891,7 @@ bmdotcom.modelBuildr = (function() {
             start: 'August 2018',
             end: 'December 2022'
           },
-          description: 'Along with my partner, Shilla Kim-Parker, I founded Thrilling, an online marketplace for vintage clothing, apparel and home goods. We partnered with 1800+ independent vintage and secondhand clothing stores in the US and Canada to list over 300k+ unique items.',
+          description: 'Along with my partner, Shilla Kim-Parker, I founded Thrilling, an online marketplace for vintage clothing, apparel, and home goods. We partnered with 1800+ independent vintage and secondhand clothing stores in the US and Canada to list over 300k+ unique items.',
           achievements: ['Completed the Urban X and Elemental Excelerator programs to rapidly develop our initial concept and go-to-market strategies for B2C retail and B2B wholesale businesses.', 'Raised over $10 million dollars in pre-seed, seed, and series A funding. Investors included Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.', 'Prototyped, launched, and scaled a business from nothing to over $1 million in annual recurring revenue.', 'Built out a team of more than 35 outstanding employees with inclusive and diverse backgrounds, including a product organization that I directly managed.', 'We achieved the ultimate validation with our own wikipedia page: <a href="https://en.m.wikipedia.org/wiki/Thrilling_(company)">https://en.m.wikipedia.org/wiki/Thrilling_(company)</a>']
         }, {
           title: 'Senior Manager Engineering',
@@ -12961,6 +12960,9 @@ bmdotcom.modelBuildr = (function() {
         {
           title: 'GitHub',
           link: 'https://github.com/briznad'
+        }, {
+          title: 'Twitter',
+          link: 'https://twitter.com/briznad'
         }
       ]
     };
@@ -13121,10 +13123,6 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         __p += '\n      </ul>\n    </section>\n\n    <section class="resume-section skills">\n      <h2 class="resume-section-header">Skills</h2>\n\n      <ul class="skills-list">\n        ';
         _.each(currentPage.skills, function (skill) {
             __p += '\n          <li class="skill-list-item">' + ((__t = (skill)) == null ? '' : __t) + '</li>\n        ';
-        });
-        __p += '\n      </ul>\n    </section>\n\n    <section class="resume-section tools">\n      <h2 class="resume-section-header">My Tools</h2>\n\n      <ul class="tools-list">\n        ';
-        _.each(currentPage.tools, function (tools) {
-            __p += '\n          <li class="tool-list-item">' + ((__t = (tools)) == null ? '' : __t) + '</li>\n        ';
         });
         __p += '\n      </ul>\n    </section>\n  </div>\n\n  <div class="resume-column-right">\n    <section class="resume-section experience">\n      <h2 class="resume-section-header">Professional Experience</h2>\n\n      <ul class="experience-list">\n        ';
         _.each(currentPage.experience, function (job) {

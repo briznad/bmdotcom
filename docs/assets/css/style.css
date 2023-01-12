@@ -1162,6 +1162,8 @@ footer {
     border: none; }
     .resume-section.resume-section:first-child, .resume-section.resume-section.meta {
       margin-top: 0; }
+  .resume-section .skills {
+    display: none; }
   .print-download-buttons {
     display: none; }
   .resume-meta-list dd:first-of-type {
