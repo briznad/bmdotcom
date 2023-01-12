@@ -1,7 +1,9 @@
+.resume-container {
+	display: grid;
+}
+
 .resume-column-left {
-	float: left;
 	width: 100% - $golden-ratio;
-	padding-right: 1em;
 }
 
 .resume-section {
@@ -118,11 +120,13 @@
 // }
 
 @media only screen and (max-width: $breakpoint-small) {
+	.resume-container {
+		display: block;
+	}
+
 	.resume-column-left {
-		float: none;
 		width: 100%;
 		margin-bottom: 1em;
-		padding-right: 0;
 	}
 }
 

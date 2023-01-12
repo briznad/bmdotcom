@@ -1054,10 +1054,11 @@ footer {
   .projects-list {
     column-count: 1; } }
 
+.resume-container {
+  display: grid; }
+
 .resume-column-left {
-  float: left;
-  width: 38.196601125%;
-  padding-right: 1em; }
+  width: 38.196601125%; }
 
 .resume-section {
   margin-top: 1em; }
@@ -1136,11 +1137,11 @@ footer {
   font-weight: normal; }
 
 @media only screen and (max-width: 550px) {
+  .resume-container {
+    display: block; }
   .resume-column-left {
-    float: none;
     width: 100%;
-    margin-bottom: 1em;
-    padding-right: 0; } }
+    margin-bottom: 1em; } }
 
 @media print {
   .resume-column-left {
