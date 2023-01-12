@@ -221,7 +221,7 @@ bmdotcom.modelBuildr = do ->
         areaCode    : '858'
         number      : '205-8052'
       website : 'https://bradmallow.com'
-    summary : 'I am a technical leader, engineering manager, and software developer with extensive experience crafting businesses, websites, applications, and services. I am passionate about exposing complicated information through thoughtful interfaces. I enjoy utilizing my skills, both technical and personal, to build quality products and foster great teams.'
+    summary : 'I am a founder, product leader, engineering manager, and software developer with extensive experience crafting businesses, applications, and services. I am passionate about exposing complicated information through thoughtful interfaces. I enjoy utilizing my skills, both technical and personal, to build quality products and foster great teams.'
     education: [
       {
         school : 'University of California, Santa Cruz'
@@ -239,11 +239,6 @@ bmdotcom.modelBuildr = do ->
       'web accessibility'
       'rapid prototyping'
     ]
-    tools: [
-      'TypeScript/JavaScript'
-      'HTML'
-      'CSS'
-    ]
     experience: [
       {
         title        : 'Co-Founder & CTO'
@@ -252,7 +247,7 @@ bmdotcom.modelBuildr = do ->
         period       :
           start : 'August 2018'
           end   : 'December 2022'
-        description  : 'Along with my partner, Shilla Kim-Parker, I founded Thrilling, an online marketplace for vintage clothing, apparel and home goods. We partnered with 1800+ independent vintage and secondhand clothing stores in the US and Canada to list over 300k+ unique items.'
+        description  : 'Along with my partner, Shilla Kim-Parker, I founded Thrilling, an online marketplace for vintage clothing, apparel, and home goods. We partnered with 1800+ independent vintage and secondhand clothing stores in the US and Canada to list over 300k+ unique items.'
         achievements : [
           'Completed the Urban X and Elemental Excelerator programs to rapidly develop our initial concept and go-to-market strategies for B2C retail and B2B wholesale businesses.'
           'Raised over $10 million dollars in pre-seed, seed, and series A funding. Investors included Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.'
@@ -335,8 +330,11 @@ bmdotcom.modelBuildr = do ->
   _addContactModel = ->
     socialMedia: [
       {
-        title: 'GitHub'
-        link: 'https://github.com/briznad'
+        title : 'GitHub'
+        link  : 'https://github.com/briznad'
+      }, {
+        title : 'Twitter'
+        link  : 'https://twitter.com/briznad'
       }
     ]
 

@@ -148,14 +148,21 @@
 	  padding-right: 2em;
 	}
 
-	.resume-section.resume-section { // doubling specificity
-		margin-top: 2em;
-		padding: 0;
-		border: none;
+	.resume-section {
+		// doubling specificity to overwrite upstream styles
+		&.resume-section {
+			margin-top: 2em;
+			padding: 0;
+			border: none;
 
-		&:first-child,
-		&.meta {
-			margin-top: 0;
+			&:first-child,
+			&.meta {
+				margin-top: 0;
+			}
+		}
+
+		.skills {
+			display: none;
 		}
 	}
 
