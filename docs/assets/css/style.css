@@ -1059,9 +1059,6 @@ footer {
   grid-template-columns: 0.3819660113fr;
   gap: 1em; }
 
-.resume-column-left {
-  width: 38.196601125%; }
-
 .resume-section {
   margin-top: 1em; }
   .resume-section:first-child {
@@ -1138,16 +1135,7 @@ footer {
   margin-bottom: 0.25em;
   font-weight: normal; }
 
-@media only screen and (max-width: 550px) {
-  .resume-container {
-    display: block; }
-  .resume-column-left {
-    width: 100%;
-    margin-bottom: 1em; } }
-
 @media print {
-  .resume-column-left {
-    padding-right: 2em; }
   .resume-section.resume-section {
     margin-top: 2em;
     padding: 0;

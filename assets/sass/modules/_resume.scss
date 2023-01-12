@@ -4,10 +4,6 @@
 	gap: 1em;
 }
 
-.resume-column-left {
-	width: 100% - $golden-ratio;
-}
-
 .resume-section {
 	margin-top: 1em;
 
@@ -122,21 +118,10 @@
 // }
 
 @media only screen and (max-width: $breakpoint-small) {
-	.resume-container {
-		display: block;
-	}
 
-	.resume-column-left {
-		width: 100%;
-		margin-bottom: 1em;
-	}
 }
 
 @media print {
-	.resume-column-left {
-	  padding-right: 2em;
-	}
-
 	.resume-section {
 		// doubling specificity to overwrite upstream styles
 		&.resume-section {
