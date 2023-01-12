@@ -1055,7 +1055,9 @@ footer {
     column-count: 1; } }
 
 .resume-container {
-  display: grid; }
+  display: grid;
+  grid-template-columns: 0.3819660113fr;
+  gap: 1em; }
 
 .resume-column-left {
   width: 38.196601125%; }

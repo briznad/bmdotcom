@@ -1,5 +1,7 @@
 .resume-container {
 	display: grid;
+	grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr;
+	gap: 1em;
 }
 
 .resume-column-left {
