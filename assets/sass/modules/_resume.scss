@@ -9,18 +9,22 @@
 
 	.right-column-container {
 		grid-column: 2;
+
+		// section:first-child {
+		// 	margin-bottom: 1em;
+		// }
 	}
 
-	> .experience {
+	.full-width-container {
 		grid-column: 1 / -1;
 	}
 
-	section {
-		&:not(.print-download-buttons) {
-			@extend %content-box-style;
+	.left-column-container section:not(.print-download-buttons),
+	.right-column-container,
+	.full-width-container {
+		@extend %content-box-style;
 
-			padding: 1em;
-		}
+		padding: 1em;
 	}
 }
 

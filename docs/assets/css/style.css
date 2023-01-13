@@ -465,7 +465,9 @@ th {
     border-color: #2c3e50;
     outline-color: #2c3e50; }
 
-.projects-list-item, .resume-container section:not(.print-download-buttons), .form-container [type="text"],
+.projects-list-item, .resume-container .left-column-container section:not(.print-download-buttons),
+.resume-container .right-column-container,
+.resume-container .full-width-container, .form-container [type="text"],
 .form-container [type="email"],
 .form-container textarea {
   background-color: #fff;
@@ -1062,9 +1064,11 @@ footer {
     grid-column: 1; }
   .resume-container .right-column-container {
     grid-column: 2; }
-  .resume-container > .experience {
+  .resume-container .full-width-container {
     grid-column: 1 / -1; }
-  .resume-container section:not(.print-download-buttons) {
+  .resume-container .left-column-container section:not(.print-download-buttons),
+  .resume-container .right-column-container,
+  .resume-container .full-width-container {
     padding: 1em; }
 
 .print-button,
