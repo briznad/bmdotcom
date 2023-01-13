@@ -6,6 +6,22 @@
 		gap: 1em;
 	}
 
+	.left-column-container,
+	.right-column-container,
+	.full-width-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+
+	.left-column-container section:not(.print-download-buttons),
+	.right-column-container,
+	.full-width-container {
+		@extend %content-box-style;
+
+		padding: 1em;
+	}
+
 	.left-column-container {
 		grid-column: 1;
 	}
@@ -20,14 +36,6 @@
 
 	.full-width-container {
 		grid-column: 1 / -1;
-	}
-
-	.left-column-container section:not(.print-download-buttons),
-	.right-column-container,
-	.full-width-container {
-		@extend %content-box-style;
-
-		padding: 1em;
 	}
 }
 
