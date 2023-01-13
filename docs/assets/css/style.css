@@ -1131,9 +1131,9 @@ footer {
   list-style-type: none;
   margin-left: 1.5em;
   line-height: 1.5em; }
-  .skill-list-item:before,
-  .tool-list-item:before,
-  .job-achievements-list-item:before {
+  .skill-list-item::before,
+  .tool-list-item::before,
+  .job-achievements-list-item::before {
     content: '';
     display: block;
     position: absolute;
@@ -1166,11 +1166,14 @@ footer {
   .resume-container .print-download-buttons,
   .resume-container .skills {
     display: none; }
-  .resume-container .left-column-container section,
+  .resume-container .left-column-container section:not(.print-download-buttons),
   .resume-container .right-column-container,
   .resume-container .full-width-container {
     border: none;
     padding: 0; }
+  .resume-container .right-column-container::after {
+    content: none;
+    display: none; }
   .resume-meta-list dd:first-of-type {
     font-size: 2em; }
   .skill-list-item,

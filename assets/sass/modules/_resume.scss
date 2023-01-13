@@ -110,7 +110,7 @@
 	margin-left: 1.5em;
 	line-height: 1.5em;
 
-	&:before {
+	&::before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -163,11 +163,18 @@
 			display: none;
 		}
 
-		.left-column-container section,
+		.left-column-container section:not(.print-download-buttons),
 		.right-column-container,
 		.full-width-container {
 			border: none;
 			padding: 0;
+		}
+
+		.right-column-container {
+			&::after {
+				content: none;
+				display: none;
+			}
 		}
 	}
 
