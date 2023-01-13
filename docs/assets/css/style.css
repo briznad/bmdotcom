@@ -1086,8 +1086,8 @@ footer {
     content: '';
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    left: -1px;
+    width: calc(100% + 2px);
     height: calc(1em + 2px);
     border-top-width: 0;
     border-bottom-width: 0; }
