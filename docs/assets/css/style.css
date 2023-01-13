@@ -1150,6 +1150,13 @@ footer {
   margin-bottom: 0.25em;
   font-weight: normal; }
 
+@media only screen and (max-width: 550px) {
+  .resume-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
+
 @media print {
   .resume-container .print-download-buttons,
   .resume-container .skills {
@@ -1160,9 +1167,9 @@ footer {
   .tool-list-item,
   .job-achievements-list-item {
     list-style-type: square; }
-    .skill-list-item:before,
-    .tool-list-item:before,
-    .job-achievements-list-item:before {
+    .skill-list-item::before,
+    .tool-list-item::before,
+    .job-achievements-list-item::before {
       content: none; } }
 
 .social-media-container {

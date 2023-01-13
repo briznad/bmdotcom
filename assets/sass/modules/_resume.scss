@@ -135,7 +135,10 @@
 // }
 
 @media only screen and (max-width: $breakpoint-small) {
-
+	.resume-container {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 @media print {
@@ -149,7 +152,7 @@
 	.resume-meta-list {
 		dd {
 			&:first-of-type {
-					font-size: 2em;
+				font-size: 2em;
 			}
 		}
 	}
@@ -159,7 +162,7 @@
 	.job-achievements-list-item {
 		list-style-type: square;
 
-		&:before {
+		&::before {
 			content: none;
 		}
 	}
