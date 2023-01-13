@@ -1,8 +1,9 @@
 .resume-container {
+	grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr #{ parseInt($golden-ratio) / 100 }fr;
+
 	&,
 	.print-download-buttons {
 		display: grid;
-		grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr #{ parseInt($golden-ratio) / 100 }fr;
 		gap: 1em;
 	}
 
@@ -24,6 +25,10 @@
 
 	.left-column-container {
 		grid-column: 1;
+	}
+
+	.print-download-buttons {
+		grid-template-columns: #{ parseInt($golden-ratio) / 100 }fr #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr;
 	}
 
 	.right-column-container {

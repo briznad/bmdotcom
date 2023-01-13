@@ -1056,44 +1056,42 @@ footer {
   .projects-list {
     column-count: 1; } }
 
-.resume-container,
-.resume-container .print-download-buttons {
-  display: grid;
-  grid-template-columns: 0.3819660113fr 0.6180339888fr;
-  gap: 1em; }
-
-.resume-container .left-column-container,
-.resume-container .right-column-container,
-.resume-container .full-width-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 1em; }
-
-.resume-container .left-column-container section:not(.print-download-buttons),
-.resume-container .right-column-container,
-.resume-container .full-width-container {
-  padding: 1em; }
-
-.resume-container .left-column-container {
-  grid-column: 1; }
-
-.resume-container .right-column-container {
-  grid-column: 2;
-  position: relative; }
-  .resume-container .right-column-container::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: -1px;
-    width: calc(100% + 2px);
-    height: calc(1em + 2px);
-    border-top-width: 0;
-    border-bottom-width: 0; }
-
-.resume-container .full-width-container {
-  grid-column: 1 / -1; }
+.resume-container {
+  grid-template-columns: 0.3819660113fr 0.6180339888fr; }
+  .resume-container,
+  .resume-container .print-download-buttons {
+    display: grid;
+    gap: 1em; }
+  .resume-container .left-column-container,
+  .resume-container .right-column-container,
+  .resume-container .full-width-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1em; }
+  .resume-container .left-column-container section:not(.print-download-buttons),
+  .resume-container .right-column-container,
+  .resume-container .full-width-container {
+    padding: 1em; }
+  .resume-container .left-column-container {
+    grid-column: 1; }
+  .resume-container .print-download-buttons {
+    grid-template-columns: 0.6180339888fr 0.3819660113fr; }
+  .resume-container .right-column-container {
+    grid-column: 2;
+    position: relative; }
+    .resume-container .right-column-container::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: -1px;
+      width: calc(100% + 2px);
+      height: calc(1em + 2px);
+      border-top-width: 0;
+      border-bottom-width: 0; }
+  .resume-container .full-width-container {
+    grid-column: 1 / -1; }
 
 .print-button,
 .download-button {
