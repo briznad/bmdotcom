@@ -1,7 +1,10 @@
 .resume-container {
-	display: grid;
-	grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr #{ parseInt($golden-ratio) / 100 }fr;
-	gap: 1em;
+	&,
+	.print-download-buttons {
+		display: grid;
+		grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr #{ parseInt($golden-ratio) / 100 }fr;
+		gap: 1em;
+	}
 
 	.left-column-container {
 		grid-column: 1;
@@ -35,22 +38,6 @@
 	padding-left: 0;
 	padding-right: 0;
 	font-size: 1.2em;
-
-	&:first-child {
-		float: left;
-	}
-
-	&:last-child {
-		float: right;
-	}
-}
-
-.print-button {
-	width: (100% - $golden-ratio) - 2%;
-}
-
-.download-button {
-	width: $golden-ratio - 2%;
 }
 
 .resume-section-header {

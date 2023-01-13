@@ -1056,38 +1056,31 @@ footer {
   .projects-list {
     column-count: 1; } }
 
-.resume-container {
+.resume-container,
+.resume-container .print-download-buttons {
   display: grid;
   grid-template-columns: 0.3819660113fr 0.6180339888fr;
   gap: 1em; }
-  .resume-container .left-column-container {
-    grid-column: 1; }
-  .resume-container .right-column-container {
-    grid-column: 2; }
-  .resume-container .full-width-container {
-    grid-column: 1 / -1; }
-  .resume-container .left-column-container section:not(.print-download-buttons),
-  .resume-container .right-column-container,
-  .resume-container .full-width-container {
-    padding: 1em; }
+
+.resume-container .left-column-container {
+  grid-column: 1; }
+
+.resume-container .right-column-container {
+  grid-column: 2; }
+
+.resume-container .full-width-container {
+  grid-column: 1 / -1; }
+
+.resume-container .left-column-container section:not(.print-download-buttons),
+.resume-container .right-column-container,
+.resume-container .full-width-container {
+  padding: 1em; }
 
 .print-button,
 .download-button {
   padding-left: 0;
   padding-right: 0;
   font-size: 1.2em; }
-  .print-button:first-child,
-  .download-button:first-child {
-    float: left; }
-  .print-button:last-child,
-  .download-button:last-child {
-    float: right; }
-
-.print-button {
-  width: 36.196601125%; }
-
-.download-button {
-  width: 59.803398875%; }
 
 .resume-section-header {
   margin-bottom: 0.5em; }
