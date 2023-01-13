@@ -168,31 +168,31 @@
 
 @media print {
 	.resume-container {
-		// &,
-		// .primary-info-container,
-		// .primary-experiences-container,
-		// .secondary-experiences-container {
-		// 	gap: 2em;
-		// }
+		&,
+		.primary-info-container,
+		.primary-experiences-container,
+		.secondary-experiences-container {
+			gap: 2em;
+		}
 
 		.print-download-buttons,
 		.skills {
 			display: none;
 		}
 
-		// .primary-info-container section:not(.print-download-buttons),
-		// .primary-experiences-container,
-		// .secondary-experiences-container {
-		// 	border: none;
-		// 	padding: 0;
-		// }
+		.primary-info-container section:not(.print-download-buttons),
+		.primary-experiences-container,
+		.secondary-experiences-container {
+			border: none;
+			padding: 0;
+		}
 
-		// .primary-experiences-container {
-		// 	&::after {
-		// 		content: none;
-		// 		display: none;
-		// 	}
-		// }
+		.primary-experiences-container {
+			&::after {
+				content: none;
+				display: none;
+			}
+		}
 
 		.print-only {
 			display: block;
