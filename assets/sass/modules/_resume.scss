@@ -16,14 +16,9 @@
 
 	.left-column-container section:not(.print-download-buttons),
 	.right-column-container,
-	.right-column-container::after,
 	.full-width-container {
 		@extend %content-box-style;
-	}
 
-	.left-column-container section:not(.print-download-buttons),
-	.right-column-container,
-	.full-width-container {
 		padding: 1em;
 	}
 
@@ -36,6 +31,8 @@
 		position: relative;
 
 		&::after {
+			@extend %content-box-style;
+
 			content: '';
 			position: absolute;
 			top: 100%;
