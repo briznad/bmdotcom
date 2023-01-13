@@ -3,9 +3,8 @@
 	overflow-wrap: break-word;
 
 	&,
-	.left-column-container,
-	.right-column-container,
-	.full-width-container,
+	.primary-info-container,
+	.additional-experiences-container,
 	.print-download-buttons {
 		gap: 1em;
 	}
@@ -15,22 +14,22 @@
 		display: grid;
 	}
 
-	.left-column-container,
-	.right-column-container,
-	.full-width-container {
+	.primary-info-container,
+	.additional-experiences-container {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.left-column-container section:not(.print-download-buttons),
-	.right-column-container,
-	.full-width-container {
+	.primary-info-container section:not(.print-download-buttons),
+	.first-experience-container,
+	.second-experience-container,
+	.additional-experiences-container {
 		@extend %content-box-style;
 
 		padding: 1em;
 	}
 
-	.left-column-container {
+	.primary-info-container {
 		grid-column: 1;
 	}
 
@@ -38,7 +37,8 @@
 		grid-template-columns: #{ parseInt($golden-ratio) / 100 }fr #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr;
 	}
 
-	.right-column-container {
+	.first-experience-container,
+	.second-experience-container {
 		grid-column: 2;
 		position: relative;
 
@@ -57,7 +57,7 @@
 		}
 	}
 
-	.full-width-container {
+	.additional-experiences-container {
 		grid-column: 1 / -1;
 	}
 }
@@ -147,16 +147,18 @@
 		display: flex;
 		flex-direction: column;
 
-		.right-column-container {
+		.first-experience-container,
+		.second-experience-container {
 			// visual bridge between experience containers
 			&::after {
 				height: 2px;
 			}
 		}
 
-		// pull "full width" experience container up on mobile
-		// to visually merge with "right column" experience container
-		.full-width-container {
+		// pull additional & second experience/s experience containers up on mobile
+		// to visually merge with first & second experience containers
+		.second-experience-container,
+		.additional-experiences-container {
 			margin-top: -2em;
 		}
 	}
@@ -165,9 +167,8 @@
 @media print {
 	.resume-container {
 		&,
-		.left-column-container,
-		.right-column-container,
-		.full-width-container {
+		.primary-info-container,
+		.additional-experiences-container {
 			gap: 2em;
 		}
 
@@ -176,14 +177,16 @@
 			display: none;
 		}
 
-		.left-column-container section:not(.print-download-buttons),
-		.right-column-container,
-		.full-width-container {
+		.primary-info-container section:not(.print-download-buttons),
+		.first-experience-container,
+		.second-experience-container,
+		.additional-experiences-container {
 			border: none;
 			padding: 0;
 		}
 
-		.right-column-container {
+		.first-experience-container,
+		.second-experience-container {
 			&::after {
 				content: none;
 				display: none;

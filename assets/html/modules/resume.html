@@ -1,5 +1,5 @@
 <article class="resume-container" itemscope itemtype="https://schema.org/Person">
-  <div class="left-column-container">
+  <div class="primary-info-container">
     <section class="print-download-buttons">
       <a href="/assets/pdf/Brad_Mallow_resume.pdf" class="download-button" target="_blank" download>download</a>
       <a href="javascript:window.print()" class="print-button">print</a>
@@ -51,9 +51,16 @@
     </section>
   </div>
 
-  <% _.each(currentPage.experience, function(job, index, list) { %>
-    <% if (index === 0 || index === 2) { %>
-      <div class="<%= index === 0 ? 'right-column' : 'full-width' %>-container">
+  <%
+    var experienceContainerPrefixes = [
+      'first-experience',
+      'second-experience',
+      'additional-experiences'
+    ];
+
+    _.each(currentPage.experience, function(job, index, list) { %>
+    <% if (index <= 2) { %>
+      <div class="<%= experienceContainerPrefixes[index] %>-container">
     <% } %>
       <section class="experience">
         <% if (index === 0) { %>
@@ -80,7 +87,7 @@
           </ul>
         <% } %>
       </section>
-    <% if (index === 1 || index === (list.length - 1)) { %>
+    <% if (index === 0 || index === 1 || index === (list.length - 1)) { %>
       </div>
     <% } %>
   <% }); %>

@@ -465,9 +465,11 @@ th {
     border-color: #2c3e50;
     outline-color: #2c3e50; }
 
-.projects-list-item, .resume-container .left-column-container section:not(.print-download-buttons),
-.resume-container .right-column-container,
-.resume-container .full-width-container, .resume-container .right-column-container::after, .form-container [type="text"],
+.projects-list-item, .resume-container .primary-info-container section:not(.print-download-buttons),
+.resume-container .first-experience-container,
+.resume-container .second-experience-container,
+.resume-container .additional-experiences-container, .resume-container .first-experience-container::after,
+.resume-container .second-experience-container::after, .form-container [type="text"],
 .form-container [type="email"],
 .form-container textarea {
   background-color: #fff;
@@ -1060,33 +1062,34 @@ footer {
   grid-template-columns: 0.3819660113fr 0.6180339888fr;
   overflow-wrap: break-word; }
   .resume-container,
-  .resume-container .left-column-container,
-  .resume-container .right-column-container,
-  .resume-container .full-width-container,
+  .resume-container .primary-info-container,
+  .resume-container .additional-experiences-container,
   .resume-container .print-download-buttons {
     gap: 1em; }
   .resume-container,
   .resume-container .print-download-buttons {
     display: grid; }
-  .resume-container .left-column-container,
-  .resume-container .right-column-container,
-  .resume-container .full-width-container {
+  .resume-container .primary-info-container,
+  .resume-container .additional-experiences-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
-  .resume-container .left-column-container section:not(.print-download-buttons),
-  .resume-container .right-column-container,
-  .resume-container .full-width-container {
+  .resume-container .primary-info-container section:not(.print-download-buttons),
+  .resume-container .first-experience-container,
+  .resume-container .second-experience-container,
+  .resume-container .additional-experiences-container {
     padding: 1em; }
-  .resume-container .left-column-container {
+  .resume-container .primary-info-container {
     grid-column: 1; }
   .resume-container .print-download-buttons {
     grid-template-columns: 0.6180339888fr 0.3819660113fr; }
-  .resume-container .right-column-container {
+  .resume-container .first-experience-container,
+  .resume-container .second-experience-container {
     grid-column: 2;
     position: relative; }
-    .resume-container .right-column-container::after {
+    .resume-container .first-experience-container::after,
+    .resume-container .second-experience-container::after {
       content: '';
       position: absolute;
       top: 100%;
@@ -1095,7 +1098,7 @@ footer {
       height: calc(1em + 2px);
       border-top-width: 0;
       border-bottom-width: 0; }
-  .resume-container .full-width-container {
+  .resume-container .additional-experiences-container {
     grid-column: 1 / -1; }
 
 .print-button,
@@ -1161,26 +1164,29 @@ footer {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .resume-container .right-column-container::after {
+    .resume-container .first-experience-container::after,
+    .resume-container .second-experience-container::after {
       height: 2px; }
-    .resume-container .full-width-container {
+    .resume-container .second-experience-container,
+    .resume-container .additional-experiences-container {
       margin-top: -2em; } }
 
 @media print {
   .resume-container,
-  .resume-container .left-column-container,
-  .resume-container .right-column-container,
-  .resume-container .full-width-container {
+  .resume-container .primary-info-container,
+  .resume-container .additional-experiences-container {
     gap: 2em; }
   .resume-container .print-download-buttons,
   .resume-container .skills {
     display: none; }
-  .resume-container .left-column-container section:not(.print-download-buttons),
-  .resume-container .right-column-container,
-  .resume-container .full-width-container {
+  .resume-container .primary-info-container section:not(.print-download-buttons),
+  .resume-container .first-experience-container,
+  .resume-container .second-experience-container,
+  .resume-container .additional-experiences-container {
     border: none;
     padding: 0; }
-  .resume-container .right-column-container::after {
+  .resume-container .first-experience-container::after,
+  .resume-container .second-experience-container::after {
     content: none;
     display: none; }
   .resume-meta-list dd:first-of-type {
