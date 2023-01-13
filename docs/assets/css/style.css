@@ -467,6 +467,7 @@ th {
 
 .projects-list-item, .resume-container .left-column-container section:not(.print-download-buttons),
 .resume-container .right-column-container,
+.resume-container .right-column-container::after,
 .resume-container .full-width-container, .form-container [type="text"],
 .form-container [type="email"],
 .form-container textarea {
@@ -1080,7 +1081,17 @@ footer {
   grid-column: 1; }
 
 .resume-container .right-column-container {
-  grid-column: 2; }
+  grid-column: 2;
+  position: relative; }
+  .resume-container .right-column-container::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(1em + 2px);
+    border-top-width: 0;
+    border-bottom-width: 0; }
 
 .resume-container .full-width-container {
   grid-column: 1 / -1; }

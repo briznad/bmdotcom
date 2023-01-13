@@ -16,9 +16,14 @@
 
 	.left-column-container section:not(.print-download-buttons),
 	.right-column-container,
+	.right-column-container::after,
 	.full-width-container {
 		@extend %content-box-style;
+	}
 
+	.left-column-container section:not(.print-download-buttons),
+	.right-column-container,
+	.full-width-container {
 		padding: 1em;
 	}
 
@@ -28,10 +33,18 @@
 
 	.right-column-container {
 		grid-column: 2;
+		position: relative;
 
-		// section:first-child {
-		// 	margin-bottom: 1em;
-		// }
+		&::after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			height: calc(1em + 2px);
+			border-top-width: 0;
+			border-bottom-width: 0;
+		}
 	}
 
 	.full-width-container {
