@@ -1097,6 +1097,8 @@ footer {
       border-bottom-width: 0; }
   .resume-container .secondary-experiences-container {
     grid-column: 1 / -1; }
+  .resume-container .print-only {
+    display: none; }
 
 .print-button,
 .download-button {
@@ -1182,6 +1184,10 @@ footer {
     padding: 0; }
   .resume-container .primary-experiences-container::after {
     content: none;
+    display: none; }
+  .resume-container .print-only {
+    display: block; }
+  .resume-container .screen-only {
     display: none; }
   .resume-meta-list dd:first-of-type {
     font-size: 2em; }

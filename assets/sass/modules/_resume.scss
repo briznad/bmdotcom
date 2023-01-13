@@ -60,6 +60,10 @@
 	.secondary-experiences-container {
 		grid-column: 1 / -1;
 	}
+
+	.print-only {
+		display: none;
+	}
 }
 
 .print-button,
@@ -188,6 +192,14 @@
 				content: none;
 				display: none;
 			}
+		}
+
+		.print-only {
+			display: block;
+		}
+
+		.screen-only {
+			display: none;
 		}
 	}
 
