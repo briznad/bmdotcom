@@ -1169,8 +1169,21 @@ footer {
       margin-top: -2em; } }
 
 @media print {
+  .resume-container,
+  .resume-container .primary-info-container,
+  .resume-container .primary-experiences-container,
+  .resume-container .secondary-experiences-container {
+    gap: 2em; }
   .resume-container .print-download-buttons,
   .resume-container .skills {
+    display: none; }
+  .resume-container .primary-info-container section:not(.print-download-buttons),
+  .resume-container .primary-experiences-container,
+  .resume-container .secondary-experiences-container {
+    border: none;
+    padding: 0; }
+  .resume-container .primary-experiences-container::after {
+    content: none;
     display: none; }
   .resume-container .print-only {
     display: block; }
