@@ -1,5 +1,6 @@
 .resume-container {
 	grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr #{ parseInt($golden-ratio) / 100 }fr;
+	overflow-wrap: break-word;
 
 	&,
 	.print-download-buttons {

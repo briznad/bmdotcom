@@ -1057,7 +1057,8 @@ footer {
     column-count: 1; } }
 
 .resume-container {
-  grid-template-columns: 0.3819660113fr 0.6180339888fr; }
+  grid-template-columns: 0.3819660113fr 0.6180339888fr;
+  overflow-wrap: break-word; }
   .resume-container,
   .resume-container .print-download-buttons {
     display: grid;
