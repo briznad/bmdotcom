@@ -75,10 +75,32 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         __p += '\n      </ul>\n    </section>\n  </div>\n\n  ';
         _.each(currentPage.experience, function (job, index, list) {
             __p += '\n    ';
-            if (index === 0 || index === 2) {
+            if (index === 1) {
+                __p += '\n      <section class="experience screen-only">\n        ';
+                if (index === 0) {
+                    __p += '\n          <h2 class="resume-section-header">Professional Experience</h2>\n        ';
+                }
+                __p += '\n\n        <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n        <span class="job-location-period">\n          ';
+                print((job.location ? job.location + ' &#8212; ' : '') + job.period.start + ' to ' + (job.period.end ? job.period.end : 'present'));
+                __p += '\n        </span>\n\n        ';
+                if (job.description) {
+                    __p += '\n          <p class="job-description">' + ((__t = (job.description)) == null ? '' : __t) + '</p>\n        ';
+                }
+                __p += '\n\n        ';
+                if (job.achievements && job.achievements.length) {
+                    __p += '\n          <h4 class="job-achievements-title">Achievements</h4>\n\n          <ul class="job-achievements-list">\n            ';
+                    _.each(job.achievements, function (achievement) {
+                        __p += '\n              <li class="job-achievements-list-item">' + ((__t = (achievement)) == null ? '' : __t) + '</li>\n            ';
+                    });
+                    __p += '\n          </ul>\n        ';
+                }
+                __p += '\n      </section>\n    ';
+            }
+            __p += '\n\n    ';
+            if (index <= 1) {
                 __p += '\n      <div class="' + ((__t = (index === 0 ? 'primary' : 'secondary')) == null ? '' : __t) + '-experiences-container">\n    ';
             }
-            __p += '\n      <section class="experience">\n        ';
+            __p += '\n      <section class="experience' + ((__t = (index === 1 ? ' print-only' : '')) == null ? '' : __t) + '">\n        ';
             if (index === 0) {
                 __p += '\n          <h2 class="resume-section-header">Professional Experience</h2>\n        ';
             }
