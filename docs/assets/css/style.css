@@ -465,7 +465,7 @@ th {
     border-color: #2c3e50;
     outline-color: #2c3e50; }
 
-.projects-list-item, .resume-container > section:not(.print-download-buttons), .form-container [type="text"],
+.projects-list-item, .resume-container section:not(.print-download-buttons), .form-container [type="text"],
 .form-container [type="email"],
 .form-container textarea {
   background-color: #fff;
@@ -1058,14 +1058,14 @@ footer {
   display: grid;
   grid-template-columns: 0.3819660113fr 0.6180339888fr;
   gap: 1em; }
-  .resume-container > section {
+  .resume-container .left-column-container {
     grid-column: 1; }
-    .resume-container > section:not(.print-download-buttons) {
-      padding: 1em; }
-    .resume-container > section.experience {
-      grid-column: 1 / -1; }
-    .resume-container > section.right-column {
-      grid-column: 2; }
+  .resume-container .right-column-container {
+    grid-column: 2; }
+  .resume-container > .experience {
+    grid-column: 1 / -1; }
+  .resume-container section:not(.print-download-buttons) {
+    padding: 1em; }
 
 .print-button,
 .download-button {
