@@ -1166,6 +1166,11 @@ footer {
   .resume-container .print-download-buttons,
   .resume-container .skills {
     display: none; }
+  .resume-container .left-column-container section,
+  .resume-container .right-column-container,
+  .resume-container .full-width-container {
+    border: none;
+    padding: 0; }
   .resume-meta-list dd:first-of-type {
     font-size: 2em; }
   .skill-list-item,
