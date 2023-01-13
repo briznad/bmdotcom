@@ -1155,7 +1155,11 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+    .resume-container .right-column-container::after {
+      height: 2px; }
+    .resume-container .full-width-container {
+      margin-top: -2em; } }
 
 @media print {
   .resume-container .print-download-buttons,

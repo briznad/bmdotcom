@@ -35,6 +35,7 @@
 		grid-column: 2;
 		position: relative;
 
+		// visual bridge between experience containers
 		&::after {
 			@extend %content-box-style;
 
@@ -138,6 +139,19 @@
 	.resume-container {
 		display: flex;
 		flex-direction: column;
+
+		.right-column-container {
+			// visual bridge between experience containers
+			&::after {
+				height: 2px;
+			}
+		}
+
+		// pull "full width" experience container up on mobile
+		// to visually merge with "right column" experience container
+		.full-width-container {
+			margin-top: -2em;
+		}
 	}
 }
 
