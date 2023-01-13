@@ -1060,17 +1060,21 @@ footer {
   grid-template-columns: 0.3819660113fr 0.6180339888fr;
   overflow-wrap: break-word; }
   .resume-container,
+  .resume-container .left-column-container,
+  .resume-container .right-column-container,
+  .resume-container .full-width-container,
   .resume-container .print-download-buttons {
-    display: grid;
     gap: 1em; }
+  .resume-container,
+  .resume-container .print-download-buttons {
+    display: grid; }
   .resume-container .left-column-container,
   .resume-container .right-column-container,
   .resume-container .full-width-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 1em; }
+    flex-direction: column; }
   .resume-container .left-column-container section:not(.print-download-buttons),
   .resume-container .right-column-container,
   .resume-container .full-width-container {
@@ -1163,6 +1167,11 @@ footer {
       margin-top: -2em; } }
 
 @media print {
+  .resume-container,
+  .resume-container .left-column-container,
+  .resume-container .right-column-container,
+  .resume-container .full-width-container {
+    gap: 2em; }
   .resume-container .print-download-buttons,
   .resume-container .skills {
     display: none; }
