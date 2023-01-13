@@ -13136,13 +13136,10 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
             __p += '\n          <li class="skill-list-item">' + ((__t = (skill)) == null ? '' : __t) + '</li>\n        ';
         });
         __p += '\n      </ul>\n    </section>\n  </div>\n\n  ';
-
-        var experienceContainerPrefixes = ['first-experience', 'second-experience', 'additional-experiences'];
-
         _.each(currentPage.experience, function (job, index, list) {
             __p += '\n    ';
-            if (index <= 2) {
-                __p += '\n      <div class="' + ((__t = (experienceContainerPrefixes[index])) == null ? '' : __t) + '-container">\n    ';
+            if (index === 0 || index === 2) {
+                __p += '\n      <div class="' + ((__t = (index === 0 ? 'primary' : 'secondary')) == null ? '' : __t) + '-experiences-container">\n    ';
             }
             __p += '\n      <section class="experience">\n        ';
             if (index === 0) {
@@ -13163,7 +13160,7 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
                 __p += '\n          </ul>\n        ';
             }
             __p += '\n      </section>\n    ';
-            if (index === 0 || index === 1 || index === (list.length - 1)) {
+            if (index === 1 || index === (list.length - 1)) {
                 __p += '\n      </div>\n    ';
             }
             __p += '\n  ';

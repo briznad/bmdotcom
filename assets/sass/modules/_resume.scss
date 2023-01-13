@@ -4,7 +4,8 @@
 
 	&,
 	.primary-info-container,
-	.additional-experiences-container,
+	.primary-experiences-container,
+	.secondary-experiences-container,
 	.print-download-buttons {
 		gap: 1em;
 	}
@@ -15,15 +16,15 @@
 	}
 
 	.primary-info-container,
-	.additional-experiences-container {
+	.primary-experiences-container,
+	.secondary-experiences-container {
 		display: flex;
 		flex-direction: column;
 	}
 
 	.primary-info-container section:not(.print-download-buttons),
-	.first-experience-container,
-	.second-experience-container,
-	.additional-experiences-container {
+	.primary-experiences-container,
+	.secondary-experiences-container {
 		@extend %content-box-style;
 
 		padding: 1em;
@@ -37,8 +38,7 @@
 		grid-template-columns: #{ parseInt($golden-ratio) / 100 }fr #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr;
 	}
 
-	.first-experience-container,
-	.second-experience-container {
+	.primary-experiences-container {
 		grid-column: 2;
 		position: relative;
 
@@ -57,7 +57,7 @@
 		}
 	}
 
-	.additional-experiences-container {
+	.secondary-experiences-container {
 		grid-column: 1 / -1;
 	}
 }
@@ -147,18 +147,16 @@
 		display: flex;
 		flex-direction: column;
 
-		.first-experience-container,
-		.second-experience-container {
+		.primary-experiences-container {
 			// visual bridge between experience containers
 			&::after {
 				height: 2px;
 			}
 		}
 
-		// pull additional & second experience/s experience containers up on mobile
-		// to visually merge with first & second experience containers
-		.second-experience-container,
-		.additional-experiences-container {
+		// pull "full width" experience container up on mobile
+		// to visually merge with "right column" experience container
+		.secondary-experiences-container {
 			margin-top: -2em;
 		}
 	}
@@ -168,7 +166,8 @@
 	.resume-container {
 		&,
 		.primary-info-container,
-		.additional-experiences-container {
+		.primary-experiences-container,
+		.secondary-experiences-container {
 			gap: 2em;
 		}
 
@@ -178,15 +177,13 @@
 		}
 
 		.primary-info-container section:not(.print-download-buttons),
-		.first-experience-container,
-		.second-experience-container,
-		.additional-experiences-container {
+		.primary-experiences-container,
+		.secondary-experiences-container {
 			border: none;
 			padding: 0;
 		}
 
-		.first-experience-container,
-		.second-experience-container {
+		.primary-experiences-container {
 			&::after {
 				content: none;
 				display: none;

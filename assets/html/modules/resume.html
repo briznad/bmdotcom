@@ -51,16 +51,9 @@
     </section>
   </div>
 
-  <%
-    var experienceContainerPrefixes = [
-      'first-experience',
-      'second-experience',
-      'additional-experiences'
-    ];
-
-    _.each(currentPage.experience, function(job, index, list) { %>
-    <% if (index <= 2) { %>
-      <div class="<%= experienceContainerPrefixes[index] %>-container">
+  <% _.each(currentPage.experience, function(job, index, list) { %>
+    <% if (index === 0 || index === 2) { %>
+      <div class="<%= index === 0 ? 'primary' : 'secondary' %>-experiences-container">
     <% } %>
       <section class="experience">
         <% if (index === 0) { %>
@@ -87,7 +80,7 @@
           </ul>
         <% } %>
       </section>
-    <% if (index === 0 || index === 1 || index === (list.length - 1)) { %>
+    <% if (index === 1 || index === (list.length - 1)) { %>
       </div>
     <% } %>
   <% }); %>
