@@ -465,7 +465,8 @@ th {
     border-color: #2c3e50;
     outline-color: #2c3e50; }
 
-.projects-list-item, .resume-container .primary-info-container section:not(.print-download-buttons),
+.projects-list-item, .resume-container .summary,
+.resume-container .primary-info-container section:not(.print-download-buttons),
 .resume-container .primary-experiences-container,
 .resume-container .secondary-experiences-container, .resume-container .primary-experiences-container::after, .form-container [type="text"],
 .form-container [type="email"],
@@ -1075,6 +1076,7 @@ footer {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .resume-container .summary,
   .resume-container .primary-info-container section:not(.print-download-buttons),
   .resume-container .primary-experiences-container,
   .resume-container .secondary-experiences-container {
