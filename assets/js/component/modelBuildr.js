@@ -146,8 +146,13 @@ bmdotcom.modelBuildr = (function() {
             start: 'August 2018',
             end: 'December 2022'
           },
-          description: 'Along with my partner, Shilla Kim-Parker, I founded Thrilling, an online marketplace for vintage clothing, apparel, and home goods. We partnered with 1800+ independent vintage and secondhand clothing stores in the US and Canada to list over 300k+ unique items.',
-          achievements: ['Completed the Urban X and Elemental Excelerator programs to rapidly develop our initial concept and go-to-market strategies for B2C retail and B2B wholesale businesses.', 'Raised over $10 million dollars in pre-seed, seed, and series A funding. Investors included Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.', 'Prototyped, launched, and scaled a business from nothing to over $1 million in annual recurring revenue.', 'Built out a team of more than 35 outstanding employees with inclusive and diverse backgrounds, including a product organization that I directly managed.', 'We achieved the ultimate validation with our own wikipedia page: <a href="https://en.m.wikipedia.org/wiki/Thrilling_(company)">https://en.m.wikipedia.org/wiki/Thrilling_(company)</a>']
+          description: 'I co-founded Thrilling, a two-sided online marketplace for vintage apparel and home goods. As the technical co-founder, I personally built the foundational website and apps, allowing us to prototype, launch, and scale the business from nothing to over $1 million in ARR. I also built out and managed the product and tech teams that scaled our offering to support 1800+ independent secondhand vendors that utilized our tools to upload 300k+ unique items sold on our marketplace.',
+          achievements: [
+            'Completed the Urban X and Elemental Excelerator programs.',
+            '$10 million dollars  raised in pre-seed, seed, and series A funding by investors including Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.',
+            'Built out a team of 35+ outstanding employees with inclusive and diverse backgrounds, including a product organization that I directly managed.',
+            'Achieved the ultimate validation with our own wikipedia page: <a href="https://en.m.wikipedia.org/wiki/Thrilling_(company)">https://en.m.wikipedia.org/wiki/Thrilling_(company)</a>',
+          ]
         }, {
           title: 'Senior Manager Engineering',
           organization: 'Poppin',
@@ -156,8 +161,11 @@ bmdotcom.modelBuildr = (function() {
             start: 'August 2015',
             end: 'August 2016'
           },
-          description: 'I ran the frontend ecom system and oversaw a successful replatforming. Transitioned to managing entire tech team, consisting of on-site and offshore team members, handling all technical needs of a rapidly growing startup selling physical goods to both B2B & B2C customers. This included ecom, ERP, sales management, and middleware systems to make it all work.',
-          achievements: ['Completed a successful replatforming from an aging system that was inhibiting growth to a modern, full-feautured ecom solution.', 'Transitioned from static markup to fully accessible templates that could be administered by our internal clients, freeing up their creativity and my developer\'s time.']
+          description: 'I started as the head of frontend development then transitioned to managing the entire tech team, consisting of on-site and offshore frontend, backend, full stack, and QA team members; handled all technical needs of a rapidly growing startup selling physical goods to both B2B & B2C customers. This included ecom, ERP, sales management, and middleware systems to make it all work.',
+          achievements: [
+            'Completed a successful replatforming from an aging system that was inhibiting growth to a modern, full-featured ecom solution.',
+            'Transitioned from static markup to fully accessible templates that could be administered by our internal clients, freeing up their creativity and my developer\'s time.',
+          ]
         }, {
           title: 'Senior Interface Developer',
           organization: 'Thrillist Media Group',
@@ -167,17 +175,26 @@ bmdotcom.modelBuildr = (function() {
             end: 'May 2015'
           },
           description: 'I developed modules and features in close collaboration with design and product teams, used across multiple editorial and ecommerce sites built upon Thrillist’s proprietary web application platform. As a senior member of the team I advocated a high standard of code quality and maintainability through active involvement in code reviews, and was also tasked with deploying code to production systems.',
-          achievements: ['Led a special projects team of developers tasked with originating ideas around strategic company objectives and developing them into production-ready solutions.', 'Designed, prototyped, and implemented internal curation tools, providing editorial and merchandising teams granular control over content placement through an intuitive interface.', 'Built the corporate identity site (http://thrillistmediagroup.com) making use of CSS animation and transitions to spice up the usual advertising, executives, career, and tech blog sections.']
+          achievements: [
+            'Led a special projects team of developers tasked with originating ideas around strategic company objectives and developing them into production-ready solutions.',
+            'Designed, prototyped, and implemented internal curation tools, providing editorial and merchandising teams granular control over content placement through an intuitive interface.',
+            'Built the corporate identity site (http://thrillistmediagroup.com) making use of CSS animation and transitions.',
+          ]
         }, {
-          title: 'Frontend Developer',
+          title: 'Frontend Development Consultant',
           organization: 'Intuit',
           location: 'Menlo Park, California',
           period: {
             start: 'February 2012',
             end: 'March 2013'
           },
-          description: 'As part of a small consulting team, I performed an overhaul on Intuit.com – an Alexa US Top 100 website - as well as Intuit\'s 50 other most-frequented pages, concentrating on performance, accessibility, frontend best practices, and optimizing for use on mobile devices.',
-          achievements: ['Achieved a 50% reduction in page load times by refactoring HTML, CSS, and JavaScript, driving a marked jump in conversions in key growth areas.', 'Introduced an adaptive, mobile-optimized experience for key new pages and helped align the production life cycle around mobile.', 'Lead tech talks for the marketing and development groups, evangelizing the cause of performance and frontend best practices.', 'Audited and refactored Intuit’s top 50 pages to ensure compliance with accessibility best practices, allow all customers to enjoy a superb experience.']
+          description: 'I performed an overhaul on Intuit.com – an Alexa US Top 100 website - as well as Intuit\'s 50 other most-frequented pages, concentrating on performance, accessibility, frontend best practices, and optimizing for use on mobile devices.',
+          achievements: [
+            'Achieved a 50% reduction in page load times by refactoring HTML, CSS, and JavaScript, driving a marked jump in conversions in key growth areas. ',
+            'Introduced an adaptive, mobile-optimized experience for key new pages and helped align the production life cycle around mobile. ',
+            'Lead tech talks for the marketing and development groups, evangelizing the cause of performance and frontend best practices. ',
+            'Audited and refactored Intuit’s top 50 pages to ensure compliance with accessibility best practices, provide a superb experience for users on all devices.',
+          ]
         }, {
           title: 'Web Developer',
           organization: 'Freelance',
@@ -186,7 +203,7 @@ bmdotcom.modelBuildr = (function() {
             start: 'October 2011',
             end: 'February 2012'
           },
-          description: 'Part of a two-man team, I created engaging web experiences using HTML5, CSS3, and JavaScript, helping clients tell their unique stories; worked with varied customers from an independent author promoting a new book to a medical-consulting startup working with an established design firm; fostered a fluid working relationship between development, designers, and the client.'
+          description: 'I created engaging web experiences using HTML5, CSS3, and JavaScript, helping clients tell their unique stories; fostered a fluid working relationship between development, designers, and the client.'
         }, {
           title: 'Support Engineer',
           organization: 'Atlassian',
@@ -204,7 +221,7 @@ bmdotcom.modelBuildr = (function() {
             start: 'February 2008',
             end: 'April 2010'
           },
-          description: 'Product expert and first line of contact for existing and prospective customers; answered technical support tickets and support forum posts, wrote blog posts and FAQs, and worked with engineering teams to file and prioritize bugs; designed and developed internal support tools integrating our admin interface, production environment, Salesforce CRM ticketing system, and bug tracking systems using HTML, CSS, and JavaScript; onboarded and trained new employees on all tools necessary for efficient awesomeness; served on the incident management on-call team.'
+          description: 'Product expert and first line of contact for existing and prospective customers; answered technical support tickets and support forum posts, wrote blog posts and FAQs, and worked with engineering teams to file and prioritize bugs; designed and developed internal support tools integrating our admin interface, production environment, Salesforce CRM ticketing system, and bug tracking systems using HTML, CSS, and JavaScript; onboarded and trained new employees; served on the incident management on-call team.'
         }
       ]
     };
