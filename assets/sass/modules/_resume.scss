@@ -3,9 +3,9 @@
 	overflow-wrap: break-word;
 
 	&,
-	.primary-info-container,
-	.primary-experiences-container,
-	.secondary-experiences-container,
+	.meta-content-container,
+	.primary-content-container,
+	.secondary-content-container,
 	.print-download-buttons {
 		gap: 1em;
 	}
@@ -15,36 +15,36 @@
 		display: grid;
 	}
 
-	.primary-info-container,
-	.primary-experiences-container,
-	.secondary-experiences-container {
+	.meta-content-container,
+	.primary-content-container,
+	.secondary-content-container {
 		display: flex;
 		flex-direction: column;
 	}
 
 	.summary,
-	.primary-info-container section:not(.print-download-buttons),
-	.primary-experiences-container,
-	.secondary-experiences-container {
+	.meta-content-container section:not(.print-download-buttons),
+	.primary-content-container,
+	.secondary-content-container {
 		@extend %content-box-style;
 
 		padding: 1em;
 	}
 
-	.primary-info-container {
+	.meta-content-container {
 		grid-column: 2;
 	}
 
 	.print-download-buttons {
-		grid-template-columns: #{ parseInt($golden-ratio) / 100 }fr #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr;
+		grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr #{ parseInt($golden-ratio) / 100 }fr;
 	}
 
 	.summary,
-	.primary-experiences-container {
+	.primary-content-container {
 		grid-column: 1;
 	}
 
-	.primary-experiences-container {
+	.primary-content-container {
 		position: relative;
 
 		// visual bridge between experience containers
@@ -62,7 +62,7 @@
 		}
 	}
 
-	.secondary-experiences-container {
+	.secondary-content-container {
 		grid-column: 1 / -1;
 	}
 
@@ -84,7 +84,7 @@
 	margin-bottom: 0.5em;
 }
 
-.resume-meta-list {
+.resume-personal-list {
 	font-size: 1.2em;
 
 	dt {
@@ -156,7 +156,7 @@
 		display: flex;
 		flex-direction: column;
 
-		.primary-experiences-container {
+		.primary-content-container {
 			// visual bridge between experience containers
 			&::after {
 				height: 2px;
@@ -165,7 +165,7 @@
 
 		// pull "full width" experience container up on mobile
 		// to visually merge with "right column" experience container
-		.secondary-experiences-container {
+		.secondary-content-container {
 			margin-top: -2em;
 		}
 	}
@@ -174,9 +174,9 @@
 @media print {
 	.resume-container {
 		&,
-		.primary-info-container,
-		.primary-experiences-container,
-		.secondary-experiences-container {
+		.meta-content-container,
+		.primary-content-container,
+		.secondary-content-container {
 			gap: 2em;
 		}
 
@@ -185,14 +185,14 @@
 			display: none;
 		}
 
-		.primary-info-container section:not(.print-download-buttons),
-		.primary-experiences-container,
-		.secondary-experiences-container {
+		.meta-content-container section:not(.print-download-buttons),
+		.primary-content-container,
+		.secondary-content-container {
 			border: none;
 			padding: 0;
 		}
 
-		.primary-experiences-container {
+		.primary-content-container {
 			&::after {
 				content: none;
 				display: none;
@@ -208,7 +208,7 @@
 		}
 	}
 
-	.resume-meta-list {
+	.resume-personal-list {
 		dd {
 			&:first-of-type {
 				font-size: 2em;

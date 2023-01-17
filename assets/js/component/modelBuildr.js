@@ -115,7 +115,7 @@ bmdotcom.modelBuildr = (function() {
   };
   _addResumeModel = function() {
     return {
-      meta: {
+      personal: {
         name: 'Brad Mallow',
         email: 'contact@bradmallow.com',
         phone: {

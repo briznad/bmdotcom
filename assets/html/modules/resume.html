@@ -1,23 +1,23 @@
 <article class="resume-container" itemscope itemtype="https://schema.org/Person">
-  <div class="primary-info-container">
+  <div class="meta-content-container">
     <section class="print-download-buttons">
       <a href="/assets/pdf/Brad_Mallow_resume.pdf" class="download-button" target="_blank" download>download</a>
       <a href="javascript:window.print()" class="print-button">print</a>
     </section>
 
-    <section class="meta">
-      <dl class="resume-meta-list">
+    <section class="personal">
+      <dl class="resume-personal-list">
         <dt>name</dt>
-        <dd itemprop="name"><%= currentPage.meta.name %></dd>
+        <dd itemprop="name"><%= currentPage.personal.name %></dd>
 
         <dt>phone number</dt>
-        <dd><a itemprop="telephone" href="tel://<%= currentPage.meta.phone.countryCode %>-<%= currentPage.meta.phone.areaCode %>-<%= currentPage.meta.phone.number %>">+<%= currentPage.meta.phone.countryCode %> (<%= currentPage.meta.phone.areaCode %>) <%= currentPage.meta.phone.number %></a></dd>
+        <dd><a itemprop="telephone" href="tel://<%= currentPage.personal.phone.countryCode %>-<%= currentPage.personal.phone.areaCode %>-<%= currentPage.personal.phone.number %>">+<%= currentPage.personal.phone.countryCode %> (<%= currentPage.personal.phone.areaCode %>) <%= currentPage.personal.phone.number %></a></dd>
 
         <dt>email address</dt>
-        <dd><a itemprop="email" href="mailto://<%= currentPage.meta.email %>"><%= currentPage.meta.email %></a></dd>
+        <dd><a itemprop="email" href="mailto://<%= currentPage.personal.email %>"><%= currentPage.personal.email %></a></dd>
 
         <dt>website</dt>
-        <dd><a itemprop="url" href="<%= currentPage.meta.website %>"><%= currentPage.meta.website %></a></dd>
+        <dd><a itemprop="url" href="<%= currentPage.personal.website %>"><%= currentPage.personal.website %></a></dd>
       </dl>
     </section>
 
@@ -45,18 +45,17 @@
     </section>
   </div>
 
-  <section class="summary">
-    <h2 class="resume-section-header">Summary</h2>
-
-    <p><%= currentPage.summary %></p>
-  </section>
-
   <% _.each(currentPage.experience, function(job, index, list) { %>
-    <% if (index === 1) { %>
+    <% if (index === 0) { %>
+      <div class="primary-content-container">
+        <section class="summary">
+          <h2 class="resume-section-header">Summary</h2>
+
+          <p><%= currentPage.summary %></p>
+        </section>
+
         <section class="experience screen-only">
-          <% if (index === 0) { %>
-            <h2 class="resume-section-header">Professional Experience</h2>
-          <% } %>
+          <h2 class="resume-section-header">Professional Experience</h2>
 
           <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization"><%= job.title %>, <span itemprop="name"><%= job.organization %></span></h3>
 
@@ -79,16 +78,15 @@
           <% } %>
         </section>
       </div>
-    <% } %>
 
-    <% if (index <= 1) { %>
-      <div class="<%= index === 0 ? 'primary' : 'secondary' %>-experiences-container">
+      <div class="secondary-content-container">
     <% } %>
-      <section class="experience<%= index === 1 ? ' print-only' : '' %>">
-        <% if (index === 0) { %>
+      <% if (index === 0) { %>
+        <section class="experience print-only">
           <h2 class="resume-section-header">Professional Experience</h2>
-        <% } %>
-
+      <% } else { %>
+        <section class="experience">
+      <% } %>
         <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization"><%= job.title %>, <span itemprop="name"><%= job.organization %></span></h3>
 
         <span class="job-location-period">

@@ -401,7 +401,7 @@ th {
 
 /* mixins */
 /* /mixins */
-.visually-hidden, .resume-meta-list dt {
+.visually-hidden, .resume-personal-list dt {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -466,9 +466,9 @@ th {
     outline-color: #2c3e50; }
 
 .projects-list-item, .resume-container .summary,
-.resume-container .primary-info-container section:not(.print-download-buttons),
-.resume-container .primary-experiences-container,
-.resume-container .secondary-experiences-container, .resume-container .primary-experiences-container::after, .form-container [type="text"],
+.resume-container .meta-content-container section:not(.print-download-buttons),
+.resume-container .primary-content-container,
+.resume-container .secondary-content-container, .resume-container .primary-content-container::after, .form-container [type="text"],
 .form-container [type="email"],
 .form-container textarea {
   background-color: #fff;
@@ -1061,36 +1061,36 @@ footer {
   grid-template-columns: 0.6180339888fr 0.3819660113fr;
   overflow-wrap: break-word; }
   .resume-container,
-  .resume-container .primary-info-container,
-  .resume-container .primary-experiences-container,
-  .resume-container .secondary-experiences-container,
+  .resume-container .meta-content-container,
+  .resume-container .primary-content-container,
+  .resume-container .secondary-content-container,
   .resume-container .print-download-buttons {
     gap: 1em; }
   .resume-container,
   .resume-container .print-download-buttons {
     display: grid; }
-  .resume-container .primary-info-container,
-  .resume-container .primary-experiences-container,
-  .resume-container .secondary-experiences-container {
+  .resume-container .meta-content-container,
+  .resume-container .primary-content-container,
+  .resume-container .secondary-content-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
   .resume-container .summary,
-  .resume-container .primary-info-container section:not(.print-download-buttons),
-  .resume-container .primary-experiences-container,
-  .resume-container .secondary-experiences-container {
+  .resume-container .meta-content-container section:not(.print-download-buttons),
+  .resume-container .primary-content-container,
+  .resume-container .secondary-content-container {
     padding: 1em; }
-  .resume-container .primary-info-container {
+  .resume-container .meta-content-container {
     grid-column: 2; }
   .resume-container .print-download-buttons {
-    grid-template-columns: 0.6180339888fr 0.3819660113fr; }
+    grid-template-columns: 0.3819660113fr 0.6180339888fr; }
   .resume-container .summary,
-  .resume-container .primary-experiences-container {
+  .resume-container .primary-content-container {
     grid-column: 1; }
-  .resume-container .primary-experiences-container {
+  .resume-container .primary-content-container {
     position: relative; }
-    .resume-container .primary-experiences-container::after {
+    .resume-container .primary-content-container::after {
       content: '';
       position: absolute;
       top: 100%;
@@ -1099,7 +1099,7 @@ footer {
       height: calc(1em + 2px);
       border-top-width: 0;
       border-bottom-width: 0; }
-  .resume-container .secondary-experiences-container {
+  .resume-container .secondary-content-container {
     grid-column: 1 / -1; }
   .resume-container .print-only {
     display: none; }
@@ -1113,15 +1113,15 @@ footer {
 .resume-section-header {
   margin-bottom: 0.5em; }
 
-.resume-meta-list {
+.resume-personal-list {
   font-size: 1.2em; }
-  .resume-meta-list dd {
+  .resume-personal-list dd {
     margin-top: 0.5em; }
-    .resume-meta-list dd:first-of-type {
+    .resume-personal-list dd:first-of-type {
       margin-top: 0;
       font-size: 1.5em;
       font-weight: bold; }
-  .resume-meta-list a {
+  .resume-personal-list a {
     display: inline-block;
     width: 100%;
     overflow: hidden;
@@ -1167,33 +1167,33 @@ footer {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .resume-container .primary-experiences-container::after {
+    .resume-container .primary-content-container::after {
       height: 2px; }
-    .resume-container .secondary-experiences-container {
+    .resume-container .secondary-content-container {
       margin-top: -2em; } }
 
 @media print {
   .resume-container,
-  .resume-container .primary-info-container,
-  .resume-container .primary-experiences-container,
-  .resume-container .secondary-experiences-container {
+  .resume-container .meta-content-container,
+  .resume-container .primary-content-container,
+  .resume-container .secondary-content-container {
     gap: 2em; }
   .resume-container .print-download-buttons,
   .resume-container .skills {
     display: none; }
-  .resume-container .primary-info-container section:not(.print-download-buttons),
-  .resume-container .primary-experiences-container,
-  .resume-container .secondary-experiences-container {
+  .resume-container .meta-content-container section:not(.print-download-buttons),
+  .resume-container .primary-content-container,
+  .resume-container .secondary-content-container {
     border: none;
     padding: 0; }
-  .resume-container .primary-experiences-container::after {
+  .resume-container .primary-content-container::after {
     content: none;
     display: none; }
   .resume-container .print-only {
     display: block; }
   .resume-container .screen-only {
     display: none; }
-  .resume-meta-list dd:first-of-type {
+  .resume-personal-list dd:first-of-type {
     font-size: 2em; }
   .skill-list-item,
   .tool-list-item,

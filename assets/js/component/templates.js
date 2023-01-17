@@ -64,7 +64,7 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
             __p += __j.call(arguments, '');
         };
     with(obj || {}) {
-        __p += '<article class="resume-container" itemscope itemtype="https://schema.org/Person">\n  <div class="primary-info-container">\n    <section class="print-download-buttons">\n      <a href="/assets/pdf/Brad_Mallow_resume.pdf" class="download-button" target="_blank" download>download</a>\n      <a href="javascript:window.print()" class="print-button">print</a>\n    </section>\n\n    <section class="meta">\n      <dl class="resume-meta-list">\n        <dt>name</dt>\n        <dd itemprop="name">' + ((__t = (currentPage.meta.name)) == null ? '' : __t) + '</dd>\n\n        <dt>phone number</dt>\n        <dd><a itemprop="telephone" href="tel://' + ((__t = (currentPage.meta.phone.countryCode)) == null ? '' : __t) + '-' + ((__t = (currentPage.meta.phone.areaCode)) == null ? '' : __t) + '-' + ((__t = (currentPage.meta.phone.number)) == null ? '' : __t) + '">+' + ((__t = (currentPage.meta.phone.countryCode)) == null ? '' : __t) + ' (' + ((__t = (currentPage.meta.phone.areaCode)) == null ? '' : __t) + ') ' + ((__t = (currentPage.meta.phone.number)) == null ? '' : __t) + '</a></dd>\n\n        <dt>email address</dt>\n        <dd><a itemprop="email" href="mailto://' + ((__t = (currentPage.meta.email)) == null ? '' : __t) + '">' + ((__t = (currentPage.meta.email)) == null ? '' : __t) + '</a></dd>\n\n        <dt>website</dt>\n        <dd><a itemprop="url" href="' + ((__t = (currentPage.meta.website)) == null ? '' : __t) + '">' + ((__t = (currentPage.meta.website)) == null ? '' : __t) + '</a></dd>\n      </dl>\n    </section>\n\n    <section class="skills">\n      <h2 class="resume-section-header">Skills</h2>\n\n      <ul class="skills-list">\n        ';
+        __p += '<article class="resume-container" itemscope itemtype="https://schema.org/Person">\n  <div class="meta-content-container">\n    <section class="print-download-buttons">\n      <a href="/assets/pdf/Brad_Mallow_resume.pdf" class="download-button" target="_blank" download>download</a>\n      <a href="javascript:window.print()" class="print-button">print</a>\n    </section>\n\n    <section class="personal">\n      <dl class="resume-personal-list">\n        <dt>name</dt>\n        <dd itemprop="name">' + ((__t = (currentPage.personal.name)) == null ? '' : __t) + '</dd>\n\n        <dt>phone number</dt>\n        <dd><a itemprop="telephone" href="tel://' + ((__t = (currentPage.personal.phone.countryCode)) == null ? '' : __t) + '-' + ((__t = (currentPage.personal.phone.areaCode)) == null ? '' : __t) + '-' + ((__t = (currentPage.personal.phone.number)) == null ? '' : __t) + '">+' + ((__t = (currentPage.personal.phone.countryCode)) == null ? '' : __t) + ' (' + ((__t = (currentPage.personal.phone.areaCode)) == null ? '' : __t) + ') ' + ((__t = (currentPage.personal.phone.number)) == null ? '' : __t) + '</a></dd>\n\n        <dt>email address</dt>\n        <dd><a itemprop="email" href="mailto://' + ((__t = (currentPage.personal.email)) == null ? '' : __t) + '">' + ((__t = (currentPage.personal.email)) == null ? '' : __t) + '</a></dd>\n\n        <dt>website</dt>\n        <dd><a itemprop="url" href="' + ((__t = (currentPage.personal.website)) == null ? '' : __t) + '">' + ((__t = (currentPage.personal.website)) == null ? '' : __t) + '</a></dd>\n      </dl>\n    </section>\n\n    <section class="skills">\n      <h2 class="resume-section-header">Skills</h2>\n\n      <ul class="skills-list">\n        ';
         _.each(currentPage.skills, function (skill) {
             __p += '\n          <li class="skill-list-item">' + ((__t = (skill)) == null ? '' : __t) + '</li>\n        ';
         });
@@ -72,15 +72,11 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         _.each(currentPage.education, function (education) {
             __p += '\n          <li itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity" class="education-list-item">\n            <h3 itemprop="name">' + ((__t = (education.school)) == null ? '' : __t) + '</h3>\n            <span class="education-degree-year">' + ((__t = (education.degree.type)) == null ? '' : __t) + ', ' + ((__t = (education.degree.subject)) == null ? '' : __t) + ' &#8212; ' + ((__t = (education.graduationYear)) == null ? '' : __t) + '</span>\n          </li>\n        ';
         });
-        __p += '\n      </ul>\n    </section>\n  </div>\n\n  <section class="summary">\n    <h2 class="resume-section-header">Summary</h2>\n\n    <p>' + ((__t = (currentPage.summary)) == null ? '' : __t) + '</p>\n  </section>\n\n  ';
+        __p += '\n      </ul>\n    </section>\n  </div>\n\n  ';
         _.each(currentPage.experience, function (job, index, list) {
             __p += '\n    ';
-            if (index === 1) {
-                __p += '\n        <section class="experience screen-only">\n          ';
-                if (index === 0) {
-                    __p += '\n            <h2 class="resume-section-header">Professional Experience</h2>\n          ';
-                }
-                __p += '\n\n          <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n          <span class="job-location-period">\n            ';
+            if (index === 0) {
+                __p += '\n      <div class="primary-content-container">\n        <section class="summary">\n          <h2 class="resume-section-header">Summary</h2>\n\n          <p>' + ((__t = (currentPage.summary)) == null ? '' : __t) + '</p>\n        </section>\n\n        <section class="experience screen-only">\n          <h2 class="resume-section-header">Professional Experience</h2>\n\n          <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n          <span class="job-location-period">\n            ';
                 print((job.location ? job.location + ' &#8212; ' : '') + job.period.start + ' to ' + (job.period.end ? job.period.end : 'present'));
                 __p += '\n          </span>\n\n          ';
                 if (job.description) {
@@ -94,17 +90,15 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
                     });
                     __p += '\n            </ul>\n          ';
                 }
-                __p += '\n        </section>\n      </div>\n    ';
+                __p += '\n        </section>\n      </div>\n\n      <div class="secondary-content-container">\n    ';
             }
-            __p += '\n\n    ';
-            if (index <= 1) {
-                __p += '\n      <div class="' + ((__t = (index === 0 ? 'primary' : 'secondary')) == null ? '' : __t) + '-experiences-container">\n    ';
-            }
-            __p += '\n      <section class="experience' + ((__t = (index === 1 ? ' print-only' : '')) == null ? '' : __t) + '">\n        ';
+            __p += '\n      ';
             if (index === 0) {
-                __p += '\n          <h2 class="resume-section-header">Professional Experience</h2>\n        ';
+                __p += '\n        <section class="experience print-only">\n          <h2 class="resume-section-header">Professional Experience</h2>\n      ';
+            } else {
+                __p += '\n        <section class="experience">\n      ';
             }
-            __p += '\n\n        <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n        <span class="job-location-period">\n          ';
+            __p += '\n        <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n        <span class="job-location-period">\n          ';
             print((job.location ? job.location + ' &#8212; ' : '') + job.period.start + ' to ' + (job.period.end ? job.period.end : 'present'));
             __p += '\n        </span>\n\n        ';
             if (job.description) {
