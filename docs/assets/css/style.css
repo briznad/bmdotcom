@@ -465,9 +465,8 @@ th {
     border-color: #2c3e50;
     outline-color: #2c3e50; }
 
-.projects-list-item, .resume-container .summary,
-.resume-container .meta-content-container section:not(.print-download-buttons),
-.resume-container .primary-content-container,
+.projects-list-item, .resume-container .meta-content-container section:not(.print-download-buttons),
+.resume-container .primary-content-container section,
 .resume-container .secondary-content-container, .resume-container .primary-content-container::after, .form-container [type="text"],
 .form-container [type="email"],
 .form-container textarea {
@@ -1076,9 +1075,8 @@ footer {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
-  .resume-container .summary,
   .resume-container .meta-content-container section:not(.print-download-buttons),
-  .resume-container .primary-content-container,
+  .resume-container .primary-content-container section,
   .resume-container .secondary-content-container {
     padding: 1em; }
   .resume-container .meta-content-container {
@@ -1182,7 +1180,7 @@ footer {
   .resume-container .skills {
     display: none; }
   .resume-container .meta-content-container section:not(.print-download-buttons),
-  .resume-container .primary-content-container,
+  .resume-container .primary-content-container section,
   .resume-container .secondary-content-container {
     border: none;
     padding: 0; }

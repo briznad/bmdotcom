@@ -22,9 +22,8 @@
 		flex-direction: column;
 	}
 
-	.summary,
 	.meta-content-container section:not(.print-download-buttons),
-	.primary-content-container,
+	.primary-content-container section,
 	.secondary-content-container {
 		@extend %content-box-style;
 
@@ -186,7 +185,7 @@
 		}
 
 		.meta-content-container section:not(.print-download-buttons),
-		.primary-content-container,
+		.primary-content-container section,
 		.secondary-content-container {
 			border: none;
 			padding: 0;
