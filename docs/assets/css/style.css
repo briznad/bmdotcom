@@ -1173,26 +1173,32 @@ footer {
       margin-top: -2em; } }
 
 @media print {
-  .resume-container,
-  .resume-container .meta-content-container,
-  .resume-container .primary-content-container,
-  .resume-container .secondary-content-container {
-    gap: 2em; }
-  .resume-container .print-download-buttons,
-  .resume-container .skills {
-    display: none; }
-  .resume-container .meta-content-container section:not(.print-download-buttons),
-  .resume-container .primary-content-container section,
-  .resume-container .secondary-content-container {
-    border: none;
-    padding: 0; }
-  .resume-container .primary-content-container::after {
-    content: none;
-    display: none; }
-  .resume-container .print-only {
-    display: block; }
-  .resume-container .screen-only {
-    display: none; }
+  .resume-container {
+    grid-template-columns: 0.3819660113fr 0.6180339888fr; }
+    .resume-container,
+    .resume-container .meta-content-container,
+    .resume-container .primary-content-container,
+    .resume-container .secondary-content-container {
+      gap: 2em; }
+    .resume-container .meta-content-container {
+      grid-column: 1; }
+    .resume-container .print-download-buttons,
+    .resume-container .skills {
+      display: none; }
+    .resume-container .primary-content-container {
+      grid-column: 2; }
+    .resume-container .meta-content-container section:not(.print-download-buttons),
+    .resume-container .primary-content-container section,
+    .resume-container .secondary-content-container {
+      border: none;
+      padding: 0; }
+    .resume-container .primary-content-container::after {
+      content: none;
+      display: none; }
+    .resume-container .print-only {
+      display: block; }
+    .resume-container .screen-only {
+      display: none; }
   .resume-personal-list dd:first-of-type {
     font-size: 2em; }
   .skill-list-item,
