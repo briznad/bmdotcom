@@ -32,18 +32,19 @@
 
 	.meta-content-container {
 		grid-column: 2;
+		grid-row: 1;
 	}
 
 	.print-download-buttons {
 		grid-template-columns: #{ ( 100 - parseInt($golden-ratio) ) / 100 }fr #{ parseInt($golden-ratio) / 100 }fr;
 	}
 
-	.summary,
 	.primary-content-container {
 		grid-column: 1;
+		grid-row: 1;
 	}
 
-	.primary-content-container {
+	.primary-content-container .experience {
 		position: relative;
 
 		// visual bridge between experience containers
@@ -63,6 +64,7 @@
 
 	.secondary-content-container {
 		grid-column: 1 / -1;
+		grid-row: 2;
 	}
 
 	.print-only {
