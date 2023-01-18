@@ -151,7 +151,7 @@ bmdotcom.modelBuildr = (function() {
             'Completed the Urban X and Elemental Excelerator programs.',
             '$10 million dollars  raised in pre-seed, seed, and series A funding by investors including Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.',
             'Built out a team of 35+ outstanding employees with inclusive and diverse backgrounds, including a product organization that I directly managed.',
-            'Achieved the ultimate validation with our own wikipedia page: <a href="https://en.m.wikipedia.org/wiki/Thrilling_(company)">https://en.m.wikipedia.org/wiki/Thrilling_(company)</a>',
+            'Got our own wikipedia page: <a href="https://en.m.wikipedia.org/wiki/Thrilling_(company)">https://en.m.wikipedia.org/wiki/Thrilling_(company)</a>',
           ]
         }, {
           title: 'Senior Manager Engineering',
