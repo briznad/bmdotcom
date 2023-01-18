@@ -164,7 +164,7 @@ bmdotcom.modelBuildr = (function() {
           description: 'I started as the head of frontend development then transitioned to managing the entire tech team, consisting of on-site and offshore frontend, backend, full stack, and QA team members; handled all technical needs of a rapidly growing startup selling physical goods to both B2B & B2C customers. This included ecom, ERP, sales management, and middleware systems to make it all work.',
           achievements: [
             'Led the team to successfully replatform from an aging system that was inhibiting growth to a modern, full-featured ecom solution.',
-            'Identified the need to transition from static markup to fully accessible templates that could be administered by our internal clients, freeing up their creativity and my developer\'s time. I implemented the initial templates, trained the tech team on how to further develop and support the system, and brought the design and marketing teams together to embrace and integrate the new capabilities.',
+            'Identified the need to transition from static markup to fully accessible templates that could be administered by our internal clients, freeing up their creativity and my developer\'s time.  I secured stakeholder buy-in (design & marketing) and led the tech team to implement and execute.'
           ]
         }, {
           title: 'Senior Interface Developer',
