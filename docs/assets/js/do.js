@@ -12870,7 +12870,7 @@ bmdotcom.modelBuildr = (function() {
         },
         website: 'https://bradmallow.com'
       },
-      summary: 'I am a founder, product leader, engineering manager, and software developer with extensive experience crafting businesses, applications, and services. I am passionate about exposing complicated information through thoughtful interfaces. I enjoy utilizing my skills, both technical and personal, to build quality products and foster great teams.',
+      summary: 'I am a founder, product leader, engineering manager, and software developer with extensive experience crafting businesses, applications, and services. I am passionate about exposing complicated information through thoughtful interfaces. I enjoy utilizing my skills to build quality products and foster great teams.',
       education: [
         {
           school: 'University of California, Santa Cruz',
@@ -12908,8 +12908,8 @@ bmdotcom.modelBuildr = (function() {
           },
           description: 'I started as the head of frontend development then transitioned to managing the entire tech team, consisting of on-site and offshore frontend, backend, full stack, and QA team members; handled all technical needs of a rapidly growing startup selling physical goods to both B2B & B2C customers. This included ecom, ERP, sales management, and middleware systems to make it all work.',
           achievements: [
-            'Completed a successful replatforming from an aging system that was inhibiting growth to a modern, full-featured ecom solution.',
-            'Transitioned from static markup to fully accessible templates that could be administered by our internal clients, freeing up their creativity and my developer\'s time.',
+            'Led the team to successfully replatform from an aging system that was inhibiting growth to a modern, full-featured ecom solution.',
+            'Identified the need to transition from static markup to fully accessible templates that could be administered by our internal clients, freeing up their creativity and my developer\'s time. I implemented the initial templates, trained the tech team on how to further develop and support the system, and brought the design and marketing teams together to embrace and integrate the new capabilities.',
           ]
         }, {
           title: 'Senior Interface Developer',
@@ -12937,8 +12937,8 @@ bmdotcom.modelBuildr = (function() {
           achievements: [
             'Achieved a 50% reduction in page load times by refactoring HTML, CSS, and JavaScript, driving a marked jump in conversions in key growth areas. ',
             'Introduced an adaptive, mobile-optimized experience for key new pages and helped align the production life cycle around mobile. ',
-            'Lead tech talks for the marketing and development groups, evangelizing the cause of performance and frontend best practices. ',
-            'Audited and refactored Intuit’s top 50 pages to ensure compliance with accessibility best practices, provide a superb experience for users on all devices.',
+            'Led tech talks for the marketing and development groups, evangelizing the cause of performance and frontend best practices. ',
+            'Audited and refactored Intuit’s top 50 pages to ensure compliance with accessibility best practices, providing a superb experience for users on all devices.',
           ]
         }, {
           title: 'Web Developer',
