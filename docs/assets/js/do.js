@@ -12891,12 +12891,12 @@ bmdotcom.modelBuildr = (function() {
             start: 'August 2018',
             end: 'December 2022'
           },
-          description: 'I co-founded Thrilling, a two-sided online marketplace for vintage apparel and home goods. As the technical co-founder, I personally built the foundational website and apps, allowing us to prototype, launch, and scale the business from nothing to over $1 million in ARR. I also built out and managed the product and tech teams that scaled our offering to support 1800+ independent secondhand vendors that utilized our tools to upload 300k+ unique items sold on our marketplace.',
+          description: 'I co-founded Thrilling, a two-sided online marketplace for vintage apparel and home goods. As the technical co-founder, I personally built the foundational website and apps, allowing us to prototype, launch, and scale the business from nothing to over $1 million in ARR.',
           achievements: [
-            'Completed the Urban X and Elemental Excelerator programs.',
-            '$10 million dollars  raised in pre-seed, seed, and series A funding by investors including Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.',
-            'Built out a team of 35+ outstanding employees with inclusive and diverse backgrounds, including a product organization that I directly managed.',
-            'Got our own wikipedia page: <a href="https://en.m.wikipedia.org/wiki/Thrilling_(company)">https://en.m.wikipedia.org/wiki/Thrilling_(company)</a>',
+            'Scaled our tech stack to support 1800+ independent secondhand vendors that utilized our tools to upload 300k+ unique items sold on our marketplace visited by millions of people.',
+            'Built out a team of 35+ outstanding employees with inclusive and diverse backgrounds, including a 12-person product & tech team that I directly managed.',
+            '$10 million dollars raised in pre-seed, seed, and series A funding by investors including Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.',
+
           ]
         }, {
           title: 'Senior Manager Engineering',
