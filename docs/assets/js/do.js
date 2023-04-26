@@ -12894,9 +12894,9 @@ bmdotcom.modelBuildr = (function() {
           description: 'I co-founded Thrilling, a two-sided online marketplace for vintage apparel and home goods. As the technical co-founder, I personally built the foundational website and apps, allowing us to prototype, launch, and scale the business from nothing to over $1 million in ARR.',
           achievements: [
             'Scaled our tech stack to support 1800+ independent secondhand vendors that utilized our tools to upload 300k+ unique items sold on our marketplace visited by millions of people.',
+            'Used a variety of tools, such as TypeScript, JavaScript, Python, React, Angular, Svelte, Ionic, node.js, GraphQL, Firestore, BigQuery, Firebase Functions, GCP Cloud Run, GCP Pub/Sub, Shopify Liquid, and many more to keep it all humming.',
             'Built out a team of 35+ outstanding employees with inclusive and diverse backgrounds, including a 12-person product & tech team that I directly managed.',
             '$10 million dollars raised in pre-seed, seed, and series A funding by investors including Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.',
-
           ]
         }, {
           title: 'Senior Manager Engineering',
