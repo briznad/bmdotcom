@@ -12884,6 +12884,16 @@ bmdotcom.modelBuildr = (function() {
       skills: ['making something from nothing', 'engineering management', 'development & deployment workflows', 'performance optimization', 'web accessibility', 'rapid prototyping'],
       experience: [
         {
+          title: 'Software Development Consultant',
+          organization : 'stealth startup',
+          location     : 'San Francisco, California',
+          period       : {
+            start : 'Feb 2023',
+            end   : 'July 2023'
+          },
+          description: 'I defined the product scope and strategy, then built the initial web application using a modern javascript application stack. The product included innovative interactive data visualizations, powered by d3.js, providing developers unprecedented insight into their build processes.',
+        },
+        {
           title: 'Co-Founder & CTO',
           organization: 'Thrilling',
           location: 'Los Angeles, California',
@@ -12898,7 +12908,8 @@ bmdotcom.modelBuildr = (function() {
             'Built out a team of 35+ outstanding employees with inclusive and diverse backgrounds, including a 12-person product & tech team that I directly managed.',
             '$10 million dollars raised in pre-seed, seed, and series A funding by investors including Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.',
           ]
-        }, {
+        },
+        {
           title: 'Senior Manager Engineering',
           organization: 'Poppin',
           location: 'New York, New York',
@@ -12911,7 +12922,8 @@ bmdotcom.modelBuildr = (function() {
             'Led the team to successfully replatform from an aging system that was inhibiting growth to a modern, full-featured ecom solution.',
             'Identified the need to transition from static markup to fully accessible templates that could be administered by our internal clients, freeing up their creativity and my developer\'s time.  I secured stakeholder buy-in (design & marketing) and led the tech team to implement and execute.'
           ]
-        }, {
+        },
+        {
           title: 'Senior Interface Developer',
           organization: 'Thrillist Media Group',
           location: 'New York, New York',
@@ -12925,7 +12937,8 @@ bmdotcom.modelBuildr = (function() {
             'Designed, prototyped, and implemented internal curation tools, providing editorial and merchandising teams granular control over content placement through an intuitive interface.',
             'Built the corporate identity site (http://thrillistmediagroup.com) making use of CSS animation and transitions.',
           ]
-        }, {
+        },
+        {
           title: 'Frontend Development Consultant',
           organization: 'Intuit',
           location: 'Menlo Park, California',
@@ -12940,7 +12953,8 @@ bmdotcom.modelBuildr = (function() {
             'Led tech talks for the marketing and development groups, evangelizing the cause of performance and frontend best practices. ',
             'Audited and refactored Intuit’s top 50 pages to ensure compliance with accessibility best practices, providing a superb experience for users on all devices.',
           ]
-        }, {
+        },
+        {
           title: 'Web Developer',
           organization: 'Freelance',
           location: 'San Francisco, California',
@@ -12949,7 +12963,8 @@ bmdotcom.modelBuildr = (function() {
             end: 'February 2012'
           },
           description: 'I created engaging web experiences using HTML5, CSS3, and JavaScript, helping clients tell their unique stories; fostered a fluid working relationship between development, designers, and the client.'
-        }, {
+        },
+        {
           title: 'Support Engineer',
           organization: 'Atlassian',
           location: 'San Francisco, California',
@@ -12958,7 +12973,8 @@ bmdotcom.modelBuildr = (function() {
             end: 'September 2011'
           },
           description: 'Provided high-touch technical support for mission-critical software development and communication tools, supporting customers of all sizes, from startups to Fortune 100s, using a number of communication channels – support tickets, online forums, telephone – across all major operating systems and DB setups – MySQL, PostgreSQL, Oracle, Solaris; developed productivity tools integrating our admin and ticketing systems using HTML5, CSS3, and JavaScript.'
-        }, {
+        },
+        {
           title: 'Community Advocate',
           organization: 'Ning',
           location: 'Palo Alto, California',
