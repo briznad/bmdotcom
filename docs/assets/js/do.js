@@ -12885,11 +12885,11 @@ bmdotcom.modelBuildr = (function() {
       experience: [
         {
           title: 'Software Development Consultant',
-          organization : 'stealth startup',
-          location     : 'San Francisco, California',
-          period       : {
-            start : 'Feb 2023',
-            end   : 'July 2023'
+          organization: 'stealth startup',
+          location: 'San Francisco, California',
+          period: {
+            start: 'Feb 2023',
+            end: 'July 2023'
           },
           description: 'I defined the product scope and strategy, then built the initial web application using a modern javascript application stack. The product included innovative interactive data visualizations, powered by d3.js, providing developers unprecedented insight into their build processes.',
         },
