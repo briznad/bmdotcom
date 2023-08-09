@@ -12907,6 +12907,7 @@ bmdotcom.modelBuildr = (function() {
             'Used a variety of tools, such as TypeScript, JavaScript, Python, React, Angular, Svelte, Ionic, node.js, GraphQL, Firestore, BigQuery, Firebase Functions, GCP Cloud Run, GCP Pub/Sub, Shopify Liquid, and many more to keep it all humming.',
             'Built out a team of 35+ outstanding employees with inclusive and diverse backgrounds, including a 12-person product & tech team that I directly managed.',
             '$10 million dollars raised in pre-seed, seed, and series A funding by investors including Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.',
+            'Crafted strategy and rolled out impactful machine learning-powered solutions for image manipulation, tagging, pricing algorithms, and AI copywriting, which reduced costs and increased revenue.',
           ]
         },
         {
