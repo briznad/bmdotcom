@@ -132,8 +132,7 @@ bmdotcom.modelBuildr = (function() {
           degree: {
             type: 'B.A.',
             subject: 'Film & Digital Media'
-          },
-          graduationYear: '2006'
+          }
         }
       ],
       skills: ['making something from nothing', 'engineering management', 'development & deployment workflows', 'performance optimization', 'web accessibility', 'rapid prototyping'],
@@ -209,36 +208,6 @@ bmdotcom.modelBuildr = (function() {
             'Led tech talks for the marketing and development groups, evangelizing the cause of performance and frontend best practices. ',
             'Audited and refactored Intuit’s top 50 pages to ensure compliance with accessibility best practices, providing a superb experience for users on all devices.',
           ]
-        },
-        {
-          title: 'Web Developer',
-          organization: 'Freelance',
-          location: 'San Francisco, California',
-          period: {
-            start: 'October 2011',
-            end: 'February 2012'
-          },
-          description: 'I created engaging web experiences using HTML5, CSS3, and JavaScript, helping clients tell their unique stories; fostered a fluid working relationship between development, designers, and the client.'
-        },
-        {
-          title: 'Support Engineer',
-          organization: 'Atlassian',
-          location: 'San Francisco, California',
-          period: {
-            start: 'August 2010',
-            end: 'September 2011'
-          },
-          description: 'Provided high-touch technical support for mission-critical software development and communication tools, supporting customers of all sizes, from startups to Fortune 100s, using a number of communication channels – support tickets, online forums, telephone – across all major operating systems and DB setups – MySQL, PostgreSQL, Oracle, Solaris; developed productivity tools integrating our admin and ticketing systems using HTML5, CSS3, and JavaScript.'
-        },
-        {
-          title: 'Community Advocate',
-          organization: 'Ning',
-          location: 'Palo Alto, California',
-          period: {
-            start: 'February 2008',
-            end: 'April 2010'
-          },
-          description: 'Product expert and first line of contact for existing and prospective customers; answered technical support tickets and support forum posts, wrote blog posts and FAQs, and worked with engineering teams to file and prioritize bugs; designed and developed internal support tools integrating our admin interface, production environment, Salesforce CRM ticketing system, and bug tracking systems using HTML, CSS, and JavaScript; onboarded and trained new employees; served on the incident management on-call team.'
         }
       ]
     };
