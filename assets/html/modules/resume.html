@@ -53,17 +53,19 @@
     </section>
   </div>
 
-  <% _.each(currentPage.experience, function(job, index, list) { %>
-    <% if (index === 0) { %>
-      <div class="primary-content-container">
-        <section class="summary">
-          <h2 class="resume-section-header">Summary</h2>
+  <div class="primary-content-container">
+    <section class="summary">
+      <h2 class="resume-section-header">Summary</h2>
 
-          <p><%= currentPage.summary %></p>
-        </section>
+      <p><%= currentPage.summary %></p>
+    </section>
 
+    <% _.each(currentPage.experience, function(job, index, list) { %>
+      <% if (index <= 1) { %>
         <section class="experience screen-only">
-          <h2 class="resume-section-header">Professional Experience</h2>
+          <% if (index === 0) { %>
+            <h2 class="resume-section-header">Professional Experience</h2>
+          <% } %>
 
           <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization"><%= job.title %>, <span itemprop="name"><%= job.organization %></span></h3>
 
@@ -85,13 +87,17 @@
             </ul>
           <% } %>
         </section>
-      </div>
+      <% } %>
+    <% }); %>
+  </div>
 
-      <div class="secondary-content-container">
-    <% } %>
-      <% if (index === 0) { %>
+  <div class="secondary-content-container">
+    <% _.each(currentPage.experience, function(job, index, list) { %>
+      <% if (index <= 1) { %>
         <section class="experience print-only">
-          <h2 class="resume-section-header">Professional Experience</h2>
+          <% if (index === 0) { %>
+            <h2 class="resume-section-header">Professional Experience</h2>
+          <% } %>
       <% } else { %>
         <section class="experience">
       <% } %>
@@ -115,10 +121,8 @@
           </ul>
         <% } %>
       </section>
-    <% if (index === list.length - 1) { %>
-      </div>
-    <% } %>
-  <% }); %>
+    <% }); %>
+  </div>
 
   <section class="education print-only">
     <h2 class="resume-section-header">Education</h2>

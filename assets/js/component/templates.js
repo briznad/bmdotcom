@@ -76,11 +76,15 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
             }
             __p += '\n            </span>\n          </li>\n        ';
         });
-        __p += '\n      </ul>\n    </section>\n  </div>\n\n  ';
+        __p += '\n      </ul>\n    </section>\n  </div>\n\n  <div class="primary-content-container">\n    <section class="summary">\n      <h2 class="resume-section-header">Summary</h2>\n\n      <p>' + ((__t = (currentPage.summary)) == null ? '' : __t) + '</p>\n    </section>\n\n    ';
         _.each(currentPage.experience, function (job, index, list) {
-            __p += '\n    ';
-            if (index === 0) {
-                __p += '\n      <div class="primary-content-container">\n        <section class="summary">\n          <h2 class="resume-section-header">Summary</h2>\n\n          <p>' + ((__t = (currentPage.summary)) == null ? '' : __t) + '</p>\n        </section>\n\n        <section class="experience screen-only">\n          <h2 class="resume-section-header">Professional Experience</h2>\n\n          <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n          <span class="job-location-period">\n            ';
+            __p += '\n      ';
+            if (index <= 1) {
+                __p += '\n        <section class="experience screen-only">\n          ';
+                if (index === 0) {
+                    __p += '\n            <h2 class="resume-section-header">Professional Experience</h2>\n          ';
+                }
+                __p += '\n\n          <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n          <span class="job-location-period">\n            ';
                 print((job.location ? job.location + ' &#8212; ' : '') + job.period.start + ' to ' + (job.period.end ? job.period.end : 'present'));
                 __p += '\n          </span>\n\n          ';
                 if (job.description) {
@@ -94,11 +98,19 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
                     });
                     __p += '\n            </ul>\n          ';
                 }
-                __p += '\n        </section>\n      </div>\n\n      <div class="secondary-content-container">\n    ';
+                __p += '\n        </section>\n      ';
             }
+            __p += '\n    ';
+        });
+        __p += '\n  </div>\n\n  <div class="secondary-content-container">\n    ';
+        _.each(currentPage.experience, function (job, index, list) {
             __p += '\n      ';
-            if (index === 0) {
-                __p += '\n        <section class="experience print-only">\n          <h2 class="resume-section-header">Professional Experience</h2>\n      ';
+            if (index <= 1) {
+                __p += '\n        <section class="experience print-only">\n          ';
+                if (index === 0) {
+                    __p += '\n            <h2 class="resume-section-header">Professional Experience</h2>\n          ';
+                }
+                __p += '\n      ';
             } else {
                 __p += '\n        <section class="experience">\n      ';
             }
@@ -117,12 +129,8 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
                 __p += '\n          </ul>\n        ';
             }
             __p += '\n      </section>\n    ';
-            if (index === list.length - 1) {
-                __p += '\n      </div>\n    ';
-            }
-            __p += '\n  ';
         });
-        __p += '\n\n  <section class="education print-only">\n    <h2 class="resume-section-header">Education</h2>\n\n    <ul class="education-list">\n      ';
+        __p += '\n  </div>\n\n  <section class="education print-only">\n    <h2 class="resume-section-header">Education</h2>\n\n    <ul class="education-list">\n      ';
         _.each(currentPage.education, function (education) {
             __p += '\n        <li itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity" class="education-list-item">\n          <h3 itemprop="name">' + ((__t = (education.school)) == null ? '' : __t) + '</h3>\n\n          <span class="education-degree-year">\n            <span>' + ((__t = (education.degree.type)) == null ? '' : __t) + ', ' + ((__t = (education.degree.subject)) == null ? '' : __t) + '</span>\n\n            ';
             if (education.graduationYear) {

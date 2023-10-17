@@ -148,6 +148,14 @@ bmdotcom.modelBuildr = (function() {
           description: 'I defined the product scope and strategy, then built the initial web application using a modern javascript application stack. The product included innovative interactive data visualizations, powered by d3.js, providing developers unprecedented insight into their build processes.',
         },
         {
+          title: 'Board Member & Technical Advisor',
+          organization: 'Thrilling',
+          period: {
+            start: 'January 2023',
+            end: 'Present'
+          }
+        },
+        {
           title: 'Co-Founder & CTO',
           organization: 'Thrilling',
           location: 'Los Angeles, California',
