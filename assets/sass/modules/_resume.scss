@@ -118,6 +118,14 @@
 	color: $concrete;
 }
 
+.education-degree-year {
+	span + span {
+		&::before {
+			content: ' \2014 ';
+		}
+	}
+}
+
 .skill-list-item,
 .tool-list-item,
 .job-achievements-list-item {

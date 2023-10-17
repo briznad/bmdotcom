@@ -70,7 +70,11 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         });
         __p += '\n      </ul>\n    </section>\n\n    <section class="education screen-only">\n      <h2 class="resume-section-header">Education</h2>\n\n      <ul class="education-list">\n        ';
         _.each(currentPage.education, function (education) {
-            __p += '\n          <li itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity" class="education-list-item">\n            <h3 itemprop="name">' + ((__t = (education.school)) == null ? '' : __t) + '</h3>\n            <span class="education-degree-year">' + ((__t = (education.degree.type)) == null ? '' : __t) + ', ' + ((__t = (education.degree.subject)) == null ? '' : __t) + ' &#8212; ' + ((__t = (education.graduationYear)) == null ? '' : __t) + '</span>\n          </li>\n        ';
+            __p += '\n          <li itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity" class="education-list-item">\n            <h3 itemprop="name">' + ((__t = (education.school)) == null ? '' : __t) + '</h3>\n\n            <span class="education-degree-year">\n              <span>' + ((__t = (education.degree.type)) == null ? '' : __t) + ', ' + ((__t = (education.degree.subject)) == null ? '' : __t) + '</span>\n\n              ';
+            if (education.graduationYear) {
+                __p += '\n                <span>' + ((__t = (education.graduationYear)) == null ? '' : __t) + '</span>\n              ';
+            }
+            __p += '\n            </span>\n          </li>\n        ';
         });
         __p += '\n      </ul>\n    </section>\n  </div>\n\n  ';
         _.each(currentPage.experience, function (job, index, list) {
@@ -120,7 +124,11 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         });
         __p += '\n\n  <section class="education print-only">\n    <h2 class="resume-section-header">Education</h2>\n\n    <ul class="education-list">\n      ';
         _.each(currentPage.education, function (education) {
-            __p += '\n        <li itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity" class="education-list-item">\n          <h3 itemprop="name">' + ((__t = (education.school)) == null ? '' : __t) + '</h3>\n          <span class="education-degree-year">' + ((__t = (education.degree.type)) == null ? '' : __t) + ', ' + ((__t = (education.degree.subject)) == null ? '' : __t) + ' &#8212; ' + ((__t = (education.graduationYear)) == null ? '' : __t) + '</span>\n        </li>\n      ';
+            __p += '\n        <li itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity" class="education-list-item">\n          <h3 itemprop="name">' + ((__t = (education.school)) == null ? '' : __t) + '</h3>\n\n          <span class="education-degree-year">\n            <span>' + ((__t = (education.degree.type)) == null ? '' : __t) + ', ' + ((__t = (education.degree.subject)) == null ? '' : __t) + '</span>\n\n            ';
+            if (education.graduationYear) {
+                __p += '\n              <span>' + ((__t = (education.graduationYear)) == null ? '' : __t) + '</span>\n            ';
+            }
+            __p += '\n          </span>\n        </li>\n      ';
         });
         __p += '\n    </ul>\n  </section>\n</article>\n';
     }

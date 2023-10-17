@@ -39,7 +39,14 @@
         <% _.each(currentPage.education, function(education) { %>
           <li itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity" class="education-list-item">
             <h3 itemprop="name"><%= education.school %></h3>
-            <span class="education-degree-year"><%= education.degree.type %>, <%= education.degree.subject %> &#8212; <%= education.graduationYear %></span>
+
+            <span class="education-degree-year">
+              <span><%= education.degree.type %>, <%= education.degree.subject %></span>
+
+              <% if (education.graduationYear) { %>
+                <span><%= education.graduationYear %></span>
+              <% } %>
+            </span>
           </li>
         <% }); %>
       </ul>
@@ -120,7 +127,14 @@
       <% _.each(currentPage.education, function(education) { %>
         <li itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity" class="education-list-item">
           <h3 itemprop="name"><%= education.school %></h3>
-          <span class="education-degree-year"><%= education.degree.type %>, <%= education.degree.subject %> &#8212; <%= education.graduationYear %></span>
+
+          <span class="education-degree-year">
+            <span><%= education.degree.type %>, <%= education.degree.subject %></span>
+
+            <% if (education.graduationYear) { %>
+              <span><%= education.graduationYear %></span>
+            <% } %>
+          </span>
         </li>
       <% }); %>
     </ul>
