@@ -43,12 +43,9 @@
 		grid-column: 1;
 		grid-row: 1;
 
-		.experience {
+		.experiences {
 			position: relative;
-
-			&:last-child {
-				flex-grow: 1;
-			}
+			flex-grow: 1;
 
 			// visual bridge between experience containers
 			&::after {
@@ -170,9 +167,11 @@
 		flex-direction: column;
 
 		.primary-content-container {
-			// visual bridge between experience containers
-			&::after {
-				height: 2px;
+			.experiences {
+				// visual bridge between experience containers
+				&::after {
+					height: 2px;
+				}
 			}
 		}
 
@@ -216,9 +215,11 @@
 		}
 
 		.primary-content-container {
-			&::after {
-				content: none;
-				display: none;
+			.experiences {
+				&::after {
+					content: none;
+					display: none;
+				}
 			}
 		}
 

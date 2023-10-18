@@ -467,7 +467,7 @@ th {
 
 .projects-list-item, .resume-container .meta-content-container section:not(.print-download-buttons),
 .resume-container .primary-content-container section,
-.resume-container .secondary-content-container, .resume-container .primary-content-container .experience::after, .form-container [type="text"],
+.resume-container .secondary-content-container, .resume-container .primary-content-container .experiences::after, .form-container [type="text"],
 .form-container [type="email"],
 .form-container textarea {
   background-color: #fff;
@@ -1087,12 +1087,11 @@ footer {
   .resume-container .primary-content-container {
     grid-column: 1;
     grid-row: 1; }
-    .resume-container .primary-content-container .experience {
-      position: relative; }
-      .resume-container .primary-content-container .experience:last-child {
-        -ms-flex-positive: 1;
-        flex-grow: 1; }
-      .resume-container .primary-content-container .experience::after {
+    .resume-container .primary-content-container .experiences {
+      position: relative;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+      .resume-container .primary-content-container .experiences::after {
         content: '';
         position: absolute;
         top: 100%;
@@ -1173,7 +1172,7 @@ footer {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .resume-container .primary-content-container::after {
+    .resume-container .primary-content-container .experiences::after {
       height: 2px; }
     .resume-container .secondary-content-container {
       margin-top: -2em; } }
@@ -1198,7 +1197,7 @@ footer {
     .resume-container .secondary-content-container {
       border: none;
       padding: 0; }
-    .resume-container .primary-content-container::after {
+    .resume-container .primary-content-container .experiences::after {
       content: none;
       display: none; }
     .resume-container .print-only {
