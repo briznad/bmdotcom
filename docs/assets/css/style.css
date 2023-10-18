@@ -1088,9 +1088,10 @@ footer {
     grid-column: 1;
     grid-row: 1; }
     .resume-container .primary-content-container .experience {
-      position: relative;
-      -ms-flex-positive: 1;
-      flex-grow: 1; }
+      position: relative; }
+      .resume-container .primary-content-container .experience:last-child {
+        -ms-flex-positive: 1;
+        flex-grow: 1; }
       .resume-container .primary-content-container .experience::after {
         content: '';
         position: absolute;

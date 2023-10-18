@@ -45,7 +45,10 @@
 
 		.experience {
 			position: relative;
-			flex-grow: 1;
+
+			&:last-child {
+				flex-grow: 1;
+			}
 
 			// visual bridge between experience containers
 			&::after {
