@@ -173,6 +173,8 @@
 
 		.primary-content-container {
 			.experiences {
+				padding-bottom: 0;
+
 				// visual bridge between experience containers
 				&::after {
 					height: 2px;

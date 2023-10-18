@@ -1173,8 +1173,10 @@ footer {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .resume-container .primary-content-container .experiences::after {
-      height: 2px; }
+    .resume-container .primary-content-container .experiences {
+      padding-bottom: 0; }
+      .resume-container .primary-content-container .experiences::after {
+        height: 2px; }
     .resume-container .secondary-content-container {
       margin-top: -2em; } }
 
