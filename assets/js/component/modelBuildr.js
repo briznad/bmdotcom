@@ -216,6 +216,33 @@ bmdotcom.modelBuildr = (function() {
             'Led tech talks for the marketing and development groups, evangelizing the cause of performance and frontend best practices. ',
             'Audited and refactored Intuit’s top 50 pages to ensure compliance with accessibility best practices, providing a superb experience for users on all devices.',
           ]
+        },
+        {
+          title: 'Web Developer',
+          organization: 'Freelance',
+          location: 'San Francisco, California',
+          period: {
+            start: 'October 2011',
+            end: 'February 2012'
+          }
+        },
+        {
+          title: 'Support Engineer',
+          organization: 'Atlassian',
+          location: 'San Francisco, California',
+          period: {
+            start: 'August 2010',
+            end: 'September 2011'
+          }
+        },
+        {
+          title: 'Community Advocate',
+          organization: 'Ning',
+          location: 'Palo Alto, California',
+          period: {
+            start: 'February 2008',
+            end: 'April 2010'
+          }
         }
       ]
     };
