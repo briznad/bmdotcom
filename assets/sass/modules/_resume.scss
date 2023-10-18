@@ -60,6 +60,12 @@
 				border-top-width: 0;
 				border-bottom-width: 0;
 			}
+
+			.experience {
+				+ .experience {
+					margin-top: 1em;
+				}
+			}
 		}
 	}
 
@@ -203,10 +209,6 @@
 			display: none;
 		}
 
-		.primary-content-container {
-			grid-column: 2;
-		}
-
 		.meta-content-container section:not(.print-download-buttons),
 		.primary-content-container section,
 		.secondary-content-container {
@@ -215,10 +217,18 @@
 		}
 
 		.primary-content-container {
+			grid-column: 2;
+
 			.experiences {
 				&::after {
 					content: none;
 					display: none;
+				}
+
+				.experience {
+					+ .experience {
+						margin-top: 2em;
+					}
 				}
 			}
 		}

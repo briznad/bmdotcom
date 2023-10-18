@@ -1100,6 +1100,8 @@ footer {
         height: calc(1em + 2px);
         border-top-width: 0;
         border-bottom-width: 0; }
+      .resume-container .primary-content-container .experiences .experience + .experience {
+        margin-top: 1em; }
   .resume-container .secondary-content-container {
     grid-column: 1 / -1;
     grid-row: 2; }
@@ -1190,16 +1192,18 @@ footer {
     .resume-container .print-download-buttons,
     .resume-container .skills {
       display: none; }
-    .resume-container .primary-content-container {
-      grid-column: 2; }
     .resume-container .meta-content-container section:not(.print-download-buttons),
     .resume-container .primary-content-container section,
     .resume-container .secondary-content-container {
       border: none;
       padding: 0; }
-    .resume-container .primary-content-container .experiences::after {
-      content: none;
-      display: none; }
+    .resume-container .primary-content-container {
+      grid-column: 2; }
+      .resume-container .primary-content-container .experiences::after {
+        content: none;
+        display: none; }
+      .resume-container .primary-content-container .experiences .experience + .experience {
+        margin-top: 2em; }
     .resume-container .print-only {
       display: block; }
     .resume-container .screen-only {
