@@ -43,23 +43,23 @@
 		grid-column: 1;
 		grid-row: 1;
 
+		// visual bridge between experience containers
+		&::after {
+			@extend %content-box-style;
+
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: -1px;
+			width: calc(100% + 2px);
+			height: calc(1em + 2px);
+			border-top-width: 0;
+			border-bottom-width: 0;
+		}
+
 		.experience {
 			position: relative;
 			flex-grow: 1;
-
-			// visual bridge between experience containers
-			&::after {
-				@extend %content-box-style;
-
-				content: '';
-				position: absolute;
-				top: 100%;
-				left: -1px;
-				width: calc(100% + 2px);
-				height: calc(1em + 2px);
-				border-top-width: 0;
-				border-bottom-width: 0;
-			}
 		}
 	}
 

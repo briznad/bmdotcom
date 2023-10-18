@@ -467,7 +467,7 @@ th {
 
 .projects-list-item, .resume-container .meta-content-container section:not(.print-download-buttons),
 .resume-container .primary-content-container section,
-.resume-container .secondary-content-container, .resume-container .primary-content-container .experience::after, .form-container [type="text"],
+.resume-container .secondary-content-container, .resume-container .primary-content-container::after, .form-container [type="text"],
 .form-container [type="email"],
 .form-container textarea {
   background-color: #fff;
@@ -1087,19 +1087,19 @@ footer {
   .resume-container .primary-content-container {
     grid-column: 1;
     grid-row: 1; }
+    .resume-container .primary-content-container::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: -1px;
+      width: calc(100% + 2px);
+      height: calc(1em + 2px);
+      border-top-width: 0;
+      border-bottom-width: 0; }
     .resume-container .primary-content-container .experience {
       position: relative;
       -ms-flex-positive: 1;
       flex-grow: 1; }
-      .resume-container .primary-content-container .experience::after {
-        content: '';
-        position: absolute;
-        top: 100%;
-        left: -1px;
-        width: calc(100% + 2px);
-        height: calc(1em + 2px);
-        border-top-width: 0;
-        border-bottom-width: 0; }
   .resume-container .secondary-content-container {
     grid-column: 1 / -1;
     grid-row: 2; }
