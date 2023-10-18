@@ -1062,7 +1062,6 @@ footer {
   .resume-container,
   .resume-container .meta-content-container,
   .resume-container .primary-content-container,
-  .resume-container .secondary-content-container,
   .resume-container .print-download-buttons {
     gap: 1em; }
   .resume-container,
@@ -1100,11 +1099,11 @@ footer {
         height: calc(1em + 2px);
         border-top-width: 0;
         border-bottom-width: 0; }
-      .resume-container .primary-content-container .experiences .experience + .experience {
-        margin-top: 1em; }
   .resume-container .secondary-content-container {
     grid-column: 1 / -1;
     grid-row: 2; }
+  .resume-container .experience + .experience {
+    margin-top: 1em; }
   .resume-container .print-only {
     display: none; }
 
@@ -1184,8 +1183,7 @@ footer {
     grid-template-columns: 0.3819660113fr 0.6180339888fr; }
     .resume-container,
     .resume-container .meta-content-container,
-    .resume-container .primary-content-container,
-    .resume-container .secondary-content-container {
+    .resume-container .primary-content-container {
       gap: 2em; }
     .resume-container .meta-content-container {
       grid-column: 1; }
@@ -1202,8 +1200,8 @@ footer {
       .resume-container .primary-content-container .experiences::after {
         content: none;
         display: none; }
-      .resume-container .primary-content-container .experiences .experience + .experience {
-        margin-top: 2em; }
+    .resume-container .experience + .experience {
+      margin-top: 2em; }
     .resume-container .print-only {
       display: block; }
     .resume-container .screen-only {
