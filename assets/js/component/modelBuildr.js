@@ -117,7 +117,7 @@ bmdotcom.modelBuildr = (function() {
     return {
       personal: {
         name: 'Brad Mallow',
-        email: 'contact@bradmallow.com',
+        email: 'brad.mallow@gmail.com',
         phone: {
           countryCode: '1',
           areaCode: '858',
