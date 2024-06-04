@@ -101,7 +101,7 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         __p += '\n    </section>\n  </div>\n\n  <div class="secondary-content-container">\n    <h2 class="resume-section-header print-only">Professional Experience</h2>\n\n    ';
         _.each(currentPage.experience, function (job, index, list) {
             __p += '\n      <section class="experience';
-            if (index <= 1) {
+            if (index <= 2) {
                 __p += ' print-only';
             }
             __p += '">\n        <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n        <span class="job-location-period">\n          ';
