@@ -30,7 +30,7 @@
   "scripts": {
     "init": "npx -p node@12 bower install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "grunt",
+    "build": "npx grunt",
     "start": "grunt watch"
   },
   "keywords": [
