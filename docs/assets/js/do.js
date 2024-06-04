@@ -12883,14 +12883,12 @@ bmdotcom.modelBuildr = (function() {
       skills: ['making something from nothing', 'engineering management', 'development & deployment workflows', 'performance optimization', 'web accessibility', 'rapid prototyping'],
       experience: [
         {
-          title: 'Software Development Consultant',
-          organization: 'stealth startup',
-          location: 'San Francisco, California',
+          title: 'Senior Software Engineer Contractor',
+          organization: 'Apple',
           period: {
-            start: 'Feb 2023',
-            end: 'July 2023'
-          },
-          description: 'I defined the product scope and strategy, then built the initial web application using a modern javascript application stack. The product included innovative interactive data visualizations, powered by d3.js, providing developers unprecedented insight into their build processes.',
+            start: 'December 2023',
+            end: 'Present'
+          }
         },
         {
           title: 'Board Member & Technical Advisor',
@@ -12899,6 +12897,16 @@ bmdotcom.modelBuildr = (function() {
             start: 'January 2023',
             end: 'Present'
           }
+        },
+        {
+          title: 'Software Development Consultant',
+          organization: 'stealth startup',
+          location: 'San Francisco, California',
+          period: {
+            start: 'Feb 2023',
+            end: 'July 2023'
+          },
+          description: 'I defined the product scope and strategy, then built the initial web application using a modern javascript application stack. The product included innovative interactive data visualizations, powered by d3.js, providing developers unprecedented insight into their build processes.',
         },
         {
           title: 'Co-Founder & CTO',
