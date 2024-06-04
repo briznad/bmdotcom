@@ -169,7 +169,7 @@ bmdotcom.modelBuildr = (function() {
           location: 'Los Angeles, California',
           period: {
             start: 'August 2018',
-            end: 'December 2022'
+            end: 'January 2023'
           },
           description: 'I co-founded Thrilling, a two-sided online marketplace for vintage apparel and home goods. As the technical co-founder, I personally built the foundational website and apps, allowing us to prototype, launch, and scale the business from nothing to over $1 million in ARR.',
           achievements: [
