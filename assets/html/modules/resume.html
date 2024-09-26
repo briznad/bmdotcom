@@ -64,7 +64,7 @@
       <h2 class="resume-section-header">Professional Experience</h2>
 
       <% _.each(currentPage.experience, function(job, index, list) { %>
-        <% if (index <= 2) { %>
+        <% if (index <= 1) { %>
           <div class="experience">
             <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization"><%= job.title %>, <span itemprop="name"><%= job.organization %></span></h3>
 
@@ -95,7 +95,7 @@
     <h2 class="resume-section-header print-only">Professional Experience</h2>
 
     <% _.each(currentPage.experience, function(job, index, list) { %>
-      <section class="experience<% if (index <= 2) { %> print-only<% } %>">
+      <section class="experience<% if (index <= 1) { %> print-only<% } %>">
         <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization"><%= job.title %>, <span itemprop="name"><%= job.organization %></span></h3>
 
         <span class="job-location-period">

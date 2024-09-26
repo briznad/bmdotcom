@@ -79,7 +79,7 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         __p += '\n      </ul>\n    </section>\n  </div>\n\n  <div class="primary-content-container">\n    <section class="summary">\n      <h2 class="resume-section-header">Summary</h2>\n\n      <p>' + ((__t = (currentPage.summary)) == null ? '' : __t) + '</p>\n    </section>\n\n    <section class="experiences screen-only">\n      <h2 class="resume-section-header">Professional Experience</h2>\n\n      ';
         _.each(currentPage.experience, function (job, index, list) {
             __p += '\n        ';
-            if (index <= 2) {
+            if (index <= 1) {
                 __p += '\n          <div class="experience">\n            <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n            <span class="job-location-period">\n              ';
                 print((job.location ? job.location + ' &#8212; ' : '') + job.period.start + ' to ' + (job.period.end ? job.period.end : 'present'));
                 __p += '\n            </span>\n\n            ';
@@ -101,7 +101,7 @@ this["bmdotcom"]["templates"]["resumeView"] = function (obj) {
         __p += '\n    </section>\n  </div>\n\n  <div class="secondary-content-container">\n    <h2 class="resume-section-header print-only">Professional Experience</h2>\n\n    ';
         _.each(currentPage.experience, function (job, index, list) {
             __p += '\n      <section class="experience';
-            if (index <= 2) {
+            if (index <= 1) {
                 __p += ' print-only';
             }
             __p += '">\n        <h3 itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">' + ((__t = (job.title)) == null ? '' : __t) + ', <span itemprop="name">' + ((__t = (job.organization)) == null ? '' : __t) + '</span></h3>\n\n        <span class="job-location-period">\n          ';
