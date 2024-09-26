@@ -12888,7 +12888,14 @@ bmdotcom.modelBuildr = (function() {
           period: {
             start: 'December 2023',
             end: 'Present'
-          }
+          },
+          description: 'As a product engineering leader on Apple\'s WeChat store app, I leverage Tencent\'s Weixin Mini Program framework to deliver Apple\'s unrivaled shopping experience to the Chinese market.',
+          achievements: [
+            'Lead innovative feature prototyping, including a groundbreaking cross-app checkout workflow for selling the Vision Pro headset via WeChat.',
+            'Drive technical strategy by auditing tech stack, improving code quality and maintainability, and advocating for UX enhancements across teams.',
+            'Translate complex e-commerce experiences from apple.com and native iOS store apps to a more restrictive technical and regulatory environment.',
+            'Utilize expertise in TypeScript, Sass, WXML, and React to develop and optimize features for the WeChat store platform.',
+          ]
         },
         {
           title: 'Board Member & Technical Advisor',
