@@ -46,6 +46,10 @@
 			position: relative;
 			flex-grow: 1;
 
+			@media only screen {
+				padding-bottom: 0;
+			}
+
 			// visual bridge between experience containers
 			&::after {
 				@extend %content-box-style;
@@ -65,6 +69,10 @@
 	.secondary-content-container {
 		grid-column: 1 / -1;
 		grid-row: 2;
+
+		@media only screen and (min-width: $breakpoint-small) {
+			padding-top: 0;
+		}
 	}
 
 	.experience {
@@ -154,7 +162,10 @@
 
 .job-location-period {
 	display: inline-block;
-	margin-bottom: 0.5em;
+
+	+ job-location-period {
+		margin-top: 0.5em;
+	}
 }
 
 .job-achievements-title {
@@ -173,8 +184,6 @@
 
 		.primary-content-container {
 			.experiences {
-				padding-bottom: 0;
-
 				// visual bridge between experience containers
 				&::after {
 					height: 2px;
