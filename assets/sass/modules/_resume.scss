@@ -75,9 +75,13 @@
 		}
 	}
 
-	.experience {
-		+ .experience {
-			margin-top: 1em;
+	@media screen {
+		.experience {
+			&:not(.print-only) {
+				+ .experience {
+					margin-top: 1em;
+				}
+			}
 		}
 	}
 

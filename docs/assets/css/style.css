@@ -1108,8 +1108,9 @@ footer {
     @media only screen and (min-width: 550px) {
       .resume-container .secondary-content-container {
         padding-top: 0; } }
-  .resume-container .experience + .experience {
-    margin-top: 1em; }
+  @media screen {
+    .resume-container .experience:not(.print-only) + .experience {
+      margin-top: 1em; } }
   .resume-container .print-only {
     display: none; }
 
