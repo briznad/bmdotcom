@@ -1167,7 +1167,7 @@ footer {
 
 .job-location-period {
   display: inline-block; }
-  .job-location-period + job-location-period {
+  .job-location-period + .job-description {
     margin-top: 0.5em; }
 
 .job-achievements-title {
