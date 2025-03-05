@@ -12,7 +12,7 @@
         <dd itemprop="name"><%= currentPage.personal.name %></dd>
 
         <dt>phone number</dt>
-        <dd><a itemprop="telephone" href="tel://<%= currentPage.personal.phone.countryCode %>-<%= currentPage.personal.phone.areaCode %>-<%= currentPage.personal.phone.number %>">+<%= currentPage.personal.phone.countryCode %> (<%= currentPage.personal.phone.areaCode %>) <%= currentPage.personal.phone.number %></a></dd>
+        <dd><a itemprop="telephone" href="tel://<%= currentPage.personal.phone.countryCode + currentPage.personal.phone.areaCode + currentPage.personal.phone.number %>">+<%= currentPage.personal.phone.countryCode %> <%= currentPage.personal.phone.areaCode %> <%= currentPage.personal.phone.number %></a></dd>
 
         <dt>email address</dt>
         <dd><a itemprop="email" href="mailto://<%= currentPage.personal.email %>"><%= currentPage.personal.email %></a></dd>

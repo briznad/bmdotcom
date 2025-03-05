@@ -119,9 +119,9 @@ bmdotcom.modelBuildr = (function() {
         name: 'Brad Mallow',
         email: 'brad.mallow@gmail.com',
         phone: {
-          countryCode: '1',
-          areaCode: '858',
-          number: '205-8052'
+          countryCode: '44',
+          areaCode: '7425',
+          number: '416069'
         },
         website: 'https://bradmallow.com'
       },
