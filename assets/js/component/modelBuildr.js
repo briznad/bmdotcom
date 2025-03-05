@@ -142,7 +142,7 @@ bmdotcom.modelBuildr = (function() {
           organization: 'Apple',
           period: {
             start: 'December 2023',
-            end: 'Present'
+            end: 'December 2024'
           },
           description: 'As a product engineering leader on Apple\'s WeChat store app, I leverage Tencent\'s Weixin Mini Program framework to deliver Apple\'s unrivaled shopping experience to the Chinese market.',
           achievements: [
