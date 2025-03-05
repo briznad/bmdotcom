@@ -138,14 +138,19 @@ bmdotcom.modelBuildr = (function() {
       skills: ['making something from nothing', 'engineering management', 'development & deployment workflows', 'performance optimization', 'web accessibility', 'rapid prototyping'],
       experience: [
         {
-          title: 'Software Development Consultant',
-          organization: 'stealth startup',
-          location: 'San Francisco, California',
+          title: 'Senior Software Engineer Contractor',
+          organization: 'Apple',
           period: {
-            start: 'Feb 2023',
-            end: 'July 2023'
+            start: 'December 2023',
+            end: 'Present'
           },
-          description: 'I defined the product scope and strategy, then built the initial web application using a modern javascript application stack. The product included innovative interactive data visualizations, powered by d3.js, providing developers unprecedented insight into their build processes.',
+          description: 'As a product engineering leader on Apple\'s WeChat store app, I leverage Tencent\'s Weixin Mini Program framework to deliver Apple\'s unrivaled shopping experience to the Chinese market.',
+          achievements: [
+            'Lead innovative feature prototyping, including a groundbreaking cross-app checkout workflow for selling the Vision Pro headset via WeChat.',
+            'Translate complex e-commerce experiences from apple.com and native iOS store apps to a more restrictive technical and regulatory environment.',
+            'Utilize expertise in TypeScript, Sass, WXML, and React to develop and optimize features for the WeChat store platform.',
+            'Drive technical strategy by auditing tech stack, improving code quality and maintainability, and advocating for UX enhancements across teams.',
+          ]
         },
         {
           title: 'Board Member & Technical Advisor',
@@ -156,20 +161,30 @@ bmdotcom.modelBuildr = (function() {
           }
         },
         {
+          title: 'Software Development Consultant',
+          organization: 'stealth startup',
+          location: 'San Francisco, California',
+          period: {
+            start: 'Feb 2023',
+            end: 'July 2023'
+          },
+          description: 'I defined the product scope and strategy, then built the initial web application using a modern javascript application stack. The product included innovative interactive data visualizations, powered by d3.js, providing developers unprecedented insight into their build processes.',
+        },
+        {
           title: 'Co-Founder & CTO',
           organization: 'Thrilling',
           location: 'Los Angeles, California',
           period: {
             start: 'August 2018',
-            end: 'December 2022'
+            end: 'January 2023'
           },
           description: 'I co-founded Thrilling, a two-sided online marketplace for vintage apparel and home goods. As the technical co-founder, I personally built the foundational website and apps, allowing us to prototype, launch, and scale the business from nothing to over $1 million in ARR.',
           achievements: [
             'Scaled our tech stack to support 1800+ independent secondhand vendors that utilized our tools to upload 300k+ unique items sold on our marketplace visited by millions of people.',
+            'Built and deployed impactful ML & AI-powered solutions for image manipulation, tagging, price prediction, and copywriting, which reduced costs and increased revenue.',
             'Used a variety of tools, such as TypeScript, JavaScript, Python, React, Angular, Svelte, Ionic, node.js, GraphQL, Firestore, BigQuery, Firebase Functions, GCP Cloud Run, GCP Pub/Sub, Shopify Liquid, and many more to keep it all humming.',
             'Built out a team of 35+ outstanding employees with inclusive and diverse backgrounds, including a 12-person product & tech team that I directly managed.',
             '$10 million dollars raised in pre-seed, seed, and series A funding by investors including Prelude Ventures, Elemental Excelerator, Defy, Urban US, Phoenix Rising, Closed Loop, and Congruent Ventures.',
-            'Crafted strategy and rolled out impactful machine learning-powered solutions for image manipulation, tagging, pricing algorithms, and AI copywriting, which reduced costs and increased revenue.',
           ]
         },
         {

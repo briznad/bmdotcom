@@ -6,6 +6,7 @@
   },
   "Gruntfile": "gruntfile.js",
   "devDependencies": {
+    "bower": "^1.8.14",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "~0.7.2",
     "grunt-contrib-clean": "^0.5.0",
@@ -15,7 +16,7 @@
     "grunt-contrib-htmlmin": "^0.4.0",
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-html-build": "^0.5.0",
+    "grunt-html-build": "^0.7.1",
     "grunt-notify": "^0.4.1",
     "grunt-sass": "^2.0.0",
     "grunt-template-module": "^0.5.0",
@@ -27,8 +28,9 @@
   },
   "main": "gruntfile.js",
   "scripts": {
+    "init": "npx -p node@12 bower install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "grunt",
+    "build": "npx grunt",
     "start": "grunt watch"
   },
   "keywords": [
@@ -37,5 +39,6 @@
     "bradmallow"
   ],
   "author": "Brad Mallow <brad.mallow@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }

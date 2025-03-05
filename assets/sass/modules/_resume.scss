@@ -46,6 +46,10 @@
 			position: relative;
 			flex-grow: 1;
 
+			@media only screen {
+				padding-bottom: 0;
+			}
+
 			// visual bridge between experience containers
 			&::after {
 				@extend %content-box-style;
@@ -65,11 +69,19 @@
 	.secondary-content-container {
 		grid-column: 1 / -1;
 		grid-row: 2;
+
+		@media only screen and (min-width: $breakpoint-small) {
+			padding-top: 0;
+		}
 	}
 
-	.experience {
-		+ .experience {
-			margin-top: 1em;
+	@media screen {
+		.experience {
+			&:not(.print-only) {
+				+ .experience {
+					margin-top: 1em;
+				}
+			}
 		}
 	}
 
@@ -154,7 +166,10 @@
 
 .job-location-period {
 	display: inline-block;
-	margin-bottom: 0.5em;
+
+	+ .job-description {
+		margin-top: 0.5em;
+	}
 }
 
 .job-achievements-title {
@@ -173,8 +188,6 @@
 
 		.primary-content-container {
 			.experiences {
-				padding-bottom: 0;
-
 				// visual bridge between experience containers
 				&::after {
 					height: 2px;
@@ -229,7 +242,7 @@
 
 		.experience {
 			+ .experience {
-				margin-top: 2em;
+				margin-top: 1.5em;
 			}
 		}
 
